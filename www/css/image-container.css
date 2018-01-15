@@ -93,6 +93,16 @@ body ,html {
 	 font-weight: normal;
 
 	}
+
+@font-face {
+	  font-family: 'gotham_bold';
+	  src: url("../fonts/Gotham Bold.eot");
+	  src: url("../fonts/Gotham Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham Bold.woff2") format("woff2"), url("../fonts/Gotham Bold.woff") format("woff"), url("../fonts/Gotham Bold.ttf") format("truetype"), url("../fonts/Gotham Bold.otf") format("opentype"), url("../fonts/Gotham Bold.svg#Gotham Bold") format("svg");
+	  font-weight: 700;
+	  font-style: normal;
+	  font-stretch: normal;
+	  unicode-range: U+0020-00FE; }
+
 .container {
 	width:100%;
 	height:100%;
@@ -181,6 +191,7 @@ body ,html {
 		 .si-main-graphic .si-grpahic-container .si-main-image .si-image-wrapper img {
 				position: absolute;
 				width: 100%;
+				min-height:100%;
 				z-index: 1; }
  .si-main-graphic .si-grpahic-container .si-resize-overlay {
 		position: absolute;
@@ -314,11 +325,11 @@ body ,html {
 								-ms-transform: translateY(-50%);
 										transform: translateY(-50%); }
 .si-grpahic-container .si-static-text-overlay.flag .si-static-text-wrap {
-							font-size: 60px;
+							font-size: 70px;
 							text-align: right;
 							font-family: 'gotham_ultra-italic',sans-serif; }
 .si-grpahic-container .si-static-text-overlay.flag .si-static-text-wrap p {
-							text-shadow: 8px 4px 0 rgba(0, 71, 178, 0.6);
+							text-shadow: 4px 0 0 rgba(0, 71, 178, 0.6);
 							color:#fff; }
 .si-grpahic-container .si-static-text-overlay.flag-1 {
 						width: 25%;
@@ -329,7 +340,7 @@ body ,html {
 										transform: translateY(0); }
 .si-grpahic-container .si-static-text-overlay.flag-1 .si-static-text-wrap .si-static-player-name {
 							text-align: right;
-							font-size: 34px;
+							font-size: 50px;
 							color: #fff;
 							font-family: 'gotham_black',sans-serif; }
 .si-grpahic-container .si-static-text-overlay.flag-1 .si-static-text-wrap .si-static-score {
@@ -337,22 +348,22 @@ body ,html {
 							display: block;
 							text-align: right;
 							font-family: 'gotham_black',sans-serif;
-							font-size: 60px;
+							font-size: 80px;
 							letter-spacing: 0.7px; }
 .si-grpahic-container .si-static-text-overlay.flag-1 .si-static-text-wrap .si-static-score .si-static-score-item {
 								font-family: 'gotham_book',sans-serif;
-								font-size: 30px; }
+								font-size: 50px; }
 .si-grpahic-container .si-static-text-overlay.flag-2 {
-						width: 25%;
+						width: 30%;
 						top: 0;
 						right: 0;
 						left: auto;
 						bottom: auto;
-						padding: 80px 20px 20px 0; }
+						padding: 40px 20px 20px 0; }
 .si-grpahic-container .si-static-text-overlay.flag-2 .si-static-title {
 							position: relative;
-							font-size: 40px;
-							font-family: 'gotham_black',sans-serif;
+							font-size: 50px;
+							font-family: 'gotham_bold',sans-serif;
 							padding-bottom: 30px;
 							margin-bottom: 30px;
 							word-wrap: break-word;
@@ -374,9 +385,9 @@ body ,html {
 							font-size: 150px; }
 .si-grpahic-container .si-static-text-overlay.flag-2 .si-static-description {
 							font-family: 'gotham_medium',sans-serif;
-							font-size: 24px;
+							font-size: 40px;
 							margin-top: 20px;
-							line-height: 1.3;
+							line-height: 1;
 							word-wrap: break-word;
 						 }
 .si-grpahic-container .si-static-text-overlay.bottom-text {
@@ -421,7 +432,7 @@ body ,html {
 .si-grpahic-container .si-static-text-overlay.bottom-gradient .si-static-text-wrap p {
 								font-family: 'gotham_book',sans-serif;
 								font-weight: normal;
-								font-size: 28px;
+								font-size: 40px;
 								line-height: 1.3; }
 .si-grpahic-container .si-static-text-overlay.left-gradient {
 						width: 30%;
@@ -436,7 +447,7 @@ body ,html {
 						padding: 40px 0 20px 40px; }
 .si-grpahic-container .si-static-text-overlay.left-gradient .si-static-title {
 							position: relative;
-							font-size: 40px;
+							font-size: 50px;
 							font-family: 'gotham_black',sans-serif;
 							padding-bottom: 20px;
 							margin-bottom: 20px; }
@@ -456,7 +467,7 @@ body ,html {
 							position: relative;
 							font-family: 'gotham_medium',sans-serif;
 							padding: 24px 0;
-							font-size: 32px;
+							font-size: 36px;
 
 						 }
 .si-grpahic-container .si-static-text-overlay.left-gradient .si-static-score-item:before {

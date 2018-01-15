@@ -2669,6 +2669,15 @@ table {
   font-stretch: normal;
   unicode-range: U+0020-0912; }
 
+@font-face {
+  font-family: 'gotham_bold';
+  src: url("../fonts/Gotham Bold.eot");
+  src: url("../fonts/Gotham Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham Bold.woff2") format("woff2"), url("../fonts/Gotham Bold.woff") format("woff"), url("../fonts/Gotham Bold.ttf") format("truetype"), url("../fonts/Gotham Bold.otf") format("opentype"), url("../fonts/Gotham Bold.svg#Gotham Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE; }
+
 .hindi {
   font-family: 'Mangal'; }
 
@@ -4008,11 +4017,11 @@ body {
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%); }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag .si-static-text-wrap {
-          font-size: 30px;
+          font-size: 35px;
           text-align: right;
           font-family: 'gotham_ultra-italic',sans-serif; }
           .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag .si-static-text-wrap p {
-            text-shadow: 4px 2px 0 rgba(0, 71, 178, 0.6);
+            text-shadow: 2px 0 0 rgba(0, 71, 178, 0.6);
             word-wrap: break-word; }
       .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag-1 {
         width: 25%;
@@ -4023,7 +4032,7 @@ body {
                 transform: translateY(0); }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag-1 .si-static-text-wrap .si-static-player-name {
           text-align: right;
-          font-size: 17px;
+          font-size: 25px;
           color: #fff;
           font-family: 'gotham_black',sans-serif; }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag-1 .si-static-text-wrap .si-static-score {
@@ -4031,22 +4040,22 @@ body {
           display: block;
           text-align: right;
           font-family: 'gotham_black',sans-serif;
-          font-size: 30px;
+          font-size: 40px;
           letter-spacing: 0.7px; }
           .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag-1 .si-static-text-wrap .si-static-score .si-static-score-item {
             font-family: 'gotham_book',sans-serif;
-            font-size: 15px; }
+            font-size: 25px; }
       .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag-2 {
-        width: 25%;
+        width: 30%;
         top: 0;
         right: 0;
         left: auto;
         bottom: auto;
-        padding: 40px 20px 20px 0; }
+        padding: 20px 20px 20px 0; }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag-2 .si-static-title {
           position: relative;
-          font-size: 20px;
-          font-family: 'gotham_black',sans-serif;
+          font-size: 25px;
+          font-family: 'gotham_bold',sans-serif;
           padding-bottom: 15px;
           margin-bottom: 15px; }
           .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag-2 .si-static-title:before {
@@ -4066,9 +4075,9 @@ body {
           font-size: 75px; }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag-2 .si-static-description {
           font-family: 'gotham_medium',sans-serif;
-          font-size: 12px;
+          font-size: 20px;
           margin-top: 10px;
-          line-height: 1.3; }
+          line-height: 1; }
       .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.bottom-text {
         width: 90%;
         bottom: 10px;
@@ -4104,7 +4113,7 @@ body {
           .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.bottom-gradient .si-static-text-wrap p {
             font-family: 'gotham_book',sans-serif;
             font-weight: normal;
-            font-size: 13.5px;
+            font-size: 20px;
             line-height: 1.3; }
       .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.left-gradient {
         width: 30%;
@@ -4115,7 +4124,7 @@ body {
         padding: 20px 0 20px 20px; }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.left-gradient .si-static-title {
           position: relative;
-          font-size: 20px;
+          font-size: 25px;
           font-family: 'gotham_black',sans-serif;
           padding-bottom: 10px;
           margin-bottom: 10px; }
@@ -4133,7 +4142,8 @@ body {
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.left-gradient .si-static-score-item {
           position: relative;
           font-family: 'gotham_medium',sans-serif;
-          padding: 12px 0; }
+          padding: 12px 0;
+          font-size: 18px; }
           .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.left-gradient .si-static-score-item:before {
             position: absolute;
             content: "";
