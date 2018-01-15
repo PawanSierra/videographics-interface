@@ -3237,8 +3237,7 @@ body {
                   align-items: center; }
       .si-main .si-col .si-itemswrapper .si-static-input-field-wrap {
         width: 80%;
-        margin-top: 20px;
-        text-transform: uppercase; }
+        margin-top: 20px; }
         .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -3301,8 +3300,7 @@ body {
             background-color: transparent;
             border: none;
             border-bottom: 1px solid #fff;
-            color: #fff;
-            text-transform: uppercase; }
+            color: #fff; }
             .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-input::-webkit-input-placeholder {
               color: #fff;
               opacity: 0.5; }
