@@ -1,0 +1,223 @@
+
+.si-infographic-selector {
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width:768px) {
+    display: block;
+  }
+  .si-infographic-selector-wrapper {
+    text-align: center;
+    width:100%;
+    height:auto;
+    max-width: 70%;
+    margin:0 auto;
+    @media (max-width: 768px) {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+    .si-selector-title {
+
+      display: inline-block;
+      color:$font-color;
+      font-size: 22px;
+      padding:0 25px 10px 25px;
+      text-align: center;
+      border-bottom: 2px solid #798a61;
+
+    }
+    .si-infographic-sports {
+      margin-top:15px;
+      padding-bottom: 10px;
+      border-bottom:1px solid rgba(255,255,255,.50);
+
+      .si-infographic-sport-list {
+        display: inline-block;
+        &:after {
+          @extend .clearfix;
+        }
+        @media (max-width: 768px) {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          &:after {
+            display: none;
+          }
+        }
+      }
+      .si-infographic-sport-item {
+
+        float:left;
+        cursor: pointer;
+        padding:40px 20px;
+        @media (max-width: 768px) {
+          padding:10px 10px;
+          float:none;
+        }
+        &.selected {
+          background: linear-gradient(to bottom, rgba(255,255,255,0) 1%,rgba(56,56,56,0.5) 17%,rgba(255,255,255,0) 100%);
+        }
+
+      & + .si-infographic-sport-item {
+        margin-left: 50px;
+        @media (max-width: 768px) {
+          margin-left:0px;
+        }
+      }
+      a {
+
+        &:before {
+          display: block;
+          background-repeat:no-repeat;
+          background-position: center center;
+          content:"";
+          width:72px;
+          height:72px;
+          border-radius: 50%;
+          margin:0 auto 20px auto;
+          @media (max-width: 768px) {
+            width:50px;
+            height:50px;
+          }
+        }
+        display: block;
+        color:$font-color;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        text-align: center;
+
+      }
+      &.active a {
+        opacity: 0.5;
+      }
+      &.allsports {
+        a:before {
+          background-image:url(../images/all_sports.svg);
+        }
+      }
+      &.cricket {
+        a:before {
+          background-image:url(../images/cricket.svg);
+        }
+      }
+      &.football {
+        a:before {
+          background-image:url(../images/football.svg);
+        }
+      }
+    }
+  }
+  .si-infographic-type {
+    margin-top:15px;
+    .si-selector-title {
+      position: relative;
+      border-bottom: none;
+      &:after {
+        position: absolute;
+        content:"";
+        width:60%;
+        height:1px;
+        background-color:#8dbc45;
+        bottom: 0px;
+        left:50%;
+        transform: translateX(-50%);
+      }
+    }
+    .si-infographic-type-options {
+      margin-top:20px;
+    }
+    .si-infographic-types-list {
+      display: inline-block;
+      &:after {
+        @extend .clearfix;
+      }
+      @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        flex:1;
+      }
+
+    }
+    .si-infographic-type-item {
+      width:200px;
+      height:200px;
+      float:left;
+      background-color:rgba(0,0,0,.20);
+      border:1px solid rgba(255,255,255,.30);
+      box-shadow: 0 11px 17px 0px rgba(0,0,0,.30);
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 768px) {
+        width:33.33%;
+        height:auto;
+        float:none;
+        padding:10px 0;
+      }
+      &.active {
+        @media (max-width: 768px) {
+          width:66.66%;
+        }
+      }
+      & + .si-infographic-type-item  {
+        margin-left: 78px;
+        @media (max-width: 768px) {
+          margin-left: 0px;
+        }
+      }
+      a {
+        &:before {
+          content:"";
+          display: block;
+          width:62px;
+          height:62px;
+          background-repeat: no-repeat;
+          background-position: center center;
+          margin:0 auto 10px auto;
+        }
+        display: block;
+        color:$font-color;
+        text-transform: uppercase;
+        font-size:16px;
+        text-decoration: none;
+      }
+      &.static a:before {
+        background-image:url(../images/stats.svg);
+      }
+      &.gif a:before {
+        background-image:url(../images/gif.svg);
+      }
+      &.video a:before {
+        background-image:url(../images/play.svg);
+      }
+      .si-infographic-type-btn {
+        margin-top:20px;
+        .si-get-btn {
+          width:146px;
+          height:32px;
+          display: inline-block;
+          appearance:none;
+          background-color:rgba(0,0,0,.10);
+          border:none;
+          color:$font-color;
+          font-size: 16px;
+          cursor: pointer;
+          border-radius:5px;
+          border:1px solid rgba(255,255,255,.30);
+          @media (max-width: 768px) {
+            width:100px;
+            height:20px;
+          }
+          &:focus , &:active {
+            outline:0px;
+          }
+        }
+      }
+    }
+  }
+} // wrapper
+} //si-infographic-selector

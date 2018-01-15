@@ -1,0 +1,201 @@
+.si-page.login {
+  .si-main {
+    height:calc(100% - 27px);
+  }
+  .si-login-section {
+    width: 70%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    @media (max-width: 768px) {
+      width:100%;
+      display: block;
+    }
+  }
+  .si-login-section-wrap {
+      height:458px;
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        height:auto;
+        align-items: center;
+        background: linear-gradient(to bottom, rgba(144,225,33,1) 0%,rgba(144,225,33,0.21) 79%,rgba(255,255,255,0.01) 99%,rgba(255,255,255,0) 100%);
+      }
+
+    & > div[class*='si'] {
+      float:left;
+    }
+    @media (max-width: 768px) {
+      & > div[class*='si'] {
+        float:none;
+        &:not(.si-login-form) {
+          width:100%;
+        }
+      }
+    }
+    &:after {
+      @extend .clearfix;
+    }
+    .si-login-branding {
+      border-radius: 5px;
+      height:100%;
+      background-color:$secondary-color;
+
+      @media (max-width: 768px) {
+        order:1;
+        padding:20px 0;
+        background-color: transparent;
+      }
+
+      .si-logo-brand {
+        position: relative;
+        margin-top:94px;
+        padding-bottom: 30px;
+        @media (max-width: 768px) {
+          margin-top: 40px;
+        }
+        &:after {
+          position: absolute;
+          display: inline-block;
+          content:"";
+          width:70%;
+          bottom: 0px;
+          left:50%;
+          transform: translateX(-50%);
+          height:2px;
+          background: radial-gradient(ellipse at center, rgba(255,255,255,.50) 0%,rgba(255,255,255,0) 100%);
+        }
+        a {
+          display: block;
+          text-indent: -1000%;
+          white-space: nowrap;
+          width:290px;
+          height:100px;
+          margin:0 auto;
+          background-image:url(../images/si-brand-big.png);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+
+        }
+      } // si-logo-brand
+      .si-product-branding {
+        margin-top: 30px;
+        @media (max-width: 768px) {
+          display: none;
+        }
+        h4,h5 {
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 20px;
+          font-weight: 400;
+        }
+      } // si-product-branding
+    }
+  }
+  .si-login-section-wrap .si-login-form {
+    width:478px;
+    margin-right: 65px;
+    @media (max-width: 768px) {
+      width:90%;
+      order:2;
+      text-align: center;
+      margin-right: 0px;
+    }
+  }
+  .si-login-section-wrap .si-login-branding {
+    width:350px;
+  }
+  .si-login-form {
+    h2 {
+      font-size: 36px;
+      font-weight:200;
+      margin-bottom: 15px;
+    }
+    h4 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 68px;
+    }
+    .si-login-container {
+      .si-input-area:not(.submit) {
+        position: relative;
+        height:34px;
+        & + .si-input-area:not(:last-child) {
+          margin-top:20px;
+        }
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba(255,255,255,1);
+          &:before {
+            position: absolute;
+            top:50%;
+            left:0;
+            display: inline-block;
+            content:"";
+            width:20px;
+            height:20px;
+            background-repeat:no-repeat;
+            background-position: center center;
+            transform: translateY(-50%);
+          }
+        }
+        &.username:before {
+          background-image: url(../images/user.svg);
+        }
+        &.password:before {
+          background-image: url(../images/lock.svg);
+        }
+
+        .si-input {
+
+          width:calc(100% - 25px);
+          height:100%;
+          background-color: transparent;
+          border:none;
+          padding:10px 5px;
+          float:right;
+          color:$font-color;
+          font-size: 16px;
+
+          &:focus {
+            outline:0px;
+            &::placeholder {
+              color:rgba(255,255,255,.50);
+              font-size: 18px;
+            }
+          }
+          &::placeholder {
+            color:$font-color;
+            font-size: 18px;
+          }
+        }
+      }
+      .si-input-area.submit:not(a) {
+        margin-top:90px;
+        text-align: right;
+        @media (max-width: 768px) {
+          margin-top: 50px;
+          text-align: center;
+        }
+        input[type="submit"] {
+          display: inline-block;
+          background-color:rgba(0,0,0,.10);
+          border:1px solid $font-color;
+          color:$font-color;
+          width:144px;
+          height:36px;
+          text-align: center;
+          border-radius:4px;
+          cursor: pointer;
+          font-size:16px;
+          &:hover , &:active {
+            background-color:rgba(0,0,0,.20);
+            outline:0px;
+          }
+        }
+      }
+    }
+  } // si-login-form
+}

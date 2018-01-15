@@ -1,0 +1,92 @@
+// @keyframes slideOut {
+//   0%{
+//     background-position: 0 50%;
+//   }
+//   100%{
+//     background-position: 100% 50%;
+//   }
+// }
+// @keyframes slideIn {
+//   0%{
+//     background-position: 100% 50%;
+//   }
+//   100%{
+//     background-position: 0 50%;
+//   }
+// }
+// @keyframes bottomFadeOut {
+//   0%{
+//     background-position: 50% 0;
+//     opacity: 0.5;
+//   }
+//   100%{
+//     background-position: 50% 100%;
+//     opacity: 0;
+//   }
+// }
+// @keyframes topFadeIn {
+//   0%{
+//     background-position: 50% 100%;
+//     opacity: 0;
+//   }
+//   100%{
+//     background-position: 50% 0;
+//     opacity: 0.5;
+//   }
+// }
+// @keyframes fadeIn {
+//   0%{
+//     opacity: 0;
+//   }
+//   100%{
+//     opacity: 1;
+//   }
+// }
+// @keyframes fadeOut {
+//   0%{
+//     opacity: 1;
+//   }
+//   100%{
+//     opacity: 0;
+//   }
+// }
+//
+// .si-template-item {
+//   &.slideout-animate .si-transition-effect:before {
+//     animation:slideOut 1000ms  linear infinite;
+//   }
+//   &.slidein-animate .si-transition-effect:before {
+//     animation:slideIn 1000ms linear infinite;
+//   }
+//   &.bottom-fadeout-animate .si-transition-effect:before {
+//     animation:bottomFadeOut 1500ms linear infinite;
+//   }
+//   &.top-fadein-animate .si-transition-effect:before {
+//     animation:topFadeIn 1500ms linear infinite;
+//   }
+//   &.fadein-animate .si-transition-effect:before {
+//     animation:fadeIn 3000ms  linear infinite;
+//   }
+//   &.fadeout-animate .si-transition-effect:before {
+//     animation:fadeOut 3000ms  linear infinite;
+//   }
+// }
+
+@keyframes loader {
+
+  0% , 75% , 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+}
+
+// @keyframes graphic-line {
+//   0%{
+//     width:0px;
+//   }
+//   100%{
+//     width:100%;
+//   }
+// }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Text Container</title>
+  <style>
+  * {
+    margin:0;
+    padding:0;
+  }
+  @font-face {
+
+      font-family:'Mangal';
+      src: url('fonts/Mangal.eot');
+  	  src: url('fonts/Mangal.eot?#iefix') format('embedded-opentype'),
+  		url('fonts/Mangal.woff') format('woff'),
+  		url('fonts/Mangal.ttf') format('truetype'),
+  		url('fonts/Mangal.otf') format('opentype'),
+  		url('fonts/Mangal.svg#Mangal') format('svg');
+      font-weight: 400;
+      font-style: normal;
+      font-stretch: normal;
+      unicode-range: U+0020-0912;
+
+  }
+  body {
+    font-size: 16px;
+    font-family:'Mangal';
+  }
+  .container {
+    width:1280px;
+    height:auto;
+    margin:0 auto;
+  }
+  .text-img {
+    word-wrap: break-word;
+    color:#fff;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="text-img"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Iste maiores quia veniam libero quibusdam! Ducimus doloribus repellendus iusto ad iure dolores sunt fuga,
+       itaque a at amet deserunt impedit suscipit.</p>
+  </div>
+</body>
+</html>
