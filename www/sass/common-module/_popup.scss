@@ -17,8 +17,10 @@
       height: 20px;
       top:0;
       right:0;
-      align-items: center;
-      justify-content: center;
+      // align-items: center;
+      @extend %align-center;
+      // justify-content: center;
+      @extend %justify-center;
       // border-radius: 50%;
       background-color: $font-color;
       // box-shadow: 0 0 3px rgba(0,0,0,0.20);
@@ -68,7 +70,8 @@
       }
       .si-popup-toggle .si-popup-toggle-control {
         display: inline-flex;
-        align-items: center;
+        // align-items: center;
+        @extend %align-center;
         label {
           display: inline-block;
           text-transform: uppercase;

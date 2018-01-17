@@ -2,9 +2,12 @@
 .si-infographic-selector {
   width:100%;
   height:100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  @extend %d-flex;
+  // align-items: center;
+  @extend %align-center;
+  // justify-content: center;
+  @extend %justify-center;
   @media (max-width:768px) {
     display: block;
   }
@@ -149,9 +152,12 @@
       border:1px solid rgba(255,255,255,.30);
       box-shadow: 0 11px 17px 0px rgba(0,0,0,.30);
       border-radius: 3px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      // display: flex;
+      @extend %d-flex;
+      // align-items: center;
+      @extend %align-center;
+      // justify-content: center;
+      @extend %justify-center;
       @media (max-width: 768px) {
         width:33.33%;
         height:auto;

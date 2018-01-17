@@ -167,6 +167,22 @@ body ,html {
 			left: 0;
 			z-index: 5;
 		 }
+		 .si-grpahic-container .si-branding {
+       position: absolute;
+       width: 163px;
+       height: 26px;
+       top: 10px;
+       background-repeat: no-repeat;
+       background-size: contain;
+       background-position: center center;
+       z-index: 4; }
+    .si-grpahic-container .si-branding.left {
+         left: 20px; }
+    .si-grpahic-container .si-branding.right {
+         right: 20px; }
+    .si-grpahic-container .si-branding.yahoo {
+         background-image: url(../images/client-logos/yahoo.png); }
+
 		 .si-main-graphic .si-grpahic-container .graphic-overlay .si-text-overlay .si-text-wrap {
 				position: absolute;
 				width: 80%;

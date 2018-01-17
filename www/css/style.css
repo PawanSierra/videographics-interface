@@ -1,3 +1,15 @@
+@-webkit-keyframes scaleX {
+  0% {
+    width: 0px; }
+  100% {
+    width: 105%; } }
+
+@keyframes scaleX {
+  0% {
+    width: 0px; }
+  100% {
+    width: 105%; } }
+
 @-webkit-keyframes loader {
   0%, 75%, 100% {
     -webkit-transform: translateY(0);
@@ -2714,6 +2726,30 @@ body {
   font-family: "FontAwesome";
   content: ""; }
 
+.si-selectoption .select-out, .si-header .si-logged-wrapper .logged-menu .si-drop-menu .si-logged-username, .si-header .si-logged-wrapper .logged-menu .si-drop-menu .si-drop-down a, .si-video-dropdown .si-video-list .video-list-item > span, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap .si-play-label span, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap .label {
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis; }
+
+.si-header, .si-breadcrumbs, .si-breadcrumbs .si-video-loader span, .si-video-dropdown, .si-video-dropdown .si-video-list .video-list-item, .si-main, .si-main .si-col .si-itemswrapper, .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item, .si-main .si-col.viewer .si-graphic-control, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-split-image, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.bottom-graphic .si-static-text-wrap, .si-main .si-col.viewer .si-graphic-actions, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.split-screen .si-btn-area, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.split-screen .si-btn-area, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.active .si-btn-action-tip, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.active .si-btn-action-tip, .si-infographic-selector, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap, .si-page.login .si-login-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.si-header, .si-header .si-logged-wrapper, .si-breadcrumbs .si-right-section, .si-breadcrumbs, .si-breadcrumbs .si-video-loader span, .si-video-dropdown, .si-video-dropdown .si-video-list .video-list-item, .si-main .si-col .si-itemswrapper, .si-main .si-col .si-itemswrapper .si-infographix-fields.check-btn, .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item, .si-main .si-col.viewer .si-graphic-control, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper, .si-infographic-selector, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap, .si-page.login .si-login-section, .si-popup .si-popup-wrap .si-popup-close, .si-popup .si-popup-wrap .si-popup-content .si-popup-toggle .si-popup-toggle-control {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.si-main .si-col .si-itemswrapper, .si-main .si-col .si-itemswrapper .si-infographix-fields.check-btn, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col, .si-infographic-selector, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item, .si-page.login .si-login-section, .si-popup .si-popup-wrap .si-popup-close {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.si-header, .si-breadcrumbs, .si-main .si-col .si-itemswrapper .si-infographix-fields.three-col:not(#a), .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.bottom-graphic .si-static-text-wrap {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .si-selectoption {
   position: relative;
   height: 20px;
@@ -2734,8 +2770,6 @@ body {
     text-transform: uppercase;
     font-size: 14px;
     overflow: hidden;
-    -o-text-overflow: ellipsis;
-       text-overflow: ellipsis;
     white-space: nowrap; }
   .si-selectoption:after {
     display: inline-block;
@@ -2778,15 +2812,6 @@ body {
   height: 38px;
   background-color: #71797e;
   padding: 0 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-shadow: 0px 11px 17px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 11px 17px 0px rgba(0, 0, 0, 0.4); }
   .si-header .si-brand-wrapper h1 a {
@@ -2801,10 +2826,7 @@ body {
     position: relative;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    display: inline-flex; }
     .si-header .si-logged-wrapper .si-home-btn {
       display: inline-block; }
       .si-header .si-logged-wrapper .si-home-btn a {
@@ -2833,9 +2855,7 @@ body {
           padding-right: 10px;
           width: 100%;
           white-space: nowrap;
-          overflow: hidden;
-          -o-text-overflow: ellipsis;
-             text-overflow: ellipsis; }
+          overflow: hidden; }
         .si-header .si-logged-wrapper .logged-menu .si-drop-menu .si-drop-down {
           display: none;
           position: absolute;
@@ -2857,8 +2877,6 @@ body {
             font-weight: 200;
             white-space: nowrap;
             overflow: hidden;
-            -o-text-overflow: ellipsis;
-               text-overflow: ellipsis;
             padding-bottom: 10px;
             border-bottom: 1px solid #cacaca; }
             .si-header .si-logged-wrapper .logged-menu .si-drop-menu .si-drop-down a:hover {
@@ -2891,17 +2909,7 @@ body {
   position: relative;
   padding: 0 20px;
   height: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-  .si-breadcrumbs,.si-breadcrumbs .si-right-section {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
   .si-breadcrumbs .si-right-section {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -2939,16 +2947,9 @@ body {
     position: relative;
     display: inline-block;
     font-size: 14px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
-    display: inline-flex;
-    align-items: center; }
+    display: inline-flex; }
     .si-breadcrumbs .si-video-loader span .si-loader {
       display: inline-block; }
       .si-breadcrumbs .si-video-loader span .si-loader > em {
@@ -2973,13 +2974,7 @@ body {
   max-width: 500px;
   height: 25px;
   line-height: 25px;
-  padding: 0 10px 0 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  padding: 0 10px 0 10px; }
   .si-video-dropdown .selected-label {
     display: inline-block;
     width: 100%;
@@ -3028,13 +3023,7 @@ body {
     .si-video-dropdown .si-video-list .video-list-item {
       position: relative;
       width: 100%;
-      height: 30px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      height: 30px; }
       .si-video-dropdown .si-video-list .video-list-item > span {
         display: inline-block;
         -webkit-box-flex: 1;
@@ -3043,8 +3032,6 @@ body {
         height: 100%;
         overflow: hidden;
         white-space: nowrap;
-        -o-text-overflow: ellipsis;
-           text-overflow: ellipsis;
         color: #000;
         font-size: 16px;
         padding: 0 10px 0 5px;
@@ -3131,10 +3118,7 @@ body {
       z-index: 2; }
 
 .si-main {
-  height: calc(100% - 100px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  height: calc(100% - 100px); }
   .si-main .si-mobile-action {
     display: none; }
   .si-main .si-col {
@@ -3153,16 +3137,7 @@ body {
       background-repeat: no-repeat; }
     .si-main .si-col .si-itemswrapper {
       width: 100%;
-      height: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+      height: 100%; }
       .si-main .si-col .si-itemswrapper.add-text {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -3197,15 +3172,45 @@ body {
             outline: 0; }
         .si-main .si-col .si-itemswrapper .si-infographix-fields.flag-dropdown {
           margin-bottom: 20px; }
+        .si-main .si-col .si-itemswrapper .si-infographix-fields .toggle-wrap {
+          margin: 0 20px; }
+        .si-main .si-col .si-itemswrapper .si-infographix-fields .si-check-btn-option {
+          position: relative;
+          display: inline-block;
+          text-transform: uppercase;
+          font-size: 14px;
+          color: #fff;
+          opacity: 0.5;
+          padding-bottom: 4px; }
+          .si-main .si-col .si-itemswrapper .si-infographix-fields .si-check-btn-option.selected {
+            opacity: 1; }
+            .si-main .si-col .si-itemswrapper .si-infographix-fields .si-check-btn-option.selected:before {
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              bottom: 0;
+              content: "";
+              width: 105%;
+              height: 2px;
+              background-color: #90c441;
+              -webkit-transform: translateX(-50%);
+                  -ms-transform: translateX(-50%);
+                      transform: translateX(-50%);
+              -webkit-animation-name: scaleX;
+                      animation-name: scaleX;
+              -webkit-animation-duration: 500ms;
+                      animation-duration: 500ms;
+              -webkit-animation-timing-function: linear;
+                      animation-timing-function: linear;
+              -webkit-animation-iteration-count: 1;
+                      animation-iteration-count: 1; }
         .si-main .si-col .si-itemswrapper .si-infographix-fields .si-toggle-btn {
           position: relative;
           display: inline-block;
-          width: 60px;
+          width: 80px;
           height: 30px;
           border-radius: 15px;
-          border: 1px solid #fff;
-          -webkit-box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.5);
-                  box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.5);
+          border: 1px solid #90c441;
           padding: 2px; }
           .si-main .si-col .si-itemswrapper .si-infographix-fields .si-toggle-btn .si-input-check {
             position: absolute;
@@ -3220,9 +3225,9 @@ body {
           .si-main .si-col .si-itemswrapper .si-infographix-fields .si-toggle-btn .si-input-check ~ .select-ext {
             position: absolute;
             display: inline-block;
-            width: 26px;
+            width: 36px;
             height: 26px;
-            border-radius: 50%;
+            border-radius: 20px;
             background-color: #90c441;
             top: 1px;
             left: 2px;
@@ -3230,107 +3235,127 @@ body {
             -o-transition: left 300ms linear;
             transition: left 300ms linear;
             text-align: center; }
-            .si-main .si-col .si-itemswrapper .si-infographix-fields .si-toggle-btn .si-input-check ~ .select-ext:before {
-              display: inline-block;
-              content: "OFF";
-              font-size: 10px;
-              color: #fff;
-              line-height: 26px; }
           .si-main .si-col .si-itemswrapper .si-infographix-fields .si-toggle-btn .si-input-check:checked ~ .select-ext {
-            left: 30px; }
-            .si-main .si-col .si-itemswrapper .si-infographix-fields .si-toggle-btn .si-input-check:checked ~ .select-ext:before {
-              content: "ON"; }
-        .si-main .si-col .si-itemswrapper .si-infographix-fields.check-btn {
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center; }
+            left: 40px; }
+        .si-main .si-col .si-itemswrapper .si-infographix-fields.three-col:not(#a) {
+          margin-top: 20px; }
+          .si-main .si-col .si-itemswrapper .si-infographix-fields.three-col:not(#a) .si-infographix-type-option {
+            text-align: center;
+            -ms-flex-preferred-size: 120px;
+                flex-basis: 120px;
+            width: 120px;
+            max-width: 120px;
+            height: 115px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            -webkit-box-shadow: 0 11px 17px rgba(0, 0, 0, 0.4);
+                    box-shadow: 0 11px 17px rgba(0, 0, 0, 0.4);
+            cursor: pointer; }
+            .si-main .si-col .si-itemswrapper .si-infographix-fields.three-col:not(#a) .si-infographix-type-option .si-infographic-type-thumb {
+              display: block;
+              width: 60px;
+              height: 60px;
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: auto;
+              margin: 10px auto; }
+            .si-main .si-col .si-itemswrapper .si-infographix-fields.three-col:not(#a) .si-infographix-type-option .si-infographic-type-label {
+              display: inline-block;
+              border: 1px solid rgba(255, 255, 255, 0.1);
+              padding: 5px 0;
+              width: 85%;
+              font-size: 12px;
+              border-radius: 4px;
+              text-transform: uppercase;
+              background-color: rgba(0, 0, 0, 0.1); }
+            .si-main .si-col .si-itemswrapper .si-infographix-fields.three-col:not(#a) .si-infographix-type-option.wagon-wheel .si-infographic-type-thumb {
+              background-image: url(../images/wagon-wheel-ico.png); }
+            .si-main .si-col .si-itemswrapper .si-infographix-fields.three-col:not(#a) .si-infographix-type-option.spider .si-infographic-type-thumb {
+              background-image: url(../images/spider-ico.png); }
+            .si-main .si-col .si-itemswrapper .si-infographix-fields.three-col:not(#a) .si-infographix-type-option.heat-map .si-infographic-type-thumb {
+              width: 80%;
+              background-image: url(../images/heat-map-ico.png); }
       .si-main .si-col .si-itemswrapper .si-static-input-field-wrap {
         width: 80%;
         margin-top: 20px; }
-        .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center; }
-          .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-text {
-            display: block;
-            -webkit-box-flex: 1;
-                -ms-flex: 1;
-                    flex: 1;
-            height: 60px;
-            padding: 5px;
-            outline: 0;
-            margin-left: 10px;
-            background-color: transparent;
-            border: none;
-            background-color: rgba(0, 0, 0, 0.1);
-            font-size: 14px;
+        .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-text {
+          display: block;
+          -webkit-box-flex: 1;
+              -ms-flex: 1;
+                  flex: 1;
+          height: 60px;
+          padding: 5px;
+          outline: 0;
+          margin-left: 10px;
+          background-color: transparent;
+          border: none;
+          background-color: rgba(0, 0, 0, 0.1);
+          font-size: 14px;
+          color: #fff;
+          resize: none;
+          overflow: hidden;
+          border: 1px dashed #8d8f81;
+          -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
+                  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3); }
+          .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-text::-webkit-input-placeholder {
+            content: "Enter Text";
             color: #fff;
-            resize: none;
-            overflow: hidden;
-            border: 1px dashed #8d8f81;
-            -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
-                    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3); }
-            .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-text::-webkit-input-placeholder {
-              content: "Enter Text";
-              color: #fff;
-              opacity: 0.7;
-              font-size: 12px;
-              font-family: 'Roboto',sans-serif;
-              font-weight: 200;
-              letter-spacing: 0.5px; }
-            .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-text:-ms-input-placeholder,.si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-text::-ms-input-placeholder {
-              content: "Enter Text";
-              color: #fff;
-              opacity: 0.7;
-              font-size: 12px;
-              font-family: 'Roboto',sans-serif;
-              font-weight: 200;
-              letter-spacing: 0.5px; }
-            .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-text::placeholder {
-              content: "Enter Text";
-              color: #fff;
-              opacity: 0.7;
-              font-size: 12px;
-              font-family: 'Roboto',sans-serif;
-              font-weight: 200;
-              letter-spacing: 0.5px; }
-          .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-input {
-            padding: 5px;
-            outline: 0;
-            margin-left: 10px;
-            -webkit-box-flex: 1;
-                -ms-flex: 1;
-                    flex: 1;
-            -webkit-box-shadow: none;
-                    box-shadow: none;
-            background-color: transparent;
-            border: none;
-            border-bottom: 1px solid #fff;
-            color: #fff; }
-            .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-input::-webkit-input-placeholder {
-              color: #fff;
-              opacity: 0.5; }
-            .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-input:-ms-input-placeholder,.si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-input::-ms-input-placeholder {
-              color: #fff;
-              opacity: 0.5; }
-            .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-input::placeholder {
-              color: #fff;
-              opacity: 0.5; }
-          .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item label {
-            width: 80px;
-            font-size: 14px;
-            text-transform: uppercase;
-            -ms-flex-item-align: start;
-                align-self: flex-start; }
-          .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item + .si-static-input-field-item {
-            margin-top: 20px; }
-          .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item.static-input label {
-            -ms-flex-item-align: center;
-                -ms-grid-row-align: center;
-                align-self: center; }
+            opacity: 0.7;
+            font-size: 12px;
+            font-family: 'Roboto',sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.5px; }
+          .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-text:-ms-input-placeholder,.si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-text::-ms-input-placeholder {
+            content: "Enter Text";
+            color: #fff;
+            opacity: 0.7;
+            font-size: 12px;
+            font-family: 'Roboto',sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.5px; }
+          .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-text::placeholder {
+            content: "Enter Text";
+            color: #fff;
+            opacity: 0.7;
+            font-size: 12px;
+            font-family: 'Roboto',sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.5px; }
+        .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-input {
+          padding: 5px;
+          outline: 0;
+          margin-left: 10px;
+          -webkit-box-flex: 1;
+              -ms-flex: 1;
+                  flex: 1;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid #fff;
+          color: #fff; }
+          .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-input::-webkit-input-placeholder {
+            color: #fff;
+            opacity: 0.5; }
+          .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-input:-ms-input-placeholder,.si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-input::-ms-input-placeholder {
+            color: #fff;
+            opacity: 0.5; }
+          .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-input::placeholder {
+            color: #fff;
+            opacity: 0.5; }
+        .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item label {
+          width: 100px;
+          font-size: 14px;
+          text-transform: uppercase;
+          -ms-flex-item-align: start;
+              align-self: flex-start; }
+        .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item + .si-static-input-field-item {
+          margin-top: 20px; }
+        .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item.static-input label {
+          -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+              align-self: center; }
   .si-main .si-col.si-side-menu {
     width: 7.1%;
     -ms-flex-preferred-size: 7.1%;
@@ -3606,8 +3631,8 @@ body {
       .si-main .si-col.editor .si-input-fields .si-selectoption:after {
         border-top: 6px solid white; }
     .si-main .si-col.editor .si-input-fields .si-submit-btn {
-      text-align: right;
-      margin-top: 50px; }
+      text-align: center;
+      margin-top: 40px; }
       .si-main .si-col.editor .si-input-fields .si-submit-btn .si-btn {
         display: inline-block;
         -webkit-appearance: none;
@@ -3642,12 +3667,6 @@ body {
   .si-main .si-col.viewer .si-graphic-preview {
     width: 640px; }
   .si-main .si-col.viewer .si-graphic-control {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-bottom: 10px;
     height: 40px; }
     .si-main .si-col.viewer .si-graphic-control .si-graphic-btn {
@@ -3685,23 +3704,13 @@ body {
         overflow: hidden; }
       .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper {
         height: 100%; }
-        .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper,.si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
         .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item {
           position: relative;
           width: 7.69230769230769%;
           cursor: pointer;
           height: 28px;
           float: left;
-          text-align: center;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center; }
+          text-align: center; }
           .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item a {
             position: relative;
             display: block;
@@ -3873,9 +3882,6 @@ body {
       height: 100%;
       top: 0;
       left: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
       overflow: hidden; }
       .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-split-image .si-split-drag.zoom-in {
         cursor: -webkit-zoom-in;
@@ -4003,6 +4009,21 @@ body {
       margin-top: 10px; }
     .si-main .si-col.viewer .si-main-graphic .si-grpahic-container span.active {
       opacity: 1; }
+    .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-branding {
+      position: absolute;
+      width: 81.5px;
+      height: 13px;
+      top: 5px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      z-index: 4; }
+      .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-branding.left {
+        left: 10px; }
+      .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-branding.right {
+        right: 10px; }
+      .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-branding.yahoo {
+        background-image: url(../images/client-logos/yahoo.png); }
     .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay {
       position: absolute;
       top: 0;
@@ -4162,12 +4183,6 @@ body {
         right: auto;
         top: auto; }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.bottom-graphic .si-static-text-wrap {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-                  justify-content: space-between;
           padding: 0 20px; }
           .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.bottom-graphic .si-static-text-wrap .si-static-player-name {
             font-size: 14px;
@@ -4189,9 +4204,6 @@ body {
               font-family: 'gotham_black',sans-serif; }
   .si-main .si-col.viewer .si-graphic-actions {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin-top: 10px;
     height: 82px;
     background-color: rgba(0, 0, 0, 0.1); }
@@ -4204,10 +4216,7 @@ body {
       display: flex;
       -webkit-box-pack: space-evenly;
           -ms-flex-pack: space-evenly;
-              justify-content: space-evenly;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
+              justify-content: space-evenly; }
       .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col {
         -webkit-box-flex: 1;
             -ms-flex: 1;
@@ -4220,9 +4229,6 @@ body {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
         -webkit-box-align: stretch;
             -ms-flex-align: stretch;
                 align-items: stretch;
@@ -4320,9 +4326,6 @@ body {
               .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn .si-btn-area .si-btn-action-tip .si-btn-action-tip-item.cancel, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col .si-btn-area .si-btn-action-tip .si-btn-action-tip-item.cancel {
                 background-image: url(../images/new/cross-out.svg); }
         .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.split-screen .si-btn-area, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.split-screen .si-btn-area {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
@@ -4334,10 +4337,6 @@ body {
             height: auto; }
             .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.split-screen .si-btn-area .si-btn:after, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.split-screen .si-btn-area .si-btn:after {
               margin: 0; }
-        .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.active .si-btn-action-tip, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.active .si-btn-action-tip {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex; }
       .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col {
         display: block; }
       .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn + .si-btn {
@@ -4399,16 +4398,7 @@ body {
 
 .si-infographic-selector {
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  height: 100%; }
   .si-infographic-selector .si-infographic-selector-wrapper {
     text-align: center;
     width: 100%;
@@ -4491,16 +4481,7 @@ body {
         border: 1px solid rgba(255, 255, 255, 0.3);
         -webkit-box-shadow: 0 11px 17px 0px rgba(0, 0, 0, 0.3);
                 box-shadow: 0 11px 17px 0px rgba(0, 0, 0, 0.3);
-        border-radius: 3px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
+        border-radius: 3px; }
         .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item + .si-infographic-type-item {
           margin-left: 78px; }
         .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item a {
@@ -4643,13 +4624,7 @@ body {
         background-color: rgba(0, 0, 0, 0.2); }
         .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap {
           padding: 5px;
-          height: 100%;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center; }
+          height: 100%; }
           .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap .si-play-btn {
             display: inline-block;
             padding-right: 12px;
@@ -4696,8 +4671,6 @@ body {
               color: #fff;
               overflow: hidden;
               white-space: nowrap;
-              -o-text-overflow: ellipsis;
-                 text-overflow: ellipsis;
               font-weight: 200; }
     .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-template-item.bottom-fade-out .si-transition-effect:before, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-template-item.top-fade-in .si-transition-effect:before {
       background-position: center 12px; }
@@ -4729,12 +4702,6 @@ body {
       height: 52px;
       padding-bottom: 0px;
       background-color: rgba(0, 0, 0, 0.1);
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       padding: 0 15px; }
       .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap .si-audio-controls {
         width: 100%; }
@@ -4747,8 +4714,6 @@ body {
         padding: 0 5px;
         overflow: hidden;
         white-space: nowrap;
-        -o-text-overflow: ellipsis;
-           text-overflow: ellipsis;
         line-height: 22px; }
       .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap .play-btn .btn {
         display: inline-block; }
@@ -4839,15 +4804,6 @@ body {
 .si-page.login .si-login-section {
   width: 70%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 0 auto; }
 
 .si-page.login .si-login-section-wrap {
@@ -5005,12 +4961,6 @@ body {
       height: 20px;
       top: 0;
       right: 0;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
       background-color: #fff;
       cursor: pointer; }
       .si-popup .si-popup-wrap .si-popup-close:before {
@@ -5053,10 +5003,7 @@ body {
       .si-popup .si-popup-wrap .si-popup-content .si-popup-toggle .si-popup-toggle-control {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
-        display: inline-flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
+        display: inline-flex; }
         .si-popup .si-popup-wrap .si-popup-content .si-popup-toggle .si-popup-toggle-control label {
           display: inline-block;
           text-transform: uppercase;

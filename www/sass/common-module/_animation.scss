@@ -71,6 +71,14 @@
 //     animation:fadeOut 3000ms  linear infinite;
 //   }
 // }
+@keyframes scaleX {
+  0%{
+    width:0px;
+  }
+  100%{
+    width:105%;
+  }
+}
 @keyframes loader {
 
   0% , 75% , 100% {
@@ -80,12 +88,3 @@
     transform: translateY(-5px);
   }
 }
-
-// @keyframes graphic-line {
-//   0%{
-//     width:0px;
-//   }
-//   100%{
-//     width:100%;
-//   }
-// }

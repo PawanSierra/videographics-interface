@@ -159,8 +159,10 @@
                 .si-transition-wrap {
                   padding:5px;
                   height:100%;
-                  display: flex;
-                  align-items: center;
+                  // display: flex;
+                  @extend %d-flex;
+                  // align-items: center;
+                  @extend %align-center;
                   .si-play-btn {
                     display: inline-block;
                     padding-right: 12px;
@@ -216,8 +218,9 @@
                       color:$font-color;
                       overflow: hidden;
                       white-space: nowrap;
-                      text-overflow: ellipsis;
+                      // text-overflow: ellipsis;
                       font-weight: 200;
+                      @extend %ellipsis;
 
                     }
                   }
@@ -283,8 +286,10 @@
             height:52px;
             padding-bottom: 0px;
             background-color:rgba(0,0,0,.10);
-            display: flex;
-            align-items: center;
+            // display: flex;
+            @extend %d-flex;
+            // align-items: center;
+            @extend %align-center;
             padding:0 15px;
             .si-audio-controls {
               width:100%;
@@ -298,8 +303,9 @@
               padding:0 5px;
               overflow: hidden;
               white-space: nowrap;
-              text-overflow: ellipsis;
+              // text-overflow: ellipsis;
               line-height: 22px;
+              @extend %ellipsis;
             }
             .play-btn {
               .btn {
@@ -389,9 +395,7 @@
             }
           }
         }
-
       }
-
     } // si-template-container
   }
 }

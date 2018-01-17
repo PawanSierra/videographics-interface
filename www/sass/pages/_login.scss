@@ -5,9 +5,13 @@
   .si-login-section {
     width: 70%;
     height:100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    @extend %d-flex;
+    // align-items: center;
+    @extend %align-center;
+    // justify-content: center;
+    @extend %justify-center;
+
     margin:0 auto;
     @media (max-width: 768px) {
       width:100%;
