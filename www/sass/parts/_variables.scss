@@ -5,3 +5,12 @@ $border-color:#66704c;
 
 // $border-color:#4a4a4a;
 // $gradient-color:#000;
+
+// @mixin flex($type,$direction,$align,$justify) {
+//
+//   display:$type;
+//   @if $direction flex-direction: $direction;
+//   align-items: $align;
+//   justify-content: $justify;
+//
+// }
