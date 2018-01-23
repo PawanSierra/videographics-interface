@@ -1,0 +1,431 @@
+.SI-select p {
+    margin: 0;
+}
+.SI-select {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  outline: none;
+  cursor: pointer;
+}
+.SI-select > p:focus , .SI-select > p:hover {
+  border:none;
+  outline: 0;
+}
+
+.sumoStopScroll {
+    overflow: hidden;
+}
+/* Filtering style */
+
+.SI-select .hidden {
+    display: none;
+}
+.SI-select .search-txt {
+    display: none;
+    outline: none;
+}
+.SI-select .no-match {
+    display: none;
+    padding: 6px;
+    color:#4a4a4a;
+}
+.SI-select.open .search-txt {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 5px 8px;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 30px;
+    margin-top: -10px;
+    background: transparent;
+    color:#fff;
+    &::placeholder {
+      color:#fff;
+    }
+}
+.SI-select.open>.search>span, .SI-select.open>.search>label {
+    visibility: hidden;
+}
+
+/*this is applied on that hidden select. DO NOT USE display:none; or visiblity:hidden; and Do not override any of these properties. */
+
+.SelectClass, .SumoUnder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    display: none;
+}
+.SelectClass {
+    z-index: 1;
+}
+.SI-select>.optWrapper>.options li.opt label, .SI-select>.CaptionCont, .SI-select .select-all>label {
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+.SI-select {
+    /*display: inline-block;
+    position: relative;
+    outline: none;*/
+}
+/*.SI-select:focus>.CaptionCont, .SI-select:hover>.CaptionCont, .SI-select.open>.CaptionCont {
+    box-shadow: 0 0 2px #7799D0;
+    border-color: #7799D0;
+}*/
+.SI-select>.CaptionCont {
+    position: absolute;
+    /*border: 1px solid #A4A4A4;*/
+    /*min-height: 14px;*/
+    background-color:transparent;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 111;
+    cursor: pointer;
+}
+.SI-select>.CaptionCont>span {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor:pointer;
+}
+
+/*placeholder style*/
+
+.SI-select>.CaptionCont>span.placeholder {
+    color: #333;
+}
+.SI-select > .CaptionCont > span:before {
+
+    top:50%;
+    right: -12px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+
+}
+.SI-select>.CaptionCont>label {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+}
+.SI-select>.CaptionCont>label>i {
+    position: absolute;
+    display: none;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wMdBhAJ/fwnjwAAAGFJREFUKM9jYBh+gBFKuzEwMKQwMDB8xaOWlYGB4T4DA0MrsuapDAwM//HgNwwMDDbYTJuGQ8MHBgYGJ1xOYGNgYJiBpuEpAwODHSF/siDZ+ISBgcGClEDqZ2Bg8B6CkQsAPRga0cpRtDEAAAAASUVORK5CYII=');
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+.SI-select>.optWrapper {
+    display: none;
+    z-index: 1000;
+    top: 38px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.50);
+    border-radius: 0 0  5px 5px;
+    overflow: hidden;
+    z-index: 999;
+
+}
+.SI-select.open>.optWrapper {
+    top:20px;
+    display: block;
+}
+.SI-select.open>.optWrapper.up {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 5px;
+}
+.SI-select>.optWrapper ul {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    overflow-y:auto;
+    overflow-x:hidden;
+
+}
+.SI-select>.optWrapper>.options {
+    border-radius: 2px;
+    position: relative;
+    /*Set the height of pop up here (only for desktop mode)*/
+    max-height: 250px;
+    /*height*/
+}
+.SI-select>.optWrapper.okCancelInMulti>.options {
+    border-radius: 2px 2px 0 0;
+}
+.SI-select>.optWrapper.selall>.options {
+    border-radius: 0 0 2px 2px;
+}
+.SI-select>.optWrapper.selall.okCancelInMulti>.options {
+    border-radius: 0;
+}
+.SI-select>.optWrapper>.options li.group.disabled> label {
+    opacity: 0.5;
+}
+.SI-select>.optWrapper>.options li ul li.opt {
+    padding-left: 22px;
+}
+.SI-select>.optWrapper.multiple>.options li ul li.opt {
+    padding-left: 50px;
+}
+.SI-select>.optWrapper.isFloating>.options {
+    max-height: 100%;
+    box-shadow: 0 0 100px #595959;
+}
+.SI-select>.optWrapper>.options li.opt {
+    padding: 6px 6px;
+    position: relative;
+    border-bottom: 1px solid #f5f5f5;
+
+}
+
+.SI-select>.optWrapper>.options>li.opt:first-child {
+    border-radius: 2px 2px 0 0;
+}
+.SI-select>.optWrapper.selall>.options>li.opt:first-child {
+    border-radius: 0;
+}
+.SI-select>.optWrapper>.options>li.opt:last-child {
+    border-radius: 0 0 2px 2px;
+    border-bottom: none;
+}
+.SI-select>.optWrapper.okCancelInMulti>.options>li.opt:last-child {
+    border-radius: 0;
+}
+.SI-select>.optWrapper>.options li.opt:hover {
+    background-color:$secondary-color;
+    label {
+      color:#fff;
+    }
+
+}
+.SI-select>.optWrapper>.options li.opt.sel, .SI-select .select-all.sel {
+    background-color: #a1c0e4;
+}
+.SI-select>.optWrapper>.options li label {
+    width:100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+    color:#4a4a4a;
+}
+.SI-select>.optWrapper>.options li span {
+    display: none;
+}
+.SI-select .select-all span:before , .SI-select .options span:before {
+  content:"";
+}
+.SI-select>.optWrapper>.options li.group>label {
+    cursor: default;
+    padding: 8px 6px;
+    font-weight: bold;
+}
+
+/*Floating styles*/
+
+.SI-select>.optWrapper.isFloating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    bottom: 0;
+    margin: auto;
+    max-height: 90%;
+}
+
+/*disabled state*/
+
+.SI-select>.optWrapper>.options li.opt.disabled {
+    background-color: inherit;
+    pointer-events: none;
+}
+.SI-select>.optWrapper>.options li.opt.disabled * {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 5-7 */
+    filter: alpha(opacity=50);
+    /* Netscape */
+    -moz-opacity: 0.5;
+    /* Safari 1.x */
+    -khtml-opacity: 0.5;
+    /* Good browsers */
+    opacity: 0.5;
+}
+
+/*styling for multiple select*/
+
+.SI-select>.optWrapper.multiple>.options li.opt {
+    padding-left: 35px;
+    cursor: pointer;
+}
+.SI-select>.optWrapper.multiple>.options li.opt span, .SI-select .select-all>span {
+    position: absolute;
+    display: block;
+    width: 30px;
+    top: 0;
+    bottom: 0;
+    margin-left: -35px;
+}
+.SI-select>.optWrapper.multiple>.options li.opt span i, .SI-select .select-all > span i {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #AEAEAE;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+}
+.SI-select>.optWrapper>.MultiControls {
+    display: none;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.13);
+    border-radius: 0 0 3px 3px;
+}
+.SI-select>.optWrapper.multiple.isFloating>.MultiControls {
+    display: block;
+    margin-top: 5px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.SI-select>.optWrapper.multiple.okCancelInMulti>.MultiControls {
+    display: block;
+}
+.SI-select>.optWrapper.multiple.okCancelInMulti>.MultiControls> p {
+    padding: 6px;
+}
+.SI-select>.optWrapper.multiple.okCancelInMulti>.MultiControls> p:focus {
+    box-shadow: 0 0 2px #a1c0e4;
+    border-color: #a1c0e4;
+    outline: none;
+    background-color: #a1c0e4;
+}
+.SI-select>.optWrapper.multiple>.MultiControls> p {
+    display: inline-block;
+    cursor: pointer;
+    padding: 12px;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.SI-select>.optWrapper.multiple>.MultiControls>p:hover {
+    background-color: #f1f1f1;
+}
+.SI-select>.optWrapper.multiple>.MultiControls>p.btnOk {
+    border-right: 1px solid #DBDBDB;
+    border-radius: 0 0 0 3px;
+}
+.SI-select>.optWrapper.multiple>.MultiControls>p.btnCancel {
+    border-radius: 0 0 3px 0;
+}
+/*styling for select on popup mode*/
+.SI-select>.optWrapper.isFloating>.options li.opt {
+    padding: 12px 6px;
+}
+
+/*styling for only multiple select on popup mode*/
+
+.SI-select>.optWrapper.multiple.isFloating>.options li.opt {
+    padding-left: 35px;
+}
+.SI-select>.optWrapper.multiple.isFloating {
+    padding-bottom: 43px;
+}
+.SI-select>.optWrapper.multiple>.options li.opt.selected span i, .SI-select .select-all.selected>span i, .SI-select .select-all.partial>span i {
+    background-color: rgb(17, 169, 17);
+    box-shadow: none;
+    border-color: transparent;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAABMSURBVAiZfc0xDkAAFIPhd2Kr1WRjcAExuIgzGUTIZ/AkImjSofnbNBAfHvzAHjOKNzhiQ42IDFXCDivaaxAJd0xYshT3QqBxqnxeHvhunpu23xnmAAAAAElFTkSuQmCC');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*disabled state*/
+
+.SI-select.disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+.SI-select.disabled>.CaptionCont {
+    border-color: #ccc;
+    box-shadow: none;
+}
+
+/**Select all button**/
+
+.SI-select .select-all {
+    border-radius: 3px 3px 0 0;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f6f6;
+    padding: 8px 0 3px 35px;
+    /*height: 20px;*/
+    cursor: pointer;
+}
+.SI-select .select-all>label, .SI-select .select-all >span i {
+    cursor: pointer;
+}
+.SI-select .select-all.partial>span i {
+    background-color: #ccc;
+}
+
+/*styling for optgroups*/
+
+// >.optWrapper>.options li.optGroup {
+//     padding-left: 5px;
+//     text-decoration: underline;
+// }

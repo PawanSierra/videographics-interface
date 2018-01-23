@@ -10,4 +10,17 @@ $(document).ready(function(){
     });
   }
 
+  if($('.SI-select')) {
+
+    $('.SI-select').SiSelect({
+      searchText:"Search Here",
+      search:true,
+      selectAll:true,
+      csvDispCount:5,
+
+    });
+
+  }
+
+
 });

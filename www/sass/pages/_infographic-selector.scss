@@ -8,6 +8,7 @@
   @extend %align-center;
   // justify-content: center;
   @extend %justify-center;
+
   @media (max-width:768px) {
     display: block;
   }
@@ -158,6 +159,7 @@
       @extend %align-center;
       // justify-content: center;
       @extend %justify-center;
+
       @media (max-width: 768px) {
         width:33.33%;
         height:auto;

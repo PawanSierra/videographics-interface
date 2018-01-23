@@ -65,38 +65,75 @@
           <div class="si-input-fields">
             <div class="si-infographix-fields">
               <div class="si-selectoption">
-                <select name="" id="">
-                  <option value="">option 1</option>
-                  <option value="">option 2</option>
-                  <option value="">option 3</option>
-                  <option value="">option 4</option>
-                  <option value="">option 5</option>
+                <select name="" id="" class="SI-select">
+                  <option value="">
+		Select Match
+	</option>
+	<option value="183054">
+		Australia VS England, 1st ODI
+	</option>
+	<option value="183055">
+		Australia VS England, 2nd ODI
+	</option>
+	<option value="183973">
+		New Zealand VS Pakistan, 3rd ODI
+	</option>
+	<option value="183974">
+		New Zealand VS Pakistan, 4th ODI
+	</option>
+	<option value="183975">
+		New Zealand VS Pakistan, 5th ODI
+	</option>
+	<option value="184800">
+		South Africa VS India, 2nd Test
+	</option>
+	<option value="185254">
+		Bangladesh VS Zimbabwe, Match 1
+	</option>
+	<option value="185255">
+		Sri Lanka VS Zimbabwe, Match 2
+	</option>
+	<option value="185256">
+		Bangladesh VS Sri Lanka, Match 3
+	</option>
+	<option value="185893">
+		Ireland VS Scotland, Match 3
+	</option>
+	<option value="185894">
+		Ireland VS Scotland, Match 4
+	</option>
+	<option value="185897">
+		United Arab Emirates VS Ireland, Match 1
+	</option>
+	<option value="185898">
+		United Arab Emirates VS Ireland, Match 2
+	</option>
                 </select>
-                <span class="select-out"> Sport</span>
+                <!-- <span class="select-out"> Sport</span> -->
               </div>
             </div>
             <div class="si-infographix-fields">
               <div class="si-selectoption">
-                <select name="" id="">
+                <select name="" id="" class="SI-select">
                   <option value="">option 1</option>
                   <option value="">option 2</option>
                   <option value="">option 3</option>
                   <option value="">option 4</option>
                   <option value="">option 5</option>
                 </select>
-                <span class="select-out">Series</span>
+                <!-- <span class="select-out">Series</span> -->
               </div>
             </div>
             <div class="si-infographix-fields">
               <div class="si-selectoption">
-                <select name="" id="">
+                <select name="" id="" class="SI-select">
                   <option value="">option 1</option>
                   <option value="">option 2</option>
                   <option value="">option 3</option>
                   <option value="">option 4</option>
                   <option value="">option 5</option>
                 </select>
-                <span class="select-out">Matches</span>
+                <!-- <span class="select-out">Matches</span> -->
               </div>
             </div>
             <!-- <div class="si-infographix-fields">
@@ -230,5 +267,12 @@
   <script src="js/jquery-min.js"></script>
   <script src="js/swiper-min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/si-select.js"> </script>
+  <script>
+  $('.SI-select').SiSelect({
+    searchText:"Search Here",
+    search:true
+  });
+  </script>
 </body>
 </html>
