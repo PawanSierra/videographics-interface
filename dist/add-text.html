@@ -52,8 +52,8 @@
         </div>
       </aside>
       <section class="si-col editor">
-        <div class="si-itemswrapper">
-          <!-- <div class="select-controls">
+        <div class="si-itemswrapper add-text">
+          <div class="select-controls">
           	<div class="si-infographix-fields">
               <label> Font Size:</label>
           		<div class="si-selectoption">
@@ -73,36 +73,59 @@
                 <span class="select-out">Select</span>
           		</div>
           	</div>
-        	<div class="si-infographix-fields">
+            <div class="si-infographix-fields">
+              <label>Family:</label>
+          		<div class="si-selectoption">
+          			<select id="font-size">
+          				<option value="10"> Select </option>
+          				<option value="11"> 22px </option>
+          				<option value="12"> 24px </option>
+          				<option value="13"> 26px </option>
+          				<option value="14"> 28px </option>
+          				<option value="15"> 30px </option>
+          				<option value="16"> 32px </option>
+          				<option value="17"> 34px </option>
+          				<option value="18"> 36px </option>
+          				<option value="19"> 38px </option>
+          				<option value="20"> 40px </option>
+          			</select>
+                <span class="select-out">Select</span>
+          		</div>
+          	</div>
+        	<div class="si-infographix-fields active color-picker">
             <label for="">Color:</label>
-        		<div class="si-selectoption">
-        			<select id="font-color">
-        				<option value="White"> Select </option>
-        				<option value="Red"> Red </option>
-        				<option value="Blue"> Blue </option>
-        				<option value="Black"> Black </option>
-        			</select>
-              <span class="select-out">Select</span>
-        		</div>
+            <span class="selected-color" data-selected-color="#FF0000"></span>
+            <div class="color-palette">
+              <div class="color-palette-list">
+                <span class="color-item" style="background:#00FFFF;" data-color=""></span>
+                <span class="color-item" style="background:#008000;" data-color=""></span>
+                <span class="color-item" style="background:#00FF00;" data-color=""></span>
+                <span class="color-item" style="background:#808000;" data-color=""></span>
+                <span class="color-item" style="background:#FFFF00;" data-color=""></span>
+                <span class="color-item" style="background:#800000;" data-color=""></span>
+                <span class="color-item" style="background:#FF0000;" data-color=""></span>
+                <span class="color-item" style="background:#000000;" data-color=""></span>
+                <span class="color-item" style="background:#808080;" data-color=""></span>
+                <span class="color-item" style="background:#C0C0C0;" data-color=""></span>
+                <span class="color-item" style="background:#FFFFFF;" data-color=""></span>
+                <span class="color-item" style="background:#182C61;" data-color=""></span>
+                <span class="color-item" style="background:#800080;" data-color=""></span>
+                <span class="color-item" style="background:#FF00FF;" data-color=""></span>
+                <span class="color-item" style="background:#0097e6;" data-color=""></span>
+                <span class="color-item" style="background:#000080;" data-color=""></span>
+                <span class="color-item" style="background:#0000FF;" data-color=""></span>
+                <span class="color-item" style="background:#008080;" data-color=""></span>
+              </div>
+              <div class="color-palette-custom">
+                <!-- <span class="color-palette-label"> Custom Colors </span> -->
+                <button class="color-palette-label">Custom Colors</button>
+              </div>
+            </div>
         	</div>
-        </div> -->
-          <div class="si-inputdiv" data-count="Max 250">
-            <textarea class="si-textarea hindi" placeholder="Max 200 characters"></textarea>
-          </div>
-          <!-- <div class="si-static-input-field-wrap">
-            <div class="si-static-input-field-item">
-              <label for="">Add Text:</label>
-              <textarea class="si-static-text" placeholder="Enter text"></textarea>
-            </div>
-            <div class="si-static-input-field-item">
-              <label for="">Title:</label>
-              <textarea class="si-static-text" placeholder="Enter text"></textarea>
-            </div>
-            <div class="si-static-input-field-item">
-              <label for="">Tagline:</label>
-              <input type="text" class="si-static-input" placeholder="Enter Text">
-            </div>
-          </div> -->
+        </div>
+        <div class="si-inputdiv" data-count="Max 250">
+          <textarea class="si-textarea hindi" placeholder="Max 200 characters"></textarea>
+        </div>
         </div>
       </section>
       <section class="si-col viewer">

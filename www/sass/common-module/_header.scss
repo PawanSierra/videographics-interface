@@ -86,8 +86,8 @@
           font-size: 16px;
           padding-right:10px;
           width:100%;
-          white-space: nowrap;
-          overflow: hidden;
+          // white-space: nowrap;
+          // overflow: hidden;
           // text-overflow: ellipsis;
           @extend %ellipsis;
           @media (max-width: 768px) {
@@ -118,8 +118,8 @@
             cursor: pointer;
             font-size: 14px;
             font-weight: 200;
-            white-space: nowrap;
-            overflow: hidden;
+            // white-space: nowrap;
+            // overflow: hidden;
             // text-overflow: ellipsis;
             padding-bottom: 10px;
             border-bottom:1px solid lighten(#4a4a4a,50);
@@ -372,8 +372,8 @@
         display: inline-block;
         flex:1;
         height:100%;
-        overflow: hidden;
-        white-space: nowrap;
+        // overflow: hidden;
+        // white-space: nowrap;
         // text-overflow: ellipsis;
         color:#000;
         font-size: 16px;
