@@ -17,7 +17,7 @@ let fs = require("fs"),
     ssync = require("gulp-scp");
 
 
-let plugins = [cssnext({ customProperties:true , browsers: "last 5 versions" , grid:true }),orderValues(),mqpacker(),merge()]; //,merge_long() autoprefixer({browsers: "last 6 versions", grid:true})
+let plugins = [cssnext({ customProperties:true  , browsers: "last 5 versions" , grid:true }),orderValues(),mqpacker(),merge()]; //,merge_long() autoprefixer({browsers: "last 6 versions", grid:true})
 
 gulp.task('connect',function() {
 
@@ -44,7 +44,6 @@ gulp.task('sass',function() {
   return gulp.src("www/sass/*.scss")
                .pipe(sourcemap.init())
                .pipe(sass({}).on('error',sass.logError)) //sourceMaps: true
-               // .pipe(cssnext())
                .pipe(postcss(plugins,{}))
                .pipe(sourcemap.write('.'))
                .pipe(gulp.dest("www/css/"));

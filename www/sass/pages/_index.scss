@@ -1290,7 +1290,8 @@
             img {
               position: absolute;
               display: block;
-              width:100%;
+              min-width:150%;
+              min-height: 100%;
               z-index: 1;
 
             }

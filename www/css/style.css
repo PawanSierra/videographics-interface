@@ -2767,7 +2767,7 @@ table {
   -moz-opacity: 0;
   -khtml-opacity: 0;
   opacity: 0;
-  display: none; }
+  display: none !important; }
 
 .SelectClass {
   z-index: 1; }
@@ -4430,7 +4430,8 @@ body {
           .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-split-image .si-image-col .si-image-wrap img {
             position: absolute;
             display: block;
-            width: 100%;
+            min-width: 150%;
+            min-height: 100%;
             z-index: 1; }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-split-image .si-image-col .ui-resizable-handle.ui-resizable-s {
           z-index: 99999999 !important;
@@ -5106,7 +5107,8 @@ body {
             background-image: url(../images/right-arrow.svg); }
           .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-template-top .si-template-nav .si-nav.disabled:before {
             opacity: 0.5;
-            pointer-events: none; }
+            pointer-events: none;
+            cursor: default; }
     .si-infographic-templates .si-infographic-templates-wrap .si-template-area.templates .si-tempalte-thumb-wrap {
       background-image: url(../images/transparent.png);
       background-repeat: no-repeat;

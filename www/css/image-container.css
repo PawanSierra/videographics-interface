@@ -305,7 +305,8 @@ body ,html {
 .si-grpahic-container .si-split-image .si-image-col .si-image-wrap img {
 						position: absolute;
 						display: block;
-						width: 100%;
+						min-width: 150%;
+						min-height: 100%;
 						z-index: 1; }
 .si-grpahic-container .si-resize-overlay, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-split-image .si-split-drag {
 			position: absolute;

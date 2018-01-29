@@ -75,7 +75,7 @@
     -moz-opacity: 0;
     -khtml-opacity: 0;
     opacity: 0;
-    display: none;
+    display: none !important;
 }
 .SelectClass {
     z-index: 1;
