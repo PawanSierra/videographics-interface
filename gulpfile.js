@@ -4,7 +4,7 @@ let fs = require("fs"),
     gulp = require("gulp"),
     sass = require("gulp-sass"),
     postcss = require("gulp-postcss"),
-    //autoprefixer = require("autoprefixer"),
+    autoprefixer = require("autoprefixer"),
     orderValues = require("postcss-ordered-values"),
     connect = require("gulp-connect"),
     sourcemap = require("gulp-sourcemaps"),
@@ -17,7 +17,12 @@ let fs = require("fs"),
     ssync = require("gulp-scp");
 
 
-let plugins = [cssnext({ customProperties:true  , browsers: "last 5 versions" , grid:true }),orderValues(),mqpacker(),merge()]; //,merge_long() autoprefixer({browsers: "last 6 versions", grid:true})
+let plugins = [cssnext({ features:{ customProperties:{ preserve:true } , grid:true  }  }),orderValues(),mqpacker(),merge()]; //,merge_long() autoprefixer({browsers: "last 6 versions", grid:true})
+
+ //autoprefixer({browsers: "last 5 versions" , grid:true })
+
+
+
 
 gulp.task('connect',function() {
 

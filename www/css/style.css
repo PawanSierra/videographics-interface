@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #71797e;
+  --secondary-color: #90c441;
+  --font-color: #fff;
+  --border-color: #66704c;
+  --background-color: #eaeaea; }
+
 @-webkit-keyframes scaleX {
   0% {
     width: 0px; }
@@ -181,31 +188,26 @@ table {
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
 
 .fa-rotate-180 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .fa-rotate-270 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
   -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
   transform: rotate(270deg); }
 
 .fa-flip-horizontal {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
   -webkit-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 
 .fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
   transform: scale(1, -1); }
 
 :root .fa-rotate-90,
@@ -2622,6 +2624,14 @@ table {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
 
 @font-face {
+  font-family: 'roboto-bold';
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.otf") format("opentype"), url("../fonts/Roboto-Bold.svg#Roboto Medium") format("svg");
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044; }
+
+@font-face {
   font-family: 'gotham_ultra-italic';
   src: url("../fonts/gotham_ultra_italic-webfont.eot"); }
 
@@ -2673,6 +2683,24 @@ table {
   unicode-range: U+0020-00FE; }
 
 @font-face {
+  font-family: 'gotham-narrow-black';
+  src: url("../fonts/GothamNarrow-Black.eot");
+  src: url("../fonts/GothamNarrow-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamNarrow-Black.woff") format("woff"), url("../fonts/GothamNarrow-Black.ttf") format("truetype"), url("../fonts/GothamNarrow-Black.otf") format("opentype"), url("../fonts/GothamNarrow-Black.svg#GothamNarrow-Black") format("svg");
+  font-weight: 450;
+  font-style: normal;
+  font-stretch: condensed;
+  unicode-range: U+0020-00FE; }
+
+@font-face {
+  font-family: 'gotham-ultra';
+  src: url("../fonts/Gotham-Ultra.eot");
+  src: url("../fonts/Gotham-Ultra.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Ultra.woff") format("woff"), url("../fonts/Gotham-Ultra.ttf") format("truetype"), url("../fonts/Gotham-Ultra.otf") format("opentype"), url("../fonts/Gotham-Ultra.svg#Gotham-Ultra") format("svg");
+  font-weight: 450;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE; }
+
+@font-face {
   font-family: 'Mangal';
   src: url("../fonts/Mangal.eot");
   src: url("../fonts/Mangal.eot?#iefix") format("embedded-opentype"), url("../fonts/Mangal.woff") format("woff"), url("../fonts/Mangal.ttf") format("truetype"), url("../fonts/Mangal.otf") format("opentype"), url("../fonts/Mangal.svg#Mangal") format("svg");
@@ -2690,8 +2718,156 @@ table {
   font-stretch: normal;
   unicode-range: U+0020-00FE; }
 
+@font-face {
+  font-family: 'helvetica-neue';
+  src: url("../fonts/Helvetica-Neue-Condensed Bold.eot");
+  src: url("../fonts/Helvetica-Neue-Condensed Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica-Neue-Condensed Bold.woff") format("woff"), url("../fonts/Helvetica-Neue-Condensed Bold.ttf") format("truetype"), url("../fonts/Helvetica-Neue-Condensed Bold.otf") format("opentype"), url("../fonts/Helvetica-Neue-Condensed Bold.svg#Helvetica Neue Condensed Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: condensed;
+  unicode-range: U+0-10FFFF; }
+
 .hindi {
   font-family: 'Mangal'; }
+
+@font-face {
+  font-family: 'Digital Medium';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/digital-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Digital ICG';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/digitalicg-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Digital';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/digitalfont-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica Neue Bold';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica Neue Bold Condensed';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-boldcond-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica Neue Roman';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-roman-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica Neue Light';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/Helvetica-Neue-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica Ultralight Tital';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultralightital-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica Ultralight';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultralight-webfont.eot");
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultralight-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica Ultralight Extended Oblique';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultraligextobl-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica Ultralight Extended';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultraligext-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica Ultralight Condensed';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultraligcond-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica Ultralight Condensed Oblique';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultraligcondobl-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'DS Digital Italic';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/ds-digii-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'DS Digital Bold';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/ds-digib-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'DS Digital';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/ds-digi-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'DS Digital Bold Italic';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/ds-digit-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica Neue Bold Italic';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/HelveticaNeue-BoldItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Play Bold';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/Play-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica Neue Thin';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-thin-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica Neue Condensed';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-thincond-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica Neue Condensed Oblique';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-thincondobl-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica Neue Extended';
+  src: url("https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-thinext-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 .SI-select p {
   margin: 0; }
@@ -2813,8 +2989,7 @@ table {
   top: 50%;
   right: -12px;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+  transform: translateY(-50%);
   cursor: pointer; }
 
 .SI-select > .CaptionCont > label {
@@ -2932,8 +3107,7 @@ table {
 
 .SI-select > .optWrapper > .options li label {
   width: 100%;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   display: block;
@@ -3129,17 +3303,16 @@ body {
   content: "";
   clear: both; }
 
-.fontAwesome, .si-breadcrumbs .si-breadcrumbs-list-item + .si-breadcrumbs-list-item a:before, .si-video-dropdown .si-video-list .si-btn:before, .proceed-action a:after, .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-container .si-gallery-thumb.selected:before, .si-main .si-col.editor .si-input-fields .si-submit-btn .si-clear-graphic:before, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item.btn span:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-set-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-set-close-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-zoomin-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-zoomout-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-zoom-controls .si-set-zoom-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-zoom-controls .si-set-zoom-close-btn:before, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap .si-play-btn .btn:before, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap .play-btn .btn:before, .si-infographic-templates .si-infographic-templates-wrap .si-templates-container .si-itemplates-wrapper .si-template-item.selected:after, .si-popup .si-popup-wrap .si-popup-close:before {
+.fontAwesome, .si-breadcrumbs .si-breadcrumbs-list-item + .si-breadcrumbs-list-item a:before, .si-video-dropdown .si-video-list .si-btn:before, .proceed-action a:after, .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-refresh:before, .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-container .si-gallery-thumb.selected:before, .si-main .si-col.editor .si-input-fields .si-submit-btn .si-clear-graphic:before, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item.btn span:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-set-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-set-close-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-zoomin-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-zoomout-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-zoom-controls .si-set-zoom-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-zoom-controls .si-set-zoom-close-btn:before, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap .si-play-btn .btn:before, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap .play-btn .btn:before, .si-infographic-templates .si-infographic-templates-wrap .si-templates-container .si-itemplates-wrapper .si-template-item.selected:after, .si-popup .si-popup-wrap .si-popup-close:before {
   font-family: "FontAwesome";
   content: ""; }
 
-.SI-select > .CaptionCont > span, .si-selectoption .select-out, .si-header .si-logged-wrapper .logged-menu .si-drop-menu .si-logged-username, .si-header .si-logged-wrapper .logged-menu .si-drop-menu .si-drop-down a, .si-video-dropdown .si-video-list .video-list-item > span, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap .si-play-label span, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap .label {
+.SI-select > .CaptionCont > span, .si-selectoption .select-out, .si-header .si-logged-wrapper .logged-menu .si-drop-menu .si-logged-username, .si-header .si-logged-wrapper .logged-menu .si-drop-menu .si-drop-down a, .si-video-dropdown .si-video-list .video-list-item > span, .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item.two-col .si-static-input-field-item-col label, .si-main .si-col.editor .si-input-fields .si-infographic-field-column .si-input-option label, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap .si-play-label span, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap .label {
   overflow: hidden;
   white-space: nowrap;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis; }
+  text-overflow: ellipsis; }
 
-.si-header, .si-breadcrumbs, .si-breadcrumbs .si-video-loader span, .si-video-dropdown, .si-video-dropdown .si-video-list .video-list-item, .si-main, .si-main .si-col .si-itemswrapper, .si-main .si-col .si-itemswrapper .si-infographix-fields.color-picker .color-palette .color-palette-list, .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item, .si-main .si-col.viewer .si-graphic-control, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-split-image, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.bottom-graphic .si-static-text-wrap, .si-main .si-col.viewer .si-graphic-actions, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.split-screen .si-btn-area, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.split-screen .si-btn-area, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.active .si-btn-action-tip:not(#a), .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.active .si-btn-action-tip:not(#a), .si-infographic-selector, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap, .si-page.login .si-login-section {
+.si-header, .si-breadcrumbs, .si-breadcrumbs .si-video-loader span, .si-video-dropdown, .si-video-dropdown .si-video-list .video-list-item, .si-main, .si-main .si-col .si-itemswrapper, .si-main .si-col .si-itemswrapper .si-infographix-fields.color-picker .color-palette .color-palette-list, .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item, .si-main .si-col.editor .si-input-fields .si-infographic-field-column, .si-main .si-col.editor .si-input-fields .si-infographic-field-column .si-input-option, .si-main .si-col.viewer .si-graphic-control, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-split-image, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.bottom-graphic .si-static-text-wrap, .si-main .si-col.viewer .si-graphic-actions, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.split-screen .si-btn-area, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.split-screen .si-btn-area, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.active .si-btn-action-tip:not(#a), .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.active .si-btn-action-tip:not(#a), .si-infographic-selector, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap, .si-page.login .si-login-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -3175,7 +3348,6 @@ body {
   .si-selectoption .select-out {
     width: calc(100% - 10px);
     display: inline-block;
-    color: #ffffff;
     color: rgba(255, 255, 255, .5);
     text-transform: uppercase;
     font-size: 14px;
@@ -3194,7 +3366,6 @@ body {
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     -webkit-transform: rotate(-46deg);
-        -ms-transform: rotate(-46deg);
             transform: rotate(-46deg);
     z-index: 1; }
   .si-selectoption.active .select-out {
@@ -3207,7 +3378,6 @@ body {
 
 .nicescroll-cursors {
   right: -8px !important;
-  background-color: #ffffff !important;
   background-color: rgba(255, 255, 255, .5) !important;
   border: none !important; }
 
@@ -3272,7 +3442,6 @@ body {
           max-width: 250px;
           top: 20px;
           right: 0;
-          background-color: #ffffff;
           background-color: rgba(255, 255, 255, .9);
           padding: 10px;
           z-index: 9999;
@@ -3309,7 +3478,6 @@ body {
           border-left: 6px solid transparent;
           border-right: 6px solid transparent;
           -webkit-transform: rotate(-46deg);
-              -ms-transform: rotate(-46deg);
                   transform: rotate(-46deg);
           z-index: 1; }
 
@@ -3328,13 +3496,11 @@ body {
     margin-left: -4px; }
     .si-breadcrumbs .si-breadcrumbs-list-item a {
       display: block;
-      color: #ffffff;
       color: rgba(255, 255, 255, .5);
       text-transform: uppercase;
       font-size: 14px;
       text-decoration: none;
       -webkit-transition: all 200ms ease-in;
-      -o-transition: all 200ms ease-in;
       transition: all 200ms ease-in; }
     .si-breadcrumbs .si-breadcrumbs-list-item + .si-breadcrumbs-list-item {
       padding-left: 10px; }
@@ -3388,7 +3554,6 @@ body {
     display: inline-block;
     width: 100%;
     padding-right: 10px;
-    color: #ffffff;
     color: rgba(255, 255, 255, .5);
     font-size: 14px; }
     .si-video-dropdown .selected-label .si-video-count {
@@ -3415,7 +3580,6 @@ body {
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
         -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
                 transform: translateX(-50%);
         z-index: 1; }
   .si-video-dropdown .si-video-list {
@@ -3425,7 +3589,6 @@ body {
     top: 34px;
     left: 0;
     padding: 5px;
-    background-color: #ffffff;
     background-color: rgba(255, 255, 255, .8);
     border-radius: 5px;
     max-height: 300px;
@@ -3476,7 +3639,6 @@ body {
   left: 50%;
   bottom: 5px;
   -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .2);
           box-shadow: 0 0 5px rgba(0, 0, 0, .2); }
@@ -3490,7 +3652,6 @@ body {
     padding: 8px 18px;
     border-radius: 2px;
     -webkit-transition: all 200ms ease-out;
-    -o-transition: all 200ms ease-out;
     transition: all 200ms ease-out; }
     .proceed-action a:after {
       display: inline-block;
@@ -3509,11 +3670,6 @@ body {
       content: "";
       width: 100%;
       height: 1px;
-      background: -webkit-radial-gradient(center, ellipse, #ffffff 0%, #ffffff 100%);
-      background: -o-radial-gradient(center, ellipse, #ffffff 0%, #ffffff 100%);
-      background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff 100%);
-      background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 100%);
-      background: -o-radial-gradient(center, ellipse, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 100%);
       background: radial-gradient(ellipse at center, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0) 100%);
       top: 0;
       left: 0;
@@ -3589,7 +3745,6 @@ body {
             height: auto;
             left: 0;
             top: 25px;
-            background-color: #000000;
             background-color: rgba(0, 0, 0, .5);
             border-radius: 5px;
             -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, .4);
@@ -3624,8 +3779,7 @@ body {
                   color: #f6f6f6;
                   text-shadow: 0 0 2px rgba(0, 0, 0, .8); }
             .si-main .si-col .si-itemswrapper .si-infographix-fields.color-picker .color-palette .color-palette-custom {
-              padding: 5px 0;
-              text-align: center; }
+              padding: 5px 0; }
               .si-main .si-col .si-itemswrapper .si-infographix-fields.color-picker .color-palette .color-palette-custom .color-palette-label {
                 display: inline-block;
                 color: #fff;
@@ -3663,7 +3817,6 @@ body {
               height: 2px;
               background-color: #90c441;
               -webkit-transform: translateX(-50%);
-                  -ms-transform: translateX(-50%);
                       transform: translateX(-50%);
               -webkit-animation-name: scaleX;
                       animation-name: scaleX;
@@ -3701,7 +3854,6 @@ body {
             top: 1px;
             left: 2px;
             -webkit-transition: left 300ms linear;
-            -o-transition: left 300ms linear;
             transition: left 300ms linear;
             text-align: center; }
           .si-main .si-col .si-itemswrapper .si-infographix-fields .si-toggle-btn .si-input-check:checked ~ .select-ext {
@@ -3716,9 +3868,7 @@ body {
             max-width: 120px;
             height: 115px;
             border-radius: 5px;
-            background-color: #000000;
             background-color: rgba(0, 0, 0, .2);
-            border: 1px solid #ffffff;
             border: 1px solid rgba(255, 255, 255, .1);
             cursor: pointer; }
             .si-main .si-col .si-itemswrapper .si-infographix-fields.three-col:not(#a) .si-infographix-type-option .si-infographic-type-thumb {
@@ -3731,14 +3881,12 @@ body {
               margin: 10px auto; }
             .si-main .si-col .si-itemswrapper .si-infographix-fields.three-col:not(#a) .si-infographix-type-option .si-infographic-type-label {
               display: inline-block;
-              border: 1px solid #ffffff;
               border: 1px solid rgba(255, 255, 255, .1);
               padding: 5px 0;
               width: 85%;
               font-size: 12px;
               border-radius: 4px;
               text-transform: uppercase;
-              background-color: #000000;
               background-color: rgba(0, 0, 0, .1); }
             .si-main .si-col .si-itemswrapper .si-infographix-fields.three-col:not(#a) .si-infographix-type-option.wagon-wheel .si-infographic-type-thumb {
               background-image: url(../images/wagon-wheel-ico.png); }
@@ -3764,7 +3912,6 @@ body {
           margin-left: 10px;
           background-color: transparent;
           border: none;
-          background-color: #000000;
           background-color: rgba(0, 0, 0, .1);
           font-size: 14px;
           color: #fff;
@@ -3830,6 +3977,22 @@ body {
         .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item.static-input label {
           -ms-flex-item-align: center;
               align-self: center; }
+        @supports (display: grid) {
+          .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item.two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 20px; }
+            .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item.two-col .si-static-input-field-item-col {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+              .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item.two-col .si-static-input-field-item-col label {
+                width: 30%;
+                max-width: 30%; }
+              .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item.two-col .si-static-input-field-item-col .si-static-input {
+                width: 70%;
+                max-width: 70%; } }
   .si-main .si-col.si-side-menu {
     width: 7.1%;
     -ms-flex-preferred-size: 7.1%;
@@ -3857,7 +4020,6 @@ body {
         height: 100%;
         background-color: #90c441;
         -webkit-transition: all 300ms ease-in;
-        -o-transition: all 300ms ease-in;
         transition: all 300ms ease-in; }
       .si-main .si-side-menu .si-sidemenu-list .si-sidemenu-item.active:before, .si-main .si-side-menu .si-sidemenu-list .si-sidemenu-item:hover:before {
         position: absolute;
@@ -3871,7 +4033,6 @@ body {
         border-right: 4px solid #90c441;
         border-left: 4px solid transparent;
         -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
                 transform: translateY(-50%); }
     .si-main .si-side-menu .si-sidemenu-list .si-sidemenu-item a {
       display: block;
@@ -3938,7 +4099,6 @@ body {
     width: 369px;
     height: 369px;
     border: 1px dashed #8d8f81;
-    background-color: #000000;
     background-color: rgba(0, 0, 0, .03); }
   .si-main .si-col.editor .si-fileupload {
     position: absolute;
@@ -3952,13 +4112,11 @@ body {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     z-index: 1; }
     .si-main .si-col.editor .si-uploadui span {
       display: block;
       white-space: nowrap;
-      color: #ffffff;
       color: rgba(255, 255, 255, .3);
       font-size: 20px;
       text-transform: uppercase; }
@@ -3979,7 +4137,6 @@ body {
     .si-main .si-col.editor .si-inputdiv:empty:before {
       content: attr(placeholder);
       font-size: 14px;
-      color: #ffffff;
       color: rgba(255, 255, 255, .2);
       text-transform: uppercase;
       font-family: "Roboto", sans-serif; }
@@ -3992,9 +4149,7 @@ body {
       height: 30px;
       color: #fff;
       line-height: 30px;
-      color: #ffffff;
       color: rgba(255, 255, 255, .5);
-      background-color: #000000;
       background-color: rgba(0, 0, 0, .05);
       border-radius: 0 0 2px 2px;
       font-size: 16px; }
@@ -4011,23 +4166,35 @@ body {
       .si-main .si-col.editor .si-inputdiv .si-textarea:focus {
         outline: 0; }
       .si-main .si-col.editor .si-inputdiv .si-textarea::-webkit-input-placeholder {
-        color: #ffffff;
         color: rgba(255, 255, 255, .8);
         text-transform: uppercase; }
       .si-main .si-col.editor .si-inputdiv .si-textarea:-ms-input-placeholder,.si-main .si-col.editor .si-inputdiv .si-textarea::-ms-input-placeholder {
-        color: #ffffff;
         color: rgba(255, 255, 255, .8);
         text-transform: uppercase; }
       .si-main .si-col.editor .si-inputdiv .si-textarea::placeholder {
-        color: #ffffff;
         color: rgba(255, 255, 255, .8);
         text-transform: uppercase; }
   .si-main .si-col.editor .si-imagegallery-wrapper {
     padding: 20px;
     margin-top: 10px; }
+    .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-refresh {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 20px;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      cursor: pointer;
+      margin-top: 10px; }
+      .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-refresh:before {
+        content: "\f021";
+        font-size: 18px;
+        color: #fff; }
     .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-container {
       position: relative;
       height: 481px;
+      margin-top: 10px;
       overflow-y: auto; }
       .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-container.loading:after {
         content: "";
@@ -4046,7 +4213,6 @@ body {
         position: relative;
         width: 100%;
         height: 115px;
-        background-color: #000000;
         background-color: rgba(0, 0, 0, .1);
         cursor: pointer; }
         .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-container .si-gallery-thumb.selected:before {
@@ -4057,7 +4223,6 @@ body {
           color: white;
           font-size: 47px;
           -webkit-transform: translate(-50%, -50%);
-              -ms-transform: translate(-50%, -50%);
                   transform: translate(-50%, -50%);
           text-shadow: 0 0 5px rgba(0, 0, 0, .7);
           z-index: 2; }
@@ -4114,6 +4279,25 @@ body {
         color: #fff; }
       .si-main .si-col.editor .si-input-fields .si-selectoption:after {
         border-top: 6px solid white; }
+    .si-main .si-col.editor .si-input-fields .si-infographic-field-column {
+      margin: 35px 0;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .si-main .si-col.editor .si-input-fields .si-infographic-field-column > * {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+                flex: 1 1 auto; }
+        .si-main .si-col.editor .si-input-fields .si-infographic-field-column > *:first-child {
+          margin-right: 10px; }
+      .si-main .si-col.editor .si-input-fields .si-infographic-field-column .si-input-option label {
+        -webkit-box-flex: 0.3;
+            -ms-flex: 0.3 0.3 auto;
+                flex: 0.3 0.3 auto;
+        padding-right: 5px; }
+      .si-main .si-col.editor .si-input-fields .si-infographic-field-column .si-input-option .si-selectoption {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+                flex: 1 1 auto; }
     .si-main .si-col.editor .si-input-fields .si-submit-btn {
       text-align: center;
       margin-top: 40px; }
@@ -4124,7 +4308,6 @@ body {
                 appearance: none;
         width: 142px;
         height: 38px;
-        background-color: #000000;
         background-color: rgba(0, 0, 0, .2);
         border: 1px solid #fff;
         border-radius: 5px;
@@ -4133,11 +4316,9 @@ body {
         font-size: 16px;
         font-weight: 200;
         -webkit-transition: all 300ms ease-in;
-        -o-transition: all 300ms ease-in;
         transition: all 300ms ease-in; }
         .si-main .si-col.editor .si-input-fields .si-submit-btn .si-btn:focus, .si-main .si-col.editor .si-input-fields .si-submit-btn .si-btn:hover {
           outline: 0px;
-          background-color: #000000;
           background-color: rgba(0, 0, 0, .5); }
         .si-main .si-col.editor .si-input-fields .si-submit-btn .si-btn + .si-btn {
           margin-left: 10px; }
@@ -4215,9 +4396,7 @@ body {
             top: 50%;
             right: 0px;
             -webkit-transform: translateY(-50%);
-                -ms-transform: translateY(-50%);
                     transform: translateY(-50%);
-            background-color: #ffffff;
             background-color: rgba(255, 255, 255, .5); }
           .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item .si-close-btn {
             display: none;
@@ -4250,7 +4429,6 @@ body {
             border-left: 4px solid transparent;
             border-right: 4px solid transparent;
             -webkit-transform: translateX(-50%);
-                -ms-transform: translateX(-50%);
                     transform: translateX(-50%); }
         .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item.btn span {
           display: block;
@@ -4291,16 +4469,9 @@ body {
         height: 2px;
         bottom: 21px;
         left: 50%;
-        background: -webkit-gradient(linear, left top, right top, from(#1e5799), color-stop(50%, white), to(#7db9e8));
-        background: -webkit-linear-gradient(left, #1e5799 0%, white 50%, #7db9e8 100%);
-        background: -o-linear-gradient(left, #1e5799 0%, white 50%, #7db9e8 100%);
-        background: linear-gradient(to right, #1e5799 0%, white 50%, #7db9e8 100%);
         background: -webkit-gradient(linear, left top, right top, from(rgba(30, 87, 153, 0)), color-stop(50%, white), to(rgba(125, 185, 232, 0)));
-        background: -webkit-linear-gradient(left, rgba(30, 87, 153, 0) 0%, white 50%, rgba(125, 185, 232, 0) 100%);
-        background: -o-linear-gradient(left, rgba(30, 87, 153, 0) 0%, white 50%, rgba(125, 185, 232, 0) 100%);
         background: linear-gradient(to right, rgba(30, 87, 153, 0) 0%, white 50%, rgba(125, 185, 232, 0) 100%);
         -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
                 transform: translateX(-50%);
         z-index: 3; }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .graphic-overlay .graphic-line.animate {
@@ -4332,10 +4503,8 @@ body {
           cursor: move; }
           .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .graphic-overlay .si-text-overlay .si-text-wrap p {
             -webkit-transition: all 100ms linear;
-            -o-transition: all 100ms linear;
             transition: all 100ms linear; }
             .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .graphic-overlay .si-text-overlay .si-text-wrap p:hover {
-              border: 1px dashed #ffffff;
               border: 1px dashed rgba(255, 255, 255, .5); }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .graphic-overlay .si-text-overlay.drag-area {
           width: calc(100% - 80px);
@@ -4343,7 +4512,6 @@ body {
           top: 0;
           left: 50%;
           -webkit-transform: translateX(-50%);
-              -ms-transform: translateX(-50%);
                   transform: translateX(-50%); }
           .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .graphic-overlay .si-text-overlay.drag-area .si-text-wrap {
             position: absolute;
@@ -4421,7 +4589,6 @@ body {
           content: "";
           width: 1px;
           height: 100%;
-          background-color: #ffffff;
           background-color: rgba(255, 255, 255, .4);
           z-index: 3; }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-split-image .si-image-col .si-image-wrap {
@@ -4448,7 +4615,6 @@ body {
             background-position: center center;
             background-size: cover;
             -webkit-transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
                     transform: translate(-50%, -50%); }
     .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-resize-overlay, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-split-image .si-split-drag {
       position: absolute;
@@ -4456,7 +4622,6 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: #000000;
       background-color: rgba(0, 0, 0, .4);
       padding: 10px;
       z-index: 999;
@@ -4464,7 +4629,6 @@ body {
       .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-resize-overlay .si-resize-wrap, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-split-image .si-split-drag .si-resize-wrap {
         width: 100%;
         height: 100%;
-        border: 1px dashed #ffffff;
         border: 1px dashed rgba(255, 255, 255, .5); }
       .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-resize-overlay.zoom-in, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-split-image .zoom-in.si-split-drag {
         cursor: -webkit-zoom-in;
@@ -4534,18 +4698,21 @@ body {
       position: absolute;
       top: 0;
       right: 24px;
-      z-index: 3; }
+      z-index: 3;
+      text-align: right; }
+      .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flipped {
+        right: auto;
+        left: 24px;
+        text-align: left; }
       .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay .si-static-text-wrap * {
         word-wrap: break-word; }
       .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag {
         width: 30%;
         top: 50%;
         -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
                 transform: translateY(-50%); }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag .si-static-text-wrap {
           font-size: 35px;
-          text-align: right;
           font-family: 'gotham_ultra-italic',sans-serif; }
           .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag .si-static-text-wrap p {
             text-shadow: 2px 0 0 rgba(0, 71, 178, .6);
@@ -4555,17 +4722,14 @@ body {
         top: auto;
         bottom: 50px;
         -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
                 transform: translateY(0); }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag-1 .si-static-text-wrap .si-static-player-name {
-          text-align: right;
           font-size: 25px;
           color: #fff;
           font-family: 'gotham_black',sans-serif; }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag-1 .si-static-text-wrap .si-static-score {
           margin-top: 5px;
           display: block;
-          text-align: right;
           font-family: 'gotham_black',sans-serif;
           font-size: 40px;
           letter-spacing: 0.7px; }
@@ -4575,10 +4739,9 @@ body {
       .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag-2 {
         width: 30%;
         top: 0;
-        right: 0;
-        left: auto;
-        bottom: auto;
-        padding: 20px 20px 20px 0; }
+        bottom: auto; }
+        .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag-2 .si-static-text-wrap {
+          padding: 20px 0; }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag-2 .si-static-title {
           position: relative;
           font-size: 25px;
@@ -4593,13 +4756,7 @@ body {
             right: -20px;
             width: calc(100% + 20px);
             height: 1px;
-            background: -webkit-gradient(linear, right top, left top, from(#ffffff), to(transparent));
-            background: -webkit-linear-gradient(right, #ffffff 0%, transparent 100%);
-            background: -o-linear-gradient(right, #ffffff 0%, transparent 100%);
-            background: linear-gradient(to left, #ffffff 0%, transparent 100%);
             background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, .8)), to(transparent));
-            background: -webkit-linear-gradient(right, rgba(255, 255, 255, .8) 0%, transparent 100%);
-            background: -o-linear-gradient(right, rgba(255, 255, 255, .8) 0%, transparent 100%);
             background: linear-gradient(to left, rgba(255, 255, 255, .8) 0%, transparent 100%); }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.flag-2 .si-static-score {
           font-family: 'gotham_black',sans-serif;
@@ -4615,7 +4772,6 @@ body {
         left: 50%;
         top: auto;
         -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
                 transform: translateX(-50%); }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.bottom-text .si-static-text-wrap .si-static-player-name {
           font-size: 35px;
@@ -4639,7 +4795,6 @@ body {
           bottom: 20px;
           left: 50%;
           -webkit-transform: translateX(-50%);
-              -ms-transform: translateX(-50%);
                   transform: translateX(-50%); }
           .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.bottom-gradient .si-static-text-wrap p {
             font-family: 'gotham_book',sans-serif;
@@ -4667,8 +4822,6 @@ body {
             height: 1px;
             width: calc(100% + 20px);
             background: -webkit-gradient(linear, left top, right top, from(white), to(transparent));
-            background: -webkit-linear-gradient(left, white 0%, transparent 100%);
-            background: -o-linear-gradient(left, white 0%, transparent 100%);
             background: linear-gradient(to right, white 0%, transparent 100%); }
         .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.left-gradient .si-static-score-item {
           position: relative;
@@ -4682,13 +4835,7 @@ body {
             bottom: 0;
             height: 1px;
             width: calc(100% + 20px);
-            background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(transparent));
-            background: -webkit-linear-gradient(left, #ffffff 0%, transparent 100%);
-            background: -o-linear-gradient(left, #ffffff 0%, transparent 100%);
-            background: linear-gradient(to right, #ffffff 0%, transparent 100%);
             background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, .2)), to(transparent));
-            background: -webkit-linear-gradient(left, rgba(255, 255, 255, .2) 0%, transparent 100%);
-            background: -o-linear-gradient(left, rgba(255, 255, 255, .2) 0%, transparent 100%);
             background: linear-gradient(to right, rgba(255, 255, 255, .2) 0%, transparent 100%); }
       .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.bottom-graphic {
         width: 100%;
@@ -4716,11 +4863,684 @@ body {
             .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.bottom-graphic .si-static-text-wrap .si-right-text .si-static-tagline {
               font-size: 25px;
               font-family: 'gotham_black',sans-serif; }
+      .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 {
+        width: 100%;
+        height: 100%;
+        right: auto;
+        left: 0;
+        text-align: left; }
+        .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 span {
+          margin: 0; }
+        .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-text-wrap {
+          height: 100%; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-text-wrap img {
+            display: block;
+            width: 100%;
+            height: auto; }
+        .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-header {
+          height: 35px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          padding: 0 24px; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-header .vs-infographic-header-title {
+            color: #fff;
+            font-size: 21px;
+            text-transform: uppercase;
+            font-family: 'helvetica-neue'; }
+        .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main {
+          height: calc(100% - 67px);
+          overflow: hidden; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player {
+            position: relative;
+            top: 48px;
+            left: 86px; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-player {
+              position: relative;
+              width: 164px;
+              height: 164px;
+              border-radius: 50%;
+              border: 6px solid #fff;
+              background-image: url(http://placehold.it/500x500);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: cover; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-player:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                -webkit-box-shadow: inset 0 0 100px 0 rgba(0, 0, 0, .5);
+                        box-shadow: inset 0 0 100px 0 rgba(0, 0, 0, .5);
+                -webkit-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%); }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-player .si-static-player-profile {
+                overflow: hidden;
+                height: 100%;
+                border-radius: 50%; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-player .si-static-player-name {
+                bottom: -35px;
+                left: 50%;
+                font-size: 20px;
+                white-space: nowrap;
+                -webkit-transform: translateX(-50%);
+                        transform: translateX(-50%);
+                font-family: 'helvetica-neue'; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-player .si-static-player-tag, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-player .si-static-player-name {
+                display: inline-block;
+                position: absolute; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-player .si-static-player-tag {
+                font-family: 'helvetica-neue';
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+                text-align: center;
+                line-height: 40px;
+                background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABOCAYAAACg7wGPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkM4QUE5OUQwMDc0NDExRTg4QjA4QUZDODZBMzI3RDI1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkM4QUE5OUQxMDc0NDExRTg4QjA4QUZDODZBMzI3RDI1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QzhBQTk5Q0UwNzQ0MTFFODhCMDhBRkM4NkEzMjdEMjUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QzhBQTk5Q0YwNzQ0MTFFODhCMDhBRkM4NkEzMjdEMjUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4uvNDyAAAHSklEQVR42uxd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") no-repeat center;
+                background-size: contain;
+                z-index: 2; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players {
+              position: absolute;
+              width: 322px;
+              height: 3px;
+              background: #fff;
+              top: 57%;
+              left: 160px; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players:before {
+                display: block;
+                position: absolute;
+                content: "MOST SIMILAR";
+                font-size: 14px;
+                width: 65px;
+                text-align: center;
+                left: 13%;
+                top: -20px;
+                line-height: 1.6;
+                font-family: 'helvetica-neue'; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list {
+                width: 100%;
+                display: block; }
+                .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item {
+                  position: absolute;
+                  left: 30%;
+                  text-align: center;
+                  top: 50%;
+                  -webkit-transform: translateY(-50%);
+                          transform: translateY(-50%);
+                  z-index: 1; }
+                  .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item .si-static-similar-player-rank {
+                    display: -webkit-inline-box;
+                    display: -ms-inline-flexbox;
+                    display: inline-flex;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    width: 30px;
+                    height: 30px;
+                    background: #000;
+                    border-radius: 50%;
+                    font-size: 10px;
+                    line-height: 20px;
+                    font-family: 'Digital';
+                    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjBCNkU4NEM0MDdENzExRThBQkQzRTI3NjgzM0NFODU1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjBCNkU4NEM1MDdENzExRThBQkQzRTI3NjgzM0NFODU1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MEI2RTg0QzIwN0Q3MTFFOEFCRDNFMjc2ODMzQ0U4NTUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MEI2RTg0QzMwN0Q3MTFFOEFCRDNFMjc2ODMzQ0U4NTUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7gKnmJAAAaWklEQVR42uyd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") no-repeat center;
+                    background-size: cover; }
+                  .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item .si-static-player-name {
+                    font-size: 12px;
+                    max-width: 130px;
+                    min-width: 110px;
+                    font-family: arial; }
+                  .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item:nth-child(even) .si-similar-player-warp {
+                    top: calc(100% + 15px); }
+                    .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item:nth-child(even) .si-similar-player-warp .si-static-player-name {
+                      bottom: -5px;
+                      -webkit-transform: translateY(100%) translateX(-50%);
+                              transform: translateY(100%) translateX(-50%); }
+                    .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item:nth-child(even) .si-similar-player-warp:before {
+                      top: -15px;
+                      -webkit-transform: translateX(-50%) rotate(180deg);
+                              transform: translateX(-50%) rotate(180deg); }
+                  .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item:nth-child(odd) .si-similar-player-warp {
+                    bottom: calc(100% + 15px); }
+                    .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item:nth-child(odd) .si-similar-player-warp .si-static-player-name {
+                      top: -5px;
+                      -webkit-transform: translateY(-100%) translateX(-50%);
+                              transform: translateY(-100%) translateX(-50%); }
+                    .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item:nth-child(odd) .si-similar-player-warp:before {
+                      bottom: -15px; }
+                  .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item .si-similar-player-warp {
+                    position: absolute;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                            transform: translateX(-50%); }
+                    .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item .si-similar-player-warp:before {
+                      position: absolute;
+                      content: "";
+                      width: 30px;
+                      height: 18px;
+                      left: 50%;
+                      -webkit-transform: translateX(-50%);
+                              transform: translateX(-50%);
+                      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAA7CAYAAADsIg00AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjM1Q0QwQUFCMDczQzExRTg5NzVCODVBNDlCNUE1QTdDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjM1Q0QwQUFDMDczQzExRTg5NzVCODVBNDlCNUE1QTdDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MzVDRDBBQTkwNzNDMTFFODk3NUI4NUE0OUI1QTVBN0MiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzVDRDBBQUEwNzNDMTFFODk3NUI4NUE0OUI1QTVBN0MiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4IiMVfAAADc0lEQVR42uybS2jUQBjHZ4OrFhGv4kEQT4KIgiKICCLWiyJ4qih6q4h3RTyo0EN9HPTiVVHES1GsVG2t1WrBt9IqVKXFSm3ra1Ha9dVq1//nfoF16b6SeSWzf/hdwmaS/PpNMjNJE5lMZpEQ4gSoBT/AhKimWJKgBnSDxgQECt5AEuurfsrKObAfDHm8gSpvF9gBPlf9FEwfqGNPQ7TBr8DcUJc+DVZWff2Xs2AfeJ+70Zvih71gG2ipOvuXX9xdd+bLK1SBfmaD447fF1NcTK2FfuAV2XkM7AanHJX3GGwoJq+UQMok2AMOOSavmeU9KfXDYl04PyTxoAPyroPt3H1LxqugYRJ4IObyzoPN5cqrtAL9HAF7YyjvEthS6U5BBFLO8GM9TvK28pBFi8BZ4ALYFAN5nWAjSAfZOahAyjwebC+NsLxBsB68CtpAGIGUhaALzI2gvO9gHbgfphEv5En0R3imUh9WngyBlCsRHGg38JAldMJ24fyb8ZoIyKOqq+WpqlUC6X7YAeZbLI/WOpeBd7Ia9CSeXH8EpnqHZcqTXYF+aHxYZ6G8Nl4gELYLpBXte2CORfJobrsWPJfdsKfgZHv5KWdTjqqQp6oCKdPBTbDaAnn0+nEVD5xFFCqQMm5RFTaokqdSIOUGuGhY3jXQpPIAqrqwnyUi+24haUggLRS0qzyAp/gCesBlQ/KaVMvTIZDSCH4aEHhSx0F0CKQ3W3c0y7sNHsVFIIXeLev86uuYCLA8b+NDJDe0CqLjexsayC9XOXQxUYGUZk3HadElT3cFLuB7k8rlLlquWgEGdF2Uzgp8o2FI81SnPN0CKVcVt9+me6ykswtT6FPiW4oeJp/AYvAxzhVInxJ3Kmq7S7c8EwIFz41VpN3AtRgR+BAMK+i+Ha4IfAvuKnj69rki0L9g2e39dkngM5FdtZaVHkPXYUzgCzAqsb0B1wSOiOynZbK670vXBFJaJbVD641fXRTYLamdYYPXYFSgrPvWoKsC6T74J2QbNJH/4KrANM8gwmTUxPzXFoHjEu5fYxL+CJEWmJJQxV9cFTghYTCdEgH/vyMOAiclVOCIqTmwDQKFhAdAyvD5GxcYdgbxzXWBScP7h840w8enVZkHPKDO8B90Rhn7JcBM8Nq0QN1v5aYSUZPzIChXoOD90qafwn8FGADNYOiN/POlowAAAABJRU5ErkJggg==");
+                      background-repeat: no-repeat;
+                      background-position: center center;
+                      background-size: cover;
+                      z-index: 0; }
+                    .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item .si-similar-player-warp .si-static-player-profile {
+                      width: 72px;
+                      height: 72px;
+                      border-radius: 50%;
+                      border: 3px solid #fff;
+                      overflow: hidden;
+                      background-image: url(http://placehold.it/500x500);
+                      background-repeat: no-repeat;
+                      background-position: center center;
+                      background-size: cover; }
+                      .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item .si-similar-player-warp .si-static-player-profile:before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        border-radius: 50%;
+                        width: calc(100% - 5px);
+                        height: calc(100% - 5px);
+                        -webkit-box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, .5);
+                                box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, .5);
+                        -webkit-transform: translate(-50%, -50%);
+                                transform: translate(-50%, -50%); }
+                    .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item .si-similar-player-warp .si-static-player-name {
+                      position: absolute;
+                      left: 50%; }
+                  .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item:nth-child(1) {
+                    left: 40%; }
+                  .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item:nth-child(2) {
+                    left: 60%; }
+                  .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item:nth-child(3) {
+                    left: 80%; }
+                  .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item:nth-child(4) {
+                    left: 100%; }
+        .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-footer {
+          height: 32px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          padding: 0 22px;
+          background: #000; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-footer .si-static-footer-metadata {
+            font-size: 10px;
+            color: #999999;
+            font-family: 'helvetica-neue'; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-footer .si-static-footer-branding {
+            display: inline-block;
+            width: 103.5px;
+            height: 13px;
+            background: url(../images/client-logos/sports-radar.png) no-repeat center;
+            background-size: contain;
+            text-indent: -1000%;
+            white-space: nowrap; }
+      .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team {
+        width: 522px;
+        height: 112px;
+        border-radius: 60px;
+        border: 1px solid #fff;
+        margin: 0 auto;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, .4); }
+        .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team.top {
+          margin: 15px auto 0 auto; }
+        .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          height: 100%;
+          z-index: 1; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.branding {
+            position: relative;
+            -ms-flex-preferred-size: 110px;
+                flex-basis: 110px;
+            max-width: 110px;
+            min-width: 110px;
+            z-index: 1;
+            border-radius: 50%; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.branding .si-static-team-brand {
+              position: absolute;
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              border: 1px solid #fff;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translate(-50%, -50%);
+                      transform: translate(-50%, -50%);
+              background: #fff;
+              padding: 5px;
+              background-image: url(http://placehold.it/500x500);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: cover;
+              background-clip: content-box; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.branding .si-static-team-brand:before {
+                position: absolute;
+                content: "";
+                width: calc(100% - 10px);
+                height: calc(100% - 10px);
+                top: 50%;
+                left: 50%;
+                border-radius: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, .5);
+                        box-shadow: inset 0 0 20px rgba(0, 0, 0, .5); }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring {
+            -webkit-box-flex: 1;
+                -ms-flex: 1 1 0px;
+                    flex: 1 1 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            position: relative; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring:after {
+              position: absolute;
+              content: "";
+              height: 20px;
+              z-index: 0; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring:before {
+              width: 60px;
+              left: 0;
+              background: #fff;
+              background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAAArCAYAAABsMDaUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjIwNjlCMUY2MEIwOTExRThBNDc3RDVENUU3RjhDNkE2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjIwNjlCMUY3MEIwOTExRThBNDc3RDVENUU3RjhDNkE2Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjA2OUIxRjQwQjA5MTFFOEE0NzdENUQ1RTdGOEM2QTYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjA2OUIxRjUwQjA5MTFFOEE0NzdENUQ1RTdGOEM2QTYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6obI/aAAAEE0lEQVR42uybW0hTcRzHz2U723RzqVO3EmcrFXK4TAgv5eaDN9psD16SWaBIQURIYkgv9RBUD9mF8infFMGHHqKoF/NCYCp4QZDCLCH1wUaYOrPNtr4HjyBk9/Sczf8Pvuz/+//PNjgfvv/f+Z//OXQgELhM/TquUCS2PGiv1/uJYRgv2gFIBikhOT+2fhCLIKdqG2BAJmhJo9GsJicn0zqdTgGpYmJiOK1W68/KyrqemJiojo+P14UjcKxCABYmtGUbwZH4Nxg0pqrAdwMIYZxZ74uNjWUAho2Li5OZTCYO8LiEhATKbDa36xFKpVKNw8IFWKzgNlpoM+R0/wLGJhz+7AfWoPEnm83OzpbzKiwsLM/JyTmoUqkM6NdAMTxLaBfEESdtEYyfQcrIyGDT0tJYfMow3VWkpqbmKxSKwxjWQyoCZZtgbAYHdUnudDojqqqqLuTl5RXJ5fI9wrS2XnsIjG3/U5pmAIaz2WwcoMjy8/PPoe4cwdBeYToLF6Y+AkOMMBqNdH19fVRNTc1RtVp9Al3ZQq2RC8WfJjBECLvdzpSUlOx3OBzHDQZDEbpSNoAJXSg8DKkKNYVGfZGPjIwcQ/4IckP+QIiGJJ2xWeTm5rLl5eVWl8t1JjIy0oqu6JAr+lJ2xmbip6nGxkbV4uLiDeTvQ8kZVLAKC0q6trY2fGBg4IHf718IhemLCnbxl8AFBQX6ycnJx8jnIV+wgqFCRfxtlsrKylg45T6c8gp9i8EGhQo18WuS0tJSzfz8/DXkb6BVAkMCNaWhoSFibm7uIfKlYHAJFepSIFpaWk6jPQ55pOwUaieIvxzOzMwM6+zsPI+8T1g8rhIYIkOprq5WY41yVXDKFwJDZJlMJra1tdXm8/meIpfMGoXaqeJdYrfbw5aXl+8hn4W+Ehgiy2AwyNra2k6i/Vpsh1BEay6pqKiI9ng8g2ICITA2yGKxaHp7e9vR9hIY0nCJoqmpySjcTiEwpHDz0eVyGWdmZt6SzSUp7EfTNJOUlLS7p6fnGYr8ge3Y7iVP+f14080/MTExk5KSYuvo6OAfgV3e6v+UkdP+UyD8tOGGSz5PT0+n1tXVDTEME0lgiAvFAyDe8fHxQ83NzUMcx20JEFIz/qyOsOnp6aaurq6XWq02itQMcR3ydXh4+F1xcXHO1NTULHGGRByi0+n2wyFPzGbzPuIMkR3idrsnHA6HbXR09AW6fMQZ0nBJRHd39y2r1co/HxxGnCGuSxbKysrOYnF4F+kCtfa21s54olDCt1BkcMhFtD/87d4Iccb/c8gqHHKzr6/vDtKPf+MQUjP+cyiVSq6/v/+2xWI5Ra299ENqhlixsrLidTqdl7AOGUTqJ84Q/wqLwTpk79jY2HO9Xp/wu9/7JsAA8Bf9QEmuQJcAAAAASUVORK5CYII=") no-repeat center;
+              background-size: contain;
+              -webkit-transform: translateX(-100%);
+                      transform: translateX(-100%); }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring:after {
+              width: 12px;
+              left: -12px;
+              background-color: #fff; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring .si-static-score-item {
+              -webkit-box-flex: 1;
+                  -ms-flex: 1 1 0px;
+                      flex: 1 1 0;
+              text-align: center;
+              position: relative;
+              display: block; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring .si-static-score-item:not(:last-child):after {
+                position: absolute;
+                width: 1px;
+                top: 30%;
+                content: "";
+                height: 55%;
+                background: rgba(255, 255, 255, .4);
+                right: 0; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring .si-static-score-item .si-static-score-item-header {
+                background: #fff;
+                color: #354e7c;
+                font-size: 12px;
+                font-family: 'helvetica-neue';
+                height: 20px;
+                line-height: 20px; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring .si-static-score-item .si-static-score-item-label, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring .si-static-score-item .si-static-score-item-time, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring .si-static-score-item .si-static-score-item-scr-no {
+                display: block;
+                margin: 5px auto 10px auto; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring .si-static-score-item .si-static-score-item-label {
+                font-size: 15px;
+                font-family: 'helvetica-neue';
+                color: #fff; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring .si-static-score-item .si-static-score-item-time {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                margin-bottom: 0;
+                line-height: 50px;
+                font-size: 19px;
+                font-family: 'digital'; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring .si-static-score-item .si-static-score-item-scr {
+                font-size: 20px;
+                font-family: 'helvetica-neue'; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring .si-static-score-item .si-static-score-item-scr-no {
+                font-size: 36px;
+                font-family: 'helvetica-neue'; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring .si-static-score-item.highlighted .si-static-score-item-time {
+                border: 1px solid #6ca6bc; }
+      .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team.label {
+        position: relative;
+        height: auto;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        text-align: center;
+        font-size: 10px;
+        color: #999999;
+        margin: 5px auto 5px auto; }
+        .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team.label .si-static-team-wrap {
+          right: 0; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team.label .si-static-team-wrap .si-staic-label-col {
+            -webkit-box-flex: 1;
+                -ms-flex: 1 1 0px;
+                    flex: 1 1 0; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team.label .si-static-team-wrap .si-staic-label-col span {
+              display: block;
+              line-height: 1.3;
+              font-family: 'helvetica-neue'; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team.label .si-static-team-wrap .si-staic-label-col:first-child {
+            -ms-flex-preferred-size: 110px;
+                flex-basis: 110px;
+            max-width: 110px;
+            min-width: 110px; }
+      .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col {
+          position: relative;
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%;
+          width: 50%;
+          max-width: 50%; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .arrow:before {
+            position: absolute;
+            top: 25%;
+            left: 5%;
+            content: "";
+            width: 80px;
+            height: 80px;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAB3CAYAAACqsWooAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjlCQTRGNkQyMEE3MDExRTg5OTI2ODgwNzY4MTAxMTkyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjlCQTRGNkQzMEE3MDExRTg5OTI2ODgwNzY4MTAxMTkyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OUJBNEY2RDAwQTcwMTFFODk5MjY4ODA3NjgxMDExOTIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OUJBNEY2RDEwQTcwMTFFODk5MjY4ODA3NjgxMDExOTIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5R5yPeAAAGQElEQVR42uyd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") no-repeat center;
+            background-size: contain;
+            z-index: 0; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .arrow.down:before {
+            -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg); }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-team-branding {
+            position: absolute;
+            display: inline-block;
+            width: 160px;
+            height: 160px;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            padding: 5px;
+            background: #0067b1;
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%); }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-team-branding .si-static-team-brand-name {
+              position: absolute;
+              font-size: 18px;
+              text-transform: uppercase;
+              color: #fff;
+              font-family: 'helvetica-neue';
+              bottom: -10px;
+              left: 50%;
+              -webkit-transform: translate(-50%, 100%);
+                      transform: translate(-50%, 100%); }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-team-branding .si-static-team-brand-logo {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: calc(100% - 20px);
+              height: calc(100% - 20px);
+              border-radius: 50%;
+              background: #fff;
+              -webkit-transform: translate(-50%, -50%);
+                      transform: translate(-50%, -50%);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: contain;
+              -webkit-box-shadow: inset 0 0 25px rgba(0, 0, 0, .5);
+                      box-shadow: inset 0 0 25px rgba(0, 0, 0, .5); }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-kick-wrap {
+            height: 100%;
+            padding: 25px 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -ms-flex-pack: distribute;
+                justify-content: space-around; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-kick-wrap .si-static-kick-item {
+              min-height: 60px;
+              background: #000;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-kick-wrap .si-static-kick-item .si-static-icon-left {
+                margin: 0 15px; }
+                .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-kick-wrap .si-static-kick-item .si-static-icon-left svg {
+                  width: 40px;
+                  height: 40px; }
+                  .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-kick-wrap .si-static-kick-item .si-static-icon-left svg .icon-digit {
+                    font-size: 180px;
+                    font-family: 'Helvetica Neue Bold'; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-kick-wrap .si-static-kick-item .si-static-para {
+                padding: 15px 10px 15px 0;
+                font-size: 12px;
+                font-family: 'Helvetica Neue Light'; }
+      .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 {
+        left: 15px;
+        right: auto;
+        top: auto;
+        bottom: 15px;
+        text-align: left; }
+        .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-details {
+          position: relative;
+          padding-bottom: 11px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-details .si-player-jersey-no, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-details .si-player-data {
+            display: inline-block;
+            text-shadow: 1px 0 rgba(0, 0, 0, .58); }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-details .si-player-jersey-no {
+            font-size: 41px;
+            font-family: 'roboto-bold',sans-serif; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-details .si-player-data {
+            margin-left: 11px; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-details .si-player-data .si-player-name {
+              font-size: 25px;
+              font-family: 'gotham-narrow-black';
+              text-shadow: 1px 0 rgba(0, 0, 0, .58); }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-details .si-player-data .si-player-type {
+              display: inline-block;
+              font-size: 12.5px;
+              font-family: 'gotham_medium';
+              text-shadow: 1px 0 rgba(0, 0, 0, .58); }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-details:before {
+            position: absolute;
+            display: inline-block;
+            width: 110%;
+            height: 1px;
+            content: "";
+            bottom: 0;
+            left: 0;
+            background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(0, 0, 0, .01)));
+            background: linear-gradient(to right, white 0%, rgba(0, 0, 0, .01) 100%); }
+        .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-points {
+          margin-top: 15px;
+          height: 40px;
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-points .si-player-point-item {
+            position: relative;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
+            width: 71px;
+            height: 40px;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            border-top: none; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-points .si-player-point-item:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-points .si-player-point-item:after {
+              position: absolute;
+              width: 25%;
+              content: "";
+              height: 1px;
+              background-color: #fff;
+              top: 0; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-points .si-player-point-item:before {
+              left: 0; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-points .si-player-point-item:after {
+              right: 0; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-points .si-player-point-item + .si-player-point-item {
+              margin-left: 12px; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-points .si-player-point-item .si-player-point-type {
+              font-family: 'gotham_book';
+              font-size: 14px;
+              position: absolute;
+              left: 50%;
+              top: 0;
+              -webkit-transform: translate(-50%, -50%);
+                      transform: translate(-50%, -50%); }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-points .si-player-point-item .si-player-point-count {
+              margin: 0;
+              font-size: 25px;
+              font-family: 'gotham_bold';
+              text-shadow: 1px 0 rgba(0, 0, 0, .58);
+              margin-bottom: 2.5px; }
+      .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 {
+        left: 0;
+        right: auto;
+        top: auto;
+        bottom: 15px;
+        width: 100%;
+        text-align: left; }
+        .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-text-wrap {
+          height: 100%; }
+        .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board {
+          width: 340px;
+          height: 40px;
+          margin: 0 auto; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-board-wrap {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            height: 100%; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side {
+            position: relative;
+            height: 100%; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.left, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.right {
+            -ms-flex-preferred-size: 117px;
+                flex-basis: 117px;
+            background: -webkit-gradient(linear, left top, left bottom, from(#ededed), color-stop(50%, #fdfdfd), to(#ededed));
+            background: linear-gradient(to bottom, #ededed 0%, #fdfdfd 50%, #ededed 100%);
+            -webkit-box-shadow: 0 -2px 2px rgba(0, 0, 0, .2);
+                    box-shadow: 0 -2px 2px rgba(0, 0, 0, .2); }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.left:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.right:before {
+              position: absolute;
+              content: "";
+              width: 40px;
+              height: 100%;
+              top: 0;
+              background: -webkit-gradient(linear, left top, left bottom, from(#ededed), color-stop(50%, #fdfdfd), to(#ededed));
+              background: linear-gradient(to bottom, #ededed 0%, #fdfdfd 50%, #ededed 100%);
+              z-index: 1; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.left .si-static-score-borad-side-wrap, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.right .si-static-score-borad-side-wrap {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              display: -webkit-inline-box;
+              display: -ms-inline-flexbox;
+              display: inline-flex;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              z-index: 2; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.left .si-static-score-borad-side-wrap .si-static-team-points, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.right .si-static-score-borad-side-wrap .si-static-team-points {
+                font-size: 25px;
+                color: #000;
+                font-family: 'gotham-ultra';
+                margin: 0;
+                min-width: 50px; }
+              .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.left .si-static-score-borad-side-wrap .si-static-team-branding, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.right .si-static-score-borad-side-wrap .si-static-team-branding {
+                display: inline-block;
+                -ms-flex-preferred-size: 36.5px;
+                    flex-basis: 36.5px;
+                max-width: 36.5px;
+                min-width: 36.5px;
+                height: 27px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.left {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 30px; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.left:before {
+              right: 0;
+              -webkit-transform: translateX(50%) skewX(40deg);
+                      transform: translateX(50%) skewX(40deg);
+              -webkit-box-shadow: 5px 0 0 0 rgba(0, 0, 0, .1);
+                      box-shadow: 5px 0 0 0 rgba(0, 0, 0, .1); }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.left .si-static-team-branding {
+              margin: 0 15px; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.right {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 30px; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.right:before {
+              left: 0;
+              -webkit-transform: translateX(-50%) skewX(-40deg);
+                      transform: translateX(-50%) skewX(-40deg);
+              -webkit-box-shadow: -5px 0 0 0 rgba(0, 0, 0, .1);
+                      box-shadow: -5px 0 0 0 rgba(0, 0, 0, .1); }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.right .si-static-team-branding {
+              -webkit-box-ordinal-group: 2;
+                  -ms-flex-order: 1;
+                      order: 1;
+              margin: 0 15px; }
+          .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.middle {
+            -ms-flex-item-align: end;
+                align-self: flex-end;
+            height: calc(100% - 5px);
+            -webkit-box-flex: 1;
+                -ms-flex: 1;
+                    flex: 1;
+            background: -webkit-gradient(linear, left top, left bottom, from(#0463a2), color-stop(50%, cyan), to(#034974));
+            background: linear-gradient(to bottom, #0463a2 0%, cyan 50%, #034974 100%);
+            text-align: center;
+            line-height: 35px; }
+            .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.middle .si-static-score-board-label {
+              font-size: 15px;
+              color: #000;
+              font-family: 'gotham_bold'; }
   .si-main .si-col.viewer .si-graphic-actions {
     width: 100%;
     margin-top: 10px;
     height: 82px;
-    background-color: #000000;
     background-color: rgba(0, 0, 0, .1); }
     .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper {
       display: block;
@@ -4752,8 +5572,7 @@ body {
         font-weight: 200;
         height: 100%;
         cursor: pointer; }
-        .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.active, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.active {
-          background-color: #000000;
+        .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.download-active, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.download-active {
           background-color: rgba(0, 0, 0, .2); }
         .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn a, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col a {
           color: #fff;
@@ -4770,11 +5589,11 @@ body {
           cursor: pointer; }
         .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.disabled, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.disabled {
           opacity: 0.5;
-          pointer-events: none;
           -webkit-user-select: none;
              -moz-user-select: none;
               -ms-user-select: none;
-                  user-select: none; }
+                  user-select: none;
+          cursor: default; }
         .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.preview:after, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.preview:after {
           background-image: url(../images/preview.svg); }
         .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.save:after, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.save:after {
@@ -4809,10 +5628,8 @@ body {
             width: 130px;
             height: 40px;
             border-radius: 4px;
-            background-color: #000000;
             background-color: rgba(0, 0, 0, .3);
             -webkit-transform: translateX(-50%);
-                -ms-transform: translateX(-50%);
                     transform: translateX(-50%); }
             .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn .si-btn-area .si-btn-action-tip:before, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col .si-btn-area .si-btn-action-tip:before {
               position: absolute;
@@ -4826,7 +5643,6 @@ body {
               border-left: 5px solid transparent;
               border-right: 5px solid transparent;
               -webkit-transform: translateX(-50%);
-                  -ms-transform: translateX(-50%);
                       transform: translateX(-50%); }
             .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn .si-btn-area .si-btn-action-tip .si-btn-action-tip-item, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col .si-btn-area .si-btn-action-tip .si-btn-action-tip-item {
               margin: 10px 0;
@@ -4940,13 +5756,7 @@ body {
         cursor: pointer;
         padding: 40px 20px; }
         .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-sports .si-infographic-sport-item.selected {
-          background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #ffffff), color-stop(17%, #383838), to(#ffffff));
-          background: -webkit-linear-gradient(top, #ffffff 1%, #383838 17%, #ffffff 100%);
-          background: -o-linear-gradient(top, #ffffff 1%, #383838 17%, #ffffff 100%);
-          background: linear-gradient(to bottom, #ffffff 1%, #383838 17%, #ffffff 100%);
           background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255, 255, 255, 0)), color-stop(17%, rgba(56, 56, 56, .5)), to(rgba(255, 255, 255, 0)));
-          background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 1%, rgba(56, 56, 56, .5) 17%, rgba(255, 255, 255, 0) 100%);
-          background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 1%, rgba(56, 56, 56, .5) 17%, rgba(255, 255, 255, 0) 100%);
           background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 1%, rgba(56, 56, 56, .5) 17%, rgba(255, 255, 255, 0) 100%); }
         .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-sports .si-infographic-sport-item + .si-infographic-sport-item {
           margin-left: 50px; }
@@ -4974,6 +5784,8 @@ body {
           background-image: url(../images/cricket.svg); }
         .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-sports .si-infographic-sport-item.football a:before {
           background-image: url(../images/football.svg); }
+        .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-sports .si-infographic-sport-item.basketball a:before {
+          background-image: url(../images/basketball.svg); }
     .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type {
       margin-top: 15px; }
       .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-selector-title {
@@ -4988,7 +5800,6 @@ body {
           bottom: 0px;
           left: 50%;
           -webkit-transform: translateX(-50%);
-              -ms-transform: translateX(-50%);
                   transform: translateX(-50%); }
       .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-options {
         margin-top: 20px; }
@@ -4998,9 +5809,7 @@ body {
         width: 200px;
         height: 200px;
         float: left;
-        background-color: #000000;
         background-color: rgba(0, 0, 0, .2);
-        border: 1px solid #ffffff;
         border: 1px solid rgba(255, 255, 255, .3);
         -webkit-box-shadow: 0 11px 17px 0px rgba(0, 0, 0, .3);
                 box-shadow: 0 11px 17px 0px rgba(0, 0, 0, .3);
@@ -5036,14 +5845,12 @@ body {
             -webkit-appearance: none;
                -moz-appearance: none;
                     appearance: none;
-            background-color: #000000;
             background-color: rgba(0, 0, 0, .1);
             border: none;
             color: #fff;
             font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
-            border: 1px solid #ffffff;
             border: 1px solid rgba(255, 255, 255, .3); }
             .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item .si-infographic-type-btn .si-get-btn:focus, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item .si-infographic-type-btn .si-get-btn:active {
               outline: 0px; }
@@ -5115,7 +5922,6 @@ body {
       background-position: center center; }
     .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap {
       position: relative;
-      background-color: #000000;
       background-color: rgba(0, 0, 0, .1); }
       .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-effect {
         position: absolute;
@@ -5148,7 +5954,6 @@ body {
         bottom: 0px;
         width: 100%;
         height: 31px;
-        background-color: #000000;
         background-color: rgba(0, 0, 0, .2); }
         .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap {
           padding: 5px;
@@ -5217,10 +6022,8 @@ body {
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
       border-radius: 50%;
-      background-color: #000000;
       background-color: rgba(0, 0, 0, .4);
       opacity: 0; }
     .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-template-item.playing:not(#a) .si-tempalte-thumb-wrap .si-transition-effect video {
@@ -5228,7 +6031,6 @@ body {
     .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap {
       height: 52px;
       padding-bottom: 0px;
-      background-color: #000000;
       background-color: rgba(0, 0, 0, .1);
       padding: 0 15px; }
       .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap .si-audio-controls {
@@ -5245,7 +6047,6 @@ body {
         display: inline-block; }
       .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap .play-btn .btn:before {
         content: "\f04b";
-        color: #ffffff;
         color: rgba(255, 255, 255, .5);
         font-size: 22px; }
       .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap .play-btn .btn.pause:before {
@@ -5285,7 +6086,6 @@ body {
         border: 4px solid #fff;
         border-radius: 50%;
         -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
         -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .3);
                 box-shadow: 0 0 4px rgba(0, 0, 0, .3); }
@@ -5296,7 +6096,6 @@ body {
         top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
         color: #fff;
         text-shadow: 0 0 4px rgba(0, 0, 0, .3); }
@@ -5313,7 +6112,6 @@ body {
     .si-infographic-templates.templates-static:not(#a) .si-template-area .si-template-item .si-template-title {
       display: block;
       height: 30px;
-      background-color: #000000;
       background-color: rgba(0, 0, 0, .1);
       color: #fff;
       text-transform: uppercase;
@@ -5354,14 +6152,8 @@ body {
         bottom: 0px;
         left: 50%;
         -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
                 transform: translateX(-50%);
         height: 2px;
-        background: -webkit-radial-gradient(center, ellipse, #ffffff 0%, #ffffff 100%);
-        background: -o-radial-gradient(center, ellipse, #ffffff 0%, #ffffff 100%);
-        background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff 100%);
-        background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, 0) 100%);
-        background: -o-radial-gradient(center, ellipse, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, 0) 100%);
         background: radial-gradient(ellipse at center, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, 0) 100%); }
       .si-page.login .si-login-section-wrap .si-login-branding .si-logo-brand a {
         display: block;
@@ -5417,7 +6209,6 @@ body {
       background-repeat: no-repeat;
       background-position: center center;
       -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
               transform: translateY(-50%); }
   .si-page.login .si-login-form .si-login-container .si-input-area:not(.submit).username:before {
     background-image: url(../images/user.svg); }
@@ -5435,15 +6226,12 @@ body {
     .si-page.login .si-login-form .si-login-container .si-input-area:not(.submit) .si-input:focus {
       outline: 0px; }
       .si-page.login .si-login-form .si-login-container .si-input-area:not(.submit) .si-input:focus::-webkit-input-placeholder {
-        color: #ffffff;
         color: rgba(255, 255, 255, .5);
         font-size: 18px; }
       .si-page.login .si-login-form .si-login-container .si-input-area:not(.submit) .si-input:focus:-ms-input-placeholder,.si-page.login .si-login-form .si-login-container .si-input-area:not(.submit) .si-input:focus::-ms-input-placeholder {
-        color: #ffffff;
         color: rgba(255, 255, 255, .5);
         font-size: 18px; }
       .si-page.login .si-login-form .si-login-container .si-input-area:not(.submit) .si-input:focus::placeholder {
-        color: #ffffff;
         color: rgba(255, 255, 255, .5);
         font-size: 18px; }
     .si-page.login .si-login-form .si-login-container .si-input-area:not(.submit) .si-input::-webkit-input-placeholder {
@@ -5461,7 +6249,6 @@ body {
   text-align: right; }
   .si-page.login .si-login-form .si-login-container .si-input-area.submit:not(a) input[type="submit"] {
     display: inline-block;
-    background-color: #000000;
     background-color: rgba(0, 0, 0, .1);
     border: 1px solid #fff;
     color: #fff;
@@ -5472,7 +6259,6 @@ body {
     cursor: pointer;
     font-size: 16px; }
     .si-page.login .si-login-form .si-login-container .si-input-area.submit:not(a) input[type="submit"]:hover, .si-page.login .si-login-form .si-login-container .si-input-area.submit:not(a) input[type="submit"]:active {
-      background-color: #000000;
       background-color: rgba(0, 0, 0, .2);
       outline: 0px; }
 
@@ -5482,7 +6268,6 @@ body {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-color: #000000;
   background-color: rgba(0, 0, 0, .85);
   z-index: 9999999999999999; }
   .si-popup .si-popup-wrap {
@@ -5513,7 +6298,6 @@ body {
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
       .si-popup .si-popup-wrap .si-popup-content .si-popup-message {
         margin: 65px 0 40px 0;
@@ -5529,7 +6313,6 @@ body {
           width: 125px;
           height: 34px;
           color: #fff;
-          background-color: #000000;
           background-color: rgba(0, 0, 0, .1);
           border: 1px solid #fff;
           outline: 0px;
@@ -5579,7 +6362,6 @@ body {
             background-color: #a6d067;
             z-index: 1;
             -webkit-transition: left 200ms linear;
-            -o-transition: left 200ms linear;
             transition: left 200ms linear; }
           .si-popup .si-popup-wrap .si-popup-content .si-popup-toggle .si-popup-toggle-control .si-main-toggle input[type="checkbox"]:checked ~ span:before {
             left: 40px; }
@@ -5589,7 +6371,6 @@ body {
           top: 50%;
           color: #a6d067;
           -webkit-transform: translateY(-50%);
-              -ms-transform: translateY(-50%);
                   transform: translateY(-50%);
           cursor: pointer; }
         .si-popup .si-popup-wrap .si-popup-content .si-popup-toggle .si-popup-toggle-control .si-main-toggle label.m {
@@ -5671,7 +6452,6 @@ body {
         top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
         background: url(../images/loading.svg) no-repeat center;
         background-size: cover; }
@@ -5735,7 +6515,6 @@ body {
       background-color: #90c441;
       right: auto;
       -webkit-transform: translate(0);
-          -ms-transform: translate(0);
               transform: translate(0);
       z-index: 777; }
       .proceed-action a {
@@ -5762,13 +6541,7 @@ body {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(1%, #010201), to(#90c441));
-        background: -webkit-linear-gradient(top, transparent 0%, #010201 1%, #90c441 100%);
-        background: -o-linear-gradient(top, transparent 0%, #010201 1%, #90c441 100%);
-        background: linear-gradient(to bottom, transparent 0%, #010201 1%, #90c441 100%);
         background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(1%, rgba(1, 2, 1, 0)), to(rgba(144, 196, 65, .79)));
-        background: -webkit-linear-gradient(top, transparent 0%, rgba(1, 2, 1, 0) 1%, rgba(144, 196, 65, .79) 100%);
-        background: -o-linear-gradient(top, transparent 0%, rgba(1, 2, 1, 0) 1%, rgba(144, 196, 65, .79) 100%);
         background: linear-gradient(to bottom, transparent 0%, rgba(1, 2, 1, 0) 1%, rgba(144, 196, 65, .79) 100%); }
         .si-main .si-mobile-action,.si-main .si-mobile-action .si-action-wrap {
         -webkit-box-align: center;
@@ -5888,7 +6661,6 @@ body {
     .si-main.create-graphic .si-col.si-side-menu .si-sidemenu-wrap {
       width: 95%;
       margin: 0 auto;
-      background-color: #000000;
       background-color: rgba(0, 0, 0, .05); }
     .si-main.create-graphic .si-col.si-side-menu .si-sidemenu-list:after {
       display: block;
@@ -5901,7 +6673,6 @@ body {
       .si-main.create-graphic .si-col.si-side-menu .si-sidemenu-item:after, .si-main.create-graphic .si-col.si-side-menu .si-sidemenu-item:before {
         display: none; }
       .si-main.create-graphic .si-col.si-side-menu .si-sidemenu-item.active {
-        background-color: #000000;
         background-color: rgba(0, 0, 0, .2); }
         .si-main.create-graphic .si-col.si-side-menu .si-sidemenu-item.active:before, .si-main.create-graphic .si-col.si-side-menu .si-sidemenu-item.active:after {
           content: "";
@@ -5915,26 +6686,13 @@ body {
           width: 1px;
           height: 100%;
           -webkit-transform: translateY(0);
-              -ms-transform: translateY(0);
                   transform: translateY(0);
-          background: -webkit-gradient(linear, left top, left bottom, from(#1e5799), color-stop(1%, #1e5799), to(white));
-          background: -webkit-linear-gradient(top, #1e5799 0%, #1e5799 1%, white 100%);
-          background: -o-linear-gradient(top, #1e5799 0%, #1e5799 1%, white 100%);
-          background: linear-gradient(to bottom, #1e5799 0%, #1e5799 1%, white 100%);
           background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 87, 153, 0)), color-stop(1%, rgba(30, 87, 153, .01)), to(white));
-          background: -webkit-linear-gradient(top, rgba(30, 87, 153, 0) 0%, rgba(30, 87, 153, .01) 1%, white 100%);
-          background: -o-linear-gradient(top, rgba(30, 87, 153, 0) 0%, rgba(30, 87, 153, .01) 1%, white 100%);
           background: linear-gradient(to bottom, rgba(30, 87, 153, 0) 0%, rgba(30, 87, 153, .01) 1%, white 100%); }
         .si-main.create-graphic .si-col.si-side-menu .si-sidemenu-item.active:after {
           width: 80%;
           height: 1px;
-          background: -webkit-gradient(linear, left top, right top, from(#1e5799), color-stop(1%, #1e5799), to(white));
-          background: -webkit-linear-gradient(left, #1e5799 0%, #1e5799 1%, white 100%);
-          background: -o-linear-gradient(left, #1e5799 0%, #1e5799 1%, white 100%);
-          background: linear-gradient(to right, #1e5799 0%, #1e5799 1%, white 100%);
           background: -webkit-gradient(linear, left top, right top, from(rgba(30, 87, 153, 0)), color-stop(1%, rgba(30, 87, 153, .01)), to(white));
-          background: -webkit-linear-gradient(left, rgba(30, 87, 153, 0) 0%, rgba(30, 87, 153, .01) 1%, white 100%);
-          background: -o-linear-gradient(left, rgba(30, 87, 153, 0) 0%, rgba(30, 87, 153, .01) 1%, white 100%);
           background: linear-gradient(to right, rgba(30, 87, 153, 0) 0%, rgba(30, 87, 153, .01) 1%, white 100%); }
         .si-main.create-graphic .si-col.si-side-menu .si-sidemenu-item.active:nth-child(even):before {
           left: 0;
@@ -5942,13 +6700,7 @@ body {
         .si-main.create-graphic .si-col.si-side-menu .si-sidemenu-item.active:nth-child(even):after {
           left: 0;
           right: auto;
-          background: -webkit-gradient(linear, left top, right top, from(white), color-stop(1%, #ffffff), to(#ffffff));
-          background: -webkit-linear-gradient(left, white 0%, #ffffff 1%, #ffffff 100%);
-          background: -o-linear-gradient(left, white 0%, #ffffff 1%, #ffffff 100%);
-          background: linear-gradient(to right, white 0%, #ffffff 1%, #ffffff 100%);
           background: -webkit-gradient(linear, left top, right top, from(white), color-stop(1%, rgba(255, 255, 255, .99)), to(rgba(255, 255, 255, 0)));
-          background: -webkit-linear-gradient(left, white 0%, rgba(255, 255, 255, .99) 1%, rgba(255, 255, 255, 0) 100%);
-          background: -o-linear-gradient(left, white 0%, rgba(255, 255, 255, .99) 1%, rgba(255, 255, 255, 0) 100%);
           background: linear-gradient(to right, white 0%, rgba(255, 255, 255, .99) 1%, rgba(255, 255, 255, 0) 100%); }
       .si-main.create-graphic .si-col.si-side-menu .si-sidemenu-item a {
         border-bottom: none; }
@@ -6036,13 +6788,7 @@ body {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      background: -webkit-gradient(linear, left top, left bottom, from(#90e121), color-stop(79%, #90e121), color-stop(99%, #ffffff), to(#ffffff));
-      background: -webkit-linear-gradient(top, #90e121 0%, #90e121 79%, #ffffff 99%, #ffffff 100%);
-      background: -o-linear-gradient(top, #90e121 0%, #90e121 79%, #ffffff 99%, #ffffff 100%);
-      background: linear-gradient(to bottom, #90e121 0%, #90e121 79%, #ffffff 99%, #ffffff 100%);
       background: -webkit-gradient(linear, left top, left bottom, from(#90e121), color-stop(79%, rgba(144, 225, 33, .21)), color-stop(99%, rgba(255, 255, 255, .01)), to(rgba(255, 255, 255, 0)));
-      background: -webkit-linear-gradient(top, #90e121 0%, rgba(144, 225, 33, .21) 79%, rgba(255, 255, 255, .01) 99%, rgba(255, 255, 255, 0) 100%);
-      background: -o-linear-gradient(top, #90e121 0%, rgba(144, 225, 33, .21) 79%, rgba(255, 255, 255, .01) 99%, rgba(255, 255, 255, 0) 100%);
       background: linear-gradient(to bottom, #90e121 0%, rgba(144, 225, 33, .21) 79%, rgba(255, 255, 255, .01) 99%, rgba(255, 255, 255, 0) 100%); }
     .si-page.login .si-login-section-wrap > div[class*='si'] {
       float: none; }

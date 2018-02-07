@@ -226,6 +226,19 @@ $font:'Roboto',sans-serif;
 }
 
 @font-face {
+    font-family:'roboto-bold';
+    src: url('../fonts/Roboto-Bold.eot');
+  	src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+  		url('../fonts/Roboto-Bold.woff') format('woff'),
+  		url('../fonts/Roboto-Bold.ttf') format('truetype'),
+  		url('../fonts/Roboto-Bold.otf') format('opentype'),
+  		url('../fonts/Roboto-Bold.svg#Roboto Medium') format('svg');
+      font-style: normal;
+      font-stretch: normal;
+      unicode-range: U+0020-2044;
+}
+
+@font-face {
     font-family: 'gotham_ultra-italic';
     src: url('../fonts/gotham_ultra_italic-webfont.eot');
 }
@@ -239,6 +252,7 @@ $font:'Roboto',sans-serif;
     font-style: normal;
 
 }
+
 @font-face {
 
     font-family: 'gotham_book';
@@ -306,6 +320,33 @@ $font:'Roboto',sans-serif;
 }
 
 @font-face {
+    font-family:'gotham-narrow-black';
+    src: url('../fonts/GothamNarrow-Black.eot');
+	  src: url('../fonts/GothamNarrow-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamNarrow-Black.woff') format('woff'),
+		url('../fonts/GothamNarrow-Black.ttf') format('truetype'),
+		url('../fonts/GothamNarrow-Black.otf') format('opentype'),
+		url('../fonts/GothamNarrow-Black.svg#GothamNarrow-Black') format('svg');
+    font-weight: 450;
+    font-style: normal;
+    font-stretch: condensed;
+    unicode-range: U+0020-00FE;
+}
+
+@font-face {
+    font-family:'gotham-ultra';
+    src: url('../fonts/Gotham-Ultra.eot');
+	src: url('../fonts/Gotham-Ultra.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gotham-Ultra.woff') format('woff'),
+		url('../fonts/Gotham-Ultra.ttf') format('truetype'),
+		url('../fonts/Gotham-Ultra.otf') format('opentype'),
+		url('../fonts/Gotham-Ultra.svg#Gotham-Ultra') format('svg');
+    font-weight: 450;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+@font-face {
 
     font-family:'Mangal';
     src: url('../fonts/Mangal.eot');
@@ -337,6 +378,186 @@ $font:'Roboto',sans-serif;
       unicode-range: U+0020-00FE;
 }
 
+@font-face {
+    font-family:'helvetica-neue';
+    src: url('../fonts/Helvetica-Neue-Condensed Bold.eot');
+	src: url('../fonts/Helvetica-Neue-Condensed Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Helvetica-Neue-Condensed Bold.woff') format('woff'),
+		url('../fonts/Helvetica-Neue-Condensed Bold.ttf') format('truetype'),
+		url('../fonts/Helvetica-Neue-Condensed Bold.otf') format('opentype'),
+		url('../fonts/Helvetica-Neue-Condensed Bold.svg#Helvetica Neue Condensed Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: condensed;
+    unicode-range: U+0-10FFFF;
+}
+
 .hindi {
   font-family: 'Mangal';
+}
+
+
+@font-face {
+    font-family: 'Digital Medium';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/digital-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Digital ICG';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/digitalicg-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Digital';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/digitalfont-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  
+    font-family: 'Helvetica Neue Bold';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'Helvetica Neue Bold Condensed';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-boldcond-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Roman';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-roman-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/Helvetica-Neue-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Ultralight Tital';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultralightital-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Ultralight';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultralight-webfont.eot');
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultralight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Ultralight Extended Oblique';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultraligextobl-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Ultralight Extended';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultraligext-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Ultralight Condensed';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultraligcond-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Ultralight Condensed Oblique';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultraligcondobl-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DS Digital Italic';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/ds-digii-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DS Digital Bold';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/ds-digib-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DS Digital';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/ds-digi-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DS Digital Bold Italic';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/ds-digit-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Bold Italic';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/HelveticaNeue-BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Play Bold';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/Play-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Thin';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Condensed';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-thincond-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Condensed Oblique';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-thincondobl-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Extended';
+    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-thinext-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
