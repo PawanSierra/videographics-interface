@@ -43,6 +43,7 @@
       @extend .clearfix;
     }
     .si-login-branding {
+
       border-radius: 5px;
       height:100%;
       background-color:$secondary-color;
@@ -124,6 +125,7 @@
       margin-bottom: 68px;
     }
     .si-login-container {
+
       .si-input-area:not(.submit) {
         position: relative;
         height:34px;
@@ -131,7 +133,9 @@
           margin-top:20px;
         }
         &:not(:last-child) {
+
           border-bottom: 1px solid rgba(255,255,255,1);
+
           &:before {
             position: absolute;
             top:50%;
@@ -144,6 +148,7 @@
             background-position: center center;
             transform: translateY(-50%);
           }
+
         }
         &.username:before {
           background-image: url(../images/user.svg);

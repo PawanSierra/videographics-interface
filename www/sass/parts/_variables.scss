@@ -5,10 +5,18 @@ $border-color:#66704c;
 
 :root {
 
+  // theme variables
   --primary-color:#71797e;
   --secondary-color:#90c441;
   --font-color:#fff;
   --border-color:#66704c;
   --background-color:#eaeaea;
+
+  // break points
+  --mobile:768px;
+  --ipad:1034px;
+  --desktop:1366px;
+  --large-desktop:1920px;
+
 
 }

@@ -45,6 +45,7 @@
         margin-bottom:0px;
       }
       @media (max-width: 768px) {
+
         height: calc(100% - 65px);
         overflow-y: auto;
         margin-bottom: 0px;
@@ -137,7 +138,6 @@
                   left:0;
                   background-repeat: no-repeat;
                   background-position: center 15px;
-
                 }
                 video {
                   opacity: 0;

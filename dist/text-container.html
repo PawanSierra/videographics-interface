@@ -1,50 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Text Container</title>
-  <style>
-  * {
-    margin:0;
-    padding:0;
-  }
-  @font-face {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text Container</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-      font-family:'Mangal';
-      src: url('fonts/Mangal.eot');
-  	  src: url('fonts/Mangal.eot?#iefix') format('embedded-opentype'),
-  		url('fonts/Mangal.woff') format('woff'),
-  		url('fonts/Mangal.ttf') format('truetype'),
-  		url('fonts/Mangal.otf') format('opentype'),
-  		url('fonts/Mangal.svg#Mangal') format('svg');
-      font-weight: 400;
-      font-style: normal;
-      font-stretch: normal;
-      unicode-range: U+0020-0912;
+        @font-face {
+            font-family: 'Mangal';
+            src: url('fonts/Mangal.eot');
+            src: url('fonts/Mangal.eot?#iefix') format('embedded-opentype'), url('fonts/Mangal.woff') format('woff'), url('fonts/Mangal.ttf') format('truetype'), url('fonts/Mangal.otf') format('opentype'), url('fonts/Mangal.svg#Mangal') format('svg');
+            font-weight: 400;
+            font-style: normal;
+            font-stretch: normal;
+            unicode-range: U+0020-0912;
+        }
 
-  }
-  body {
-    font-size: 16px;
-    font-family:'Mangal';
-  }
-  .container {
-    width:1280px;
-    height:auto;
-    margin:0 auto;
-  }
-  .text-img {
-    word-wrap: break-word;
-    color:#fff;
-  }
-  </style>
+        @font-face {
+            font-family: 'gotham_ultra-italic';
+            src: url("../fonts/gotham_ultra_italic-webfont.eot");
+        }
+
+        @font-face {
+            font-family: 'gotham_ultra-italic';
+            src: url("../fonts/gotham_ultra_italic-webfont.woff") format("woff"), url("../fonts/gotham_ultra_italic-webfont.ttf") format("truetype"), url("../fonts/gotham_ultra_italic-webfont.svg#gotham_ultraitalic") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'gotham_book';
+            src: url("../fonts/Gotham-Book.eot");
+        }
+
+        @font-face {
+            font-family: 'gotham_book';
+            src: url("../fonts/Gotham-Book.woff") format("woff"), url("../fonts/Gotham-Book.ttf") format("truetype"), url("../fonts/Gotham-Book.svg") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'gotham_black';
+            src: url("../fonts/Gotham-Black.eot") format("embedded-opentype");
+        }
+
+        @font-face {
+            font-family: 'gotham_black';
+            src: url("../fonts/Gotham-Black.woff") format("woff"), url("../fonts/Gotham-Black.ttf") format("truetype"), url("../fonts/Gotham-Black.svg") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'gotham_medium';
+            src: url("../fonts/Gotham-Medium.woff") format("woff"), url("../fonts/Gotham-Medium.eot") format("embedded-opentype"), url("../fonts/Gotham-Medium.ttf") format("truetype"), url("../fonts/Gotham-Medium.svg") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'gotham_light';
+            src: url("../fonts/Gotham-Light.woff") format("woff"), url("../fonts/Gotham-Light.eot") format("embedded-opentype"), url("../fonts/Gotham-Light.ttf") format("truetype"), url("../fonts/Gotham-Light.svg") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'gotham-book-italic';
+            src: url('../fonts/Gotham-BookItalic.woff') format('woff'), url('../fonts/Gotham-BookItalic.eot') format('embedded-opentype'), url('../fonts/Gotham-BookItalic.ttf') format('truetype'), url('../fonts/Gotham-BookItalic.otf') format('opentype'), url('../fonts/Gotham-BookItalic.svg') format('svg');
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: 'gotham_bold';
+            src: url("../fonts/Gotham-Bold.eot");
+            src: url("../fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Bold.woff2") format("woff2"), url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype"), url("../fonts/Gotham-Bold.otf") format("opentype"), url("../fonts/Gotham-Bold.svg#Gotham Bold") format("svg");
+            font-weight: 700;
+            font-style: normal;
+            font-stretch: normal;
+            unicode-range: U+0020-00FE;
+        }
+
+        @font-face {
+            font-family: 'gotham-narrow-black';
+            src: url('../fonts/GothamNarrow-Black.eot');
+            src: url('../fonts/GothamNarrow-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamNarrow-Black.woff') format('woff'), url('../fonts/GothamNarrow-Black.ttf') format('truetype'), url('../fonts/GothamNarrow-Black.otf') format('opentype'), url('../fonts/GothamNarrow-Black.svg#GothamNarrow-Black') format('svg');
+            font-weight: 450;
+            font-style: normal;
+            font-stretch: condensed;
+            unicode-range: U+0020-00FE;
+        }
+
+        @font-face {
+            font-family: 'roboto-bold';
+            src: url('../fonts/Roboto-Bold.eot');
+            src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Bold.woff') format('woff'), url('../fonts/Roboto-Bold.ttf') format('truetype'), url('../fonts/Roboto-Bold.otf') format('opentype'), url('../fonts/Roboto-Bold.svg#Roboto Medium') format('svg');
+            font-style: normal;
+            font-stretch: normal;
+            unicode-range: U+0020-2044;
+        }
+
+        @font-face {
+            font-family: 'gotham-ultra';
+            src: url('../fonts/Gotham-Ultra.eot');
+            src: url('../fonts/Gotham-Ultra.eot?#iefix') format('embedded-opentype'), url('../fonts/Gotham-Ultra.woff') format('woff'), url('../fonts/Gotham-Ultra.ttf') format('truetype'), url('../fonts/Gotham-Ultra.otf') format('opentype'), url('../fonts/Gotham-Ultra.svg#Gotham-Ultra') format('svg');
+            font-weight: 450;
+            font-style: normal;
+            font-stretch: normal;
+            unicode-range: U+0020-00FE;
+        }
+
+        @font-face {
+            font-family: 'helvetica-neue';
+            src: url('../fonts/Helvetica-Neue-Condensed Bold.eot');
+            src: url('../fonts/Helvetica-Neue-Condensed Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Helvetica-Neue-Condensed Bold.woff') format('woff'), url('../fonts/Helvetica-Neue-Condensed Bold.ttf') format('truetype'), url('../fonts/Helvetica-Neue-Condensed Bold.otf') format('opentype'), url('../fonts/Helvetica-Neue-Condensed Bold.svg#Helvetica Neue Condensed Bold') format('svg');
+            font-weight: 700;
+            font-style: normal;
+            font-stretch: condensed;
+            unicode-range: U+0-10FFFF;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue Bold';
+            src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-bold-webfont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue Light';
+            src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/Helvetica-Neue-Light.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Digital';
+            src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/digitalfont-webfont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-size: 16px;
+            font-family: 'Mangal';
+        }
+
+        .container {
+            width: 1280px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .text-img {
+            word-wrap: break-word;
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <p class="text-img"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Iste maiores quia veniam libero quibusdam! Ducimus doloribus repellendus iusto ad iure dolores sunt fuga,
-       itaque a at amet deserunt impedit suscipit.</p>
-  </div>
+    <div class="container">
+        <p class="text-img"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste maiores quia veniam libero quibusdam! Ducimus doloribus repellendus iusto ad iure dolores sunt fuga, itaque a at amet deserunt impedit suscipit.</p>
+    </div>
 </body>
+
 </html>

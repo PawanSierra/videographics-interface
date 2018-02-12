@@ -14,10 +14,14 @@ let fs = require("fs"),
     mqpacker = require("css-mqpacker"),
     merge = require("postcss-merge-rules"),
     cssnext = require("postcss-cssnext"),
-    ssync = require("gulp-scp");
+    ssync = require("gulp-scp"),
+    htmlbeautify = require("gulp-html-beautify"),
+    customselector = require('postcss-custom-selectors');
 
 
-let plugins = [cssnext({ features:{ customProperties:{ preserve:true } , grid:true  }  }),orderValues(),mqpacker(),merge()]; //,merge_long() autoprefixer({browsers: "last 6 versions", grid:true})
+
+
+let plugins = [cssnext({ features:{ customProperties:{ preserve:true } , grid:true  }  }),customselector(),orderValues(),mqpacker(),merge()]; //,merge_long() autoprefixer({browsers: "last 6 versions", grid:true})
 
  //autoprefixer({browsers: "last 5 versions" , grid:true })
 
@@ -61,6 +65,7 @@ gulp.task('reload',function(){
 });
 gulp.task('production',function() {
 
+
   let imagesminify =  gulp.src("www/images/*")
                           .pipe(imagemin({ progressive: true, optimizationLevel:5, removeViewBox: true }))
                           .pipe(gulp.dest("dist/images/"));
@@ -76,12 +81,18 @@ gulp.task('production',function() {
                           .pipe(gulp.dest("dist/css/"));
 
 
+  let htmlbeauty = gulp.src('www/*.html')
+                          .pipe(htmlbeautify({indentSize: 2}))
+                          .pipe(gulp.dest('dist/'));
 
 
-  return [files_sync,imagesminify,cssminify];
+
+
+  return [files_sync,imagesminify,cssminify,htmlbeauty];
 
 
 });
+
 
 
 gulp.task('watch',function(){
