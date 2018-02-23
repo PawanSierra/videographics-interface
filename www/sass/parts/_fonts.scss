@@ -379,9 +379,10 @@ $font:'Roboto',sans-serif;
 }
 
 @font-face {
+
     font-family:'helvetica-neue';
     src: url('../fonts/Helvetica-Neue-Condensed Bold.eot');
-	src: url('../fonts/Helvetica-Neue-Condensed Bold.eot?#iefix') format('embedded-opentype'),
+	  src: url('../fonts/Helvetica-Neue-Condensed Bold.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/Helvetica-Neue-Condensed Bold.woff') format('woff'),
 		url('../fonts/Helvetica-Neue-Condensed Bold.ttf') format('truetype'),
 		url('../fonts/Helvetica-Neue-Condensed Bold.otf') format('opentype'),
@@ -399,29 +400,29 @@ $font:'Roboto',sans-serif;
 
 @font-face {
     font-family: 'Digital Medium';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/digital-webfont.ttf') format('truetype');
+    src: url('../fonts/digital-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Digital ICG';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/digitalicg-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
+// @font-face {
+//     font-family: 'Digital ICG';
+//     src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/digitalicg-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+//
 @font-face {
     font-family: 'Digital';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/digitalfont-webfont.ttf') format('truetype');
+    src: url('../fonts/digitalfont-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-  
+
     font-family: 'Helvetica Neue Bold';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-bold-webfont.ttf') format('truetype');
+    src: url('../fonts/helveticaneue-bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -429,135 +430,136 @@ $font:'Roboto',sans-serif;
 @font-face {
 
     font-family: 'Helvetica Neue Bold Condensed';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-boldcond-webfont.ttf') format('truetype');
+    src: url('../fonts/helveticaneue-boldcond-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Helvetica Neue Roman';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-roman-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Helvetica Neue Roman';
+//     src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-roman-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
 @font-face {
+
     font-family: 'Helvetica Neue Light';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/Helvetica-Neue-Light.ttf') format('truetype');
+    src: url('../fonts/Helvetica-Neue-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Helvetica Ultralight Tital';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultralightital-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Helvetica Ultralight Tital';
+//     src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultralightital-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'Helvetica Ultralight';
+//     src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultralight-webfont.eot');
+//     src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultralight-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
-@font-face {
-    font-family: 'Helvetica Ultralight';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultralight-webfont.eot');
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultralight-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Helvetica Ultralight Extended Oblique';
+//     src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultraligextobl-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
-@font-face {
-    font-family: 'Helvetica Ultralight Extended Oblique';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultraligextobl-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Helvetica Ultralight Extended';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultraligext-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Helvetica Ultralight Extended';
+//     src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultraligext-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
 @font-face {
     font-family: 'Helvetica Ultralight Condensed';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultraligcond-webfont.ttf') format('truetype');
+    src: url('../fonts/helveticaneue-ultraligcond-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Helvetica Ultralight Condensed Oblique';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultraligcondobl-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Helvetica Ultralight Condensed Oblique';
+//     src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-ultraligcondobl-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
-@font-face {
-    font-family: 'DS Digital Italic';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/ds-digii-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'DS Digital Italic';
+//     src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/ds-digii-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
-@font-face {
-    font-family: 'DS Digital Bold';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/ds-digib-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'DS Digital Bold';
+//     src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/ds-digib-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
-@font-face {
-    font-family: 'DS Digital';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/ds-digi-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'DS Digital';
+//     src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/ds-digi-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
-@font-face {
-    font-family: 'DS Digital Bold Italic';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/ds-digit-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Helvetica Neue Bold Italic';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/HelveticaNeue-BoldItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Play Bold';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/Play-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Helvetica Neue Thin';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-thin-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-}
+// @font-face {
+//     font-family: 'DS Digital Bold Italic';
+//     src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/ds-digit-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'Helvetica Neue Bold Italic';
+//     src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/HelveticaNeue-BoldItalic.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'Play Bold';
+//     src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/Play-Bold.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'Helvetica Neue Thin';
+//     src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
 
 @font-face {
     font-family: 'Helvetica Neue Condensed';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-thincond-webfont.ttf') format('truetype');
+    src: url('../fonts/helveticaneue-thincond-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Helvetica Neue Condensed Oblique';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-thincondobl-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Helvetica Neue Extended';
-    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-thinext-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Helvetica Neue Condensed Oblique';
+//     src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-thincondobl-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'Helvetica Neue Extended';
+//     src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-thinext-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }

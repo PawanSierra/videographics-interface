@@ -2,7 +2,7 @@
   width:100%;
   padding-top:30px;
   @media (max-width: 768px) {
-    padding-top:10px;
+    padding-top:5px;
     height:100%;
   }
   .si-infographic-templates-wrap {
@@ -20,10 +20,12 @@
         @extend .clearfix;
       }
       .si-tab-col {
+
         width:33.33%;
         float:left;
         padding:10px 0;
         margin-bottom: -2.5px;
+
         a {
           display: block;
           text-align: center;
@@ -371,6 +373,7 @@
               box-shadow: 0 17px 11px 0px rgba(0,0,0,.20);
             }
             &:before {
+
               position: absolute;
               top:50%;
               left:50%;
@@ -381,8 +384,10 @@
               border-radius: 50%;
               transform: translate(-50%,-50%);
               box-shadow: 0 0 4px rgba(0,0,0,.30);
+
             }
             &:after {
+
               position: absolute;
               @extend .fontAwesome;
               content:"\f00c";
@@ -392,6 +397,7 @@
               transform: translate(-50%,-50%);
               color:#fff;
               text-shadow: 0 0 4px rgba(0,0,0,.30);
+
             }
           }
         }

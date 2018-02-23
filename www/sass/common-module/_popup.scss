@@ -37,6 +37,9 @@
     .si-popup-content {
       position: absolute;
       width:45%;
+      @media (max-width: 768px) {
+        width:80%;
+      }
       background-color: $primary-color;
       top:50%;
       left:50%;

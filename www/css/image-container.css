@@ -160,26 +160,26 @@ body ,html {
 		@font-face {
 
 		    font-family: 'Helvetica Neue Bold Condensed';
-		    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-boldcond-webfont.ttf') format('truetype');
+		    src: url('../fonts/helveticaneue-boldcond-webfont.ttf') format('truetype');
 		    font-weight: normal;
 		    font-style: normal;
 		}
 		@font-face {
 
 		    font-family: 'Helvetica Neue Bold';
-		    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/helveticaneue-bold-webfont.ttf') format('truetype');
+		    src: url('../fonts/helveticaneue-bold-webfont.ttf') format('truetype');
 		    font-weight: normal;
 		    font-style: normal;
 		}
 		@font-face {
 		    font-family: 'Helvetica Neue Light';
-		    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/Helvetica-Neue-Light.ttf') format('truetype');
+		    src: url('../fonts/Helvetica-Neue-Light.ttf') format('truetype');
 		    font-weight: normal;
 		    font-style: normal;
 		}
 		@font-face {
 		    font-family: 'Digital';
-		    src: url('https://mocap-static.s3.amazonaws.com/cards_static/fonts/digitalfont-webfont.ttf') format('truetype');
+		    src: url('../fonts/digitalfont-webfont.ttf') format('truetype');
 		    font-weight: normal;
 		    font-style: normal;
 		}
@@ -494,10 +494,12 @@ body ,html {
 							word-wrap: break-word;
 						 }
 .si-grpahic-container .si-static-text-overlay.bottom-text {
+
 						width: 90%;
 						bottom: 20px;
 						left: 50%;
 						top: auto;
+						text-align: left;
 						-webkit-transform: translateX(-50%);
 								-ms-transform: translateX(-50%);
 										transform: translateX(-50%); }
@@ -519,6 +521,7 @@ body ,html {
 						top: auto;
 						right: auto;
 						left: 0;
+						text-align: left;
 						/* background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.8)));
 						background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
 						background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
@@ -543,6 +546,7 @@ body ,html {
 						top: 0;
 						height: 100%;
 						right: auto;
+						text-align: left;
 						/* background: -webkit-gradient(linear, right top, left top, from(transparent), to(rgba(0, 0, 0, 0.5)));
 						background: -webkit-linear-gradient(right, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
 						background: -o-linear-gradient(right, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
@@ -913,12 +917,12 @@ body ,html {
 											height: 328px;
 											border-radius: 50%;
 											border: 6px solid #fff;
-											background-image: url(http://placehold.it/500x500);
-											background-repeat: no-repeat;
-											background-position: center center;
-											background-size: cover;
-											-webkit-box-shadow: inset 0 0 100px 0 rgba(0, 0, 0, 0.5);
-															box-shadow: inset 0 0 100px 0 rgba(0, 0, 0, 0.5);
+											background:url(http://placehold.it/500x500) , blue;
+						          background-repeat: no-repeat;
+						          background-position: -70px center;
+						          background-size: 200px 200px;
+											-webkit-box-shadow: inset 0 0 100px 0 rgba(0, 0, 0, 0.8);
+															box-shadow: inset 0 0 100px 0 rgba(0, 0, 0, 0.8);
 											z-index:1;
 											 }
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-player:before {
@@ -1064,10 +1068,10 @@ body ,html {
 															overflow: hidden;
 															-webkit-box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
 																			box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
-															background-image: url(http://placehold.it/500x500);
-															background-repeat: no-repeat;
-															background-position: center center;
-															background-size: cover; }
+																			background: url(http://placehold.it/500x500), red;
+				                  		background-repeat: no-repeat;
+				                  		background-position: -40px center;
+				                  		background-size:100px 100px; }
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item .si-similar-player-warp .si-static-player-profile:before {
 																content: "";
 																position: absolute;
@@ -1180,8 +1184,8 @@ body ,html {
 															border-radius: 50%;
 															-webkit-transform: translate(-50%, -50%);
 																			transform: translate(-50%, -50%);
-															-webkit-box-shadow: inset 0 0 40px rgba(0, 0, 0, .5);
-																			box-shadow: inset 0 0 40px rgba(0, 0, 0, .5); }
+															-webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .8);
+																			box-shadow: inset 0 0 100px rgba(0, 0, 0, .8); }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring {
 														-webkit-box-flex: 1;
@@ -1237,8 +1241,11 @@ body ,html {
 															margin: 10px auto 20px auto; }
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring .si-static-score-item .si-static-score-item-label {
 															font-size: 30px;
+															height:30px;
 															font-family: 'helvetica-neue';
-															color: #fff; }
+															color: #fff;
+															text-transform: uppercase;
+														 }
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring .si-static-score-item .si-static-score-item-time {
 															width: 100px;
 															height: 100px;
@@ -1269,9 +1276,11 @@ body ,html {
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team.label .si-static-team-wrap {
 												right: 0; }
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team.label .si-static-team-wrap .si-staic-label-col {
-													-webkit-box-flex: 1;
-															-ms-flex: 1 1 0px;
-																	flex: 1 1 0; }
+											-webkit-box-flex: 1;
+										-ms-flex: 1 1 0px;
+										-webkit-flex: 1 1 0;
+										flex: 1 1 0;
+									}
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team.label .si-static-team-wrap .si-staic-label-col span {
 														display: block;
 														line-height: 1.3;
@@ -1350,8 +1359,8 @@ body ,html {
 																	background-repeat: no-repeat;
 																	background-position: center center;
 																	background-size: contain;
-																	-webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
-										                      box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+																	-webkit-box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.8);
+										                      box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.8);
 
 																 }
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-kick-wrap {
@@ -1454,17 +1463,41 @@ body ,html {
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-game-points .si-static-rank-warp {
 																	 		height: 140px;
 																	 		background: #000;
-																	 		display: -webkit-box;
-																	 		display: -ms-flexbox;
-																	 		display: flex;
-																	 		-webkit-box-align: center;
-																	 				-ms-flex-align: center;
-																	 						align-items: center;
-																	 		-ms-flex-pack: distribute;
-																	 				justify-content: space-around;
+																			display: -webkit-box;
+																			display: -ms-flexbox;
+																			display: -webkit-flex;
+																			display: flex;
+																			-webkit-box-align: center;
+																			-ms-flex-align: center;
+																			-webkit-align-items: center;
+																			align-items: center;
+																			-ms-flex-pack: distribute;
+																			-webkit-justify-content: space-around;
+																			justify-content: space-around;
 																	 		font-size: 20px;
 																	 		font-family: 'Helvetica Neue Bold Condensed';
 																	 		text-transform: uppercase; }
+
+.si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-game-points .si-static-rank-warp .si-static-rank-graphic {
+																				-ms-flex-preferred-size: 136px;
+																						flex-basis: 136px;
+																				width: 136px;
+																				max-width: 136px;
+																				height: 100px; }
+.si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-game-points .si-static-rank-warp .si-static-rank-graphic svg .st0 {
+																					fill: #04175B; }
+.si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-game-points .si-static-rank-warp .si-static-rank-graphic svg text {
+																					font-family: 'Helvetica Neue Bold Condensed'; }
+.si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-game-points .si-static-rank-warp .si-static-rank-graphic svg .si-static-rank-graphic-no {
+																					font-size: 274px; }
+.si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-game-points .si-static-rank-warp .si-static-rank-graphic svg .si-static-rank-graphic-sup {
+																					font-size: 98px; }
+.si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-game-points .si-static-rank-warp .si-static-rank-graphic svg .st4 {
+																					fill: #FFFFFF; }
+.si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-game-points .si-static-rank-warp .si-static-rank-graphic svg .st5 {
+																					fill: #008A98; }
+.si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-game-points .si-static-rank-warp .si-static-rank-graphic svg .st6 {
+																					fill: #DADEE0; }
 
 .si-spider-graphic {
 	position: absolute;

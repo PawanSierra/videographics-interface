@@ -123,6 +123,9 @@
       font-size: 28px;
       font-weight: 600;
       margin-bottom: 68px;
+      @media (max-width: 768px) {
+        margin-bottom: 40px;
+      }
     }
     .si-login-container {
 

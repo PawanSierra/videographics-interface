@@ -22,6 +22,7 @@
   "devDependencies": {
     "css-mqpacker": "^6.0.1",
     "gulp-html-beautify": "^1.0.1",
+    "postcss-clip-path-polyfill": "^1.0.4",
     "postcss-merge-rules": "^2.1.2"
   },
   "scripts": {

@@ -39,6 +39,7 @@ body {
   text-overflow: ellipsis;
 }
 %d-flex {
+
   display: flex;
 }
 %align-center {
@@ -48,11 +49,18 @@ body {
   justify-content: center;
 }
 %justify-between {
+
   justify-content: space-between;
 }
 %justify-around {
+
   justify-content: space-around;
+
 }
+%align-start {
+  align-items: flex-start;
+}
+
 .si-selectoption {
   position: relative;
   height:20px;
@@ -66,7 +74,20 @@ body {
     color:#4a4a4a;
     text-transform: uppercase;
     z-index: 2;
+    @media (max-width: 768px) {
+      opacity:1;
+      display: block;
+      background: transparent;
+      color:#fff;
+      appearance:none;
 
+    }
+
+  }
+  @media (max-width:  768px) {
+    .CaptionCont {
+      display: none;
+    }
   }
   .select-out {
 

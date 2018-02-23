@@ -17,13 +17,14 @@ let fs = require("fs"),
     ssync = require("gulp-scp"),
     htmlbeautify = require("gulp-html-beautify"),
     customselector = require('postcss-custom-selectors');
+    //clip_path = require("postcss-clip-path-polyfill");
 
 
+let prefixer = autoprefixer({browsers: "last 5 versions" , grid:true }); //clip_path()
+
+let plugins = [cssnext({ features:{ customProperties:{ preserve:true }, grid:true  } }),customselector(),orderValues(),mqpacker(),merge()]; //,merge_long() autoprefixer({browsers: "last 6 versions", grid:true})
 
 
-let plugins = [cssnext({ features:{ customProperties:{ preserve:true } , grid:true  }  }),customselector(),orderValues(),mqpacker(),merge()]; //,merge_long() autoprefixer({browsers: "last 6 versions", grid:true})
-
- //autoprefixer({browsers: "last 5 versions" , grid:true })
 
 
 
@@ -63,6 +64,8 @@ gulp.task('reload',function(){
   return gulp.src("*")
               .pipe(connect.reload());
 });
+
+
 gulp.task('production',function() {
 
 
@@ -70,18 +73,18 @@ gulp.task('production',function() {
                           .pipe(imagemin({ progressive: true, optimizationLevel:5, removeViewBox: true }))
                           .pipe(gulp.dest("dist/images/"));
 
-  let files_sync =  gulp.src("")
+  let files_sync   =  gulp.src("")
                           .pipe(sync('www/','dist/',{ printSummary:true , ignore:"sass"}))
                           .on('error',function(){
                                 console.log("Something went wrong with files sync!");
                           });
 
-  let cssminify = gulp.src('dist/css/*.css')
+  let cssminify    = gulp.src('dist/css/*.css')
                           .pipe(cleancss())
                           .pipe(gulp.dest("dist/css/"));
 
 
-  let htmlbeauty = gulp.src('www/*.html')
+  let htmlbeauty   = gulp.src('www/*.html')
                           .pipe(htmlbeautify({indentSize: 2}))
                           .pipe(gulp.dest('dist/'));
 
@@ -97,10 +100,11 @@ gulp.task('production',function() {
 
 gulp.task('watch',function(){
 
-  console.log("waiting for changes");
-  gulp.watch('www/sass/**/*.scss',['sass']);
-  gulp.watch('www/css/*.css',['reload']);
-  gulp.watch('www/**/*.html',['reload']);
+    console.log("waiting for changes");
+    gulp.watch('www/sass/**/*.scss',['sass']);
+    gulp.watch('www/css/*.css',['reload']);
+    gulp.watch('www/**/*.html',['reload']);
 
 });
+
 gulp.task('default',['connect','watch']);

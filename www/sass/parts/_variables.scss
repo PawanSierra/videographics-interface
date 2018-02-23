@@ -1,16 +1,14 @@
-$primary-color:#71797e;
-$secondary-color:#90c441;
+$primary-color:#71797e; 
+$secondary-color: #90c441;
 $font-color:#fff;
 $border-color:#66704c;
 
 :root {
 
   // theme variables
-  --primary-color:#71797e;
-  --secondary-color:#90c441;
-  --font-color:#fff;
-  --border-color:#66704c;
-  --background-color:#eaeaea;
+  --primary-color:$primary-color;
+  --secondary-color:$secondary-color;
+  --font-color:$font-color;
 
   // break points
   --mobile:768px;

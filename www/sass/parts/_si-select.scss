@@ -76,6 +76,26 @@
     -khtml-opacity: 0;
     opacity: 0;
     display: none !important;
+    @media (max-width: 768px) {
+      display: block !important;
+      background: transparent;
+      span.select-out , .CaptionCont {
+        display: none;
+      }
+
+      select {
+        color:#fff;
+        appearance: none;
+        width: calc(100% - 18px);
+        &::-ms-expand {
+            display: none;
+        }
+
+      }
+      option {
+        color:#000;
+      }
+    }
 }
 .SelectClass {
     z-index: 1;
