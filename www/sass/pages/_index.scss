@@ -1937,11 +1937,34 @@
   width: 640px;
   height: 360px;
 
+  @media (max-width: 768px) {
+    width:100%;
+    height:100%;
+  }
+
+  .example {
+
+    position: absolute;
+    width:100%;
+    height:auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+  }
+
   .brick.small {
+
     width:140px;
     height:auto;
     cursor: pointer;
     overflow: hidden;
+
+    @media (max-width: 768px) {
+      width:calc(80% / 5);
+      height:100%;
+    }
+
     .brick-wrap {
 
       position: relative;
@@ -1949,6 +1972,7 @@
       height:0px;
       padding-bottom: 56.25%;
       img {
+
         display: block;
         width:100%;
         height:auto;
@@ -1966,6 +1990,23 @@
         line-height:20px;
         background: rgba(0,0,0,0.8);
         color:#fff;
+        @media (max-width: 768px) {
+          width:15px;
+          height:15px;
+          font-size: 10px;
+          line-height: 15px;
+        }
+      }
+      .sub-wrap {
+        position: absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        @extend %d-flex;
+        .sub-item {
+          flex:1;
+        }
       }
     }
   }
