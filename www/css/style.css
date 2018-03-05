@@ -35,6 +35,22 @@
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px); } }
 
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -3208,21 +3224,21 @@ body {
   content: "";
   clear: both; }
 
-.fontAwesome, .si-breadcrumbs .si-breadcrumbs-list-item + .si-breadcrumbs-list-item a:before, .si-video-dropdown .si-video-list .si-btn:before, .fixed-btn-bottom a:after, .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-refresh:before, .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-container .si-gallery-thumb.selected:before, .si-main .si-col.editor .si-input-fields .si-submit-btn .si-clear-graphic:before, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item.btn span:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-set-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-set-close-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-zoomin-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-zoomout-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-zoom-controls .si-set-zoom-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-zoom-controls .si-set-zoom-close-btn:before, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap .si-play-btn .btn:before, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap .play-btn .btn:before, .si-infographic-templates .si-infographic-templates-wrap .si-templates-container .si-itemplates-wrapper .si-template-item.selected:after, .si-popup .si-popup-wrap .si-popup-close:before {
+.fontAwesome, .si-breadcrumbs .si-breadcrumbs-list-item + .si-breadcrumbs-list-item a:before, .si-video-dropdown .si-video-list .si-btn:before, .fixed-btn-bottom a:after, .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-refresh:before, .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-container .si-gallery-thumb.selected:before, .si-main .si-col.editor .si-input-fields .si-submit-btn .si-clear-graphic:before, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item.btn span:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-set-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-set-close-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-zoomin-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-zoomout-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-zoom-controls .si-set-zoom-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-zoom-controls .si-set-zoom-close-btn:before, .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-transition-controls .si-transition-wrap .si-play-btn .btn:before, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap .play-btn .btn:before, .si-infographic-templates .si-infographic-templates-wrap .si-templates-container .si-itemplates-wrapper .si-template-item.selected:after, .si-popup .si-popup-wrap .si-popup-close:before {
   font-family: "FontAwesome";
   content: ""; }
 
-.SI-select > .CaptionCont > span, .si-selectoption .select-out, .si-header .si-logged-wrapper .logged-menu .si-drop-menu .si-logged-username, .si-header .si-logged-wrapper .logged-menu .si-drop-menu .si-drop-down a, .si-video-dropdown .si-video-list .video-list-item > span, .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item.two-col .si-static-input-field-item-col label, .si-main .si-col.editor .si-input-fields .si-infographic-field-column .si-input-option label, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap .si-play-label span, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap .label {
+.SI-select > .CaptionCont > span, .si-selectoption .select-out, .si-header .si-logged-wrapper .logged-menu .si-drop-menu .si-logged-username, .si-header .si-logged-wrapper .logged-menu .si-drop-menu .si-drop-down a, .si-video-dropdown .si-video-list .video-list-item > span, .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item.two-col .si-static-input-field-item-col label, .si-main .si-col.editor .si-input-fields .si-infographic-field-column .si-input-option label, .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-transition-controls .si-transition-wrap .si-play-label span, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap .label {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; }
 
-.si-header, .si-breadcrumbs, .si-breadcrumbs .si-video-loader span, .si-video-dropdown, .si-video-dropdown .si-video-list .video-list-item, .si-main, .si-main .si-col .si-itemswrapper, .si-main .si-col .si-itemswrapper .si-infographix-fields.color-picker .color-palette .color-palette-list, .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item, .si-main .si-col.editor .si-input-fields .si-infographic-field-column, .si-main .si-col.editor .si-input-fields .si-infographic-field-column .si-input-option, .si-main .si-col.viewer .si-graphic-control, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-split-image, .si-main .si-col.viewer .si-graphic-actions, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.split-screen .si-btn-area, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.split-screen .si-btn-area, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.active .si-btn-action-tip:not(#a), .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.active .si-btn-action-tip:not(#a), .contentGridly .brick.small .brick-wrap .sub-wrap, .si-static-text-overlay.bottom-graphic .si-static-text-wrap, .si-infographic-selector, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap, .si-page.login .si-login-section {
+.si-header, .si-breadcrumbs, .si-breadcrumbs .si-video-loader span, .si-video-dropdown, .si-video-dropdown .si-video-list .video-list-item, .si-main, .si-main .si-col .si-itemswrapper, .si-main .si-col .si-itemswrapper .si-infographix-fields.color-picker .color-palette .color-palette-list, .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item, .si-main .si-col.editor .si-input-fields .si-infographic-field-column, .si-main .si-col.editor .si-input-fields .si-infographic-field-column .si-input-option, .si-main .si-col.viewer .si-graphic-control, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-split-image, .si-main .si-col.viewer .si-graphic-actions, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.split-screen .si-btn-area, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.split-screen .si-btn-area, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.active .si-btn-action-tip:not(#a), .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.active .si-btn-action-tip:not(#a), .contentGridly .brick.small .brick-wrap .sub-wrap, .si-static-text-overlay.bottom-graphic .si-static-text-wrap, .si-infographic-selector, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item, .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-transition-controls .si-transition-wrap, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap, .si-page.login .si-login-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.si-header, .si-header .si-logged-wrapper, .si-breadcrumbs .si-right-section, .si-breadcrumbs, .si-breadcrumbs .si-video-loader span, .si-video-dropdown, .si-video-dropdown .si-video-list .video-list-item, .si-main .si-col .si-itemswrapper, .si-main .si-col .si-itemswrapper .si-infographix-fields.check-btn, .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item, .si-main .si-col.viewer .si-graphic-control, .si-main .si-col.viewer .si-graphic-control .si-graphic-btn, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper, .si-infographic-selector, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap, .si-page.login .si-login-section, .si-popup .si-popup-wrap .si-popup-close, .si-popup .si-popup-wrap .si-popup-content .si-popup-toggle .si-popup-toggle-control {
+.si-header, .si-header .si-logged-wrapper, .si-breadcrumbs .si-right-section, .si-breadcrumbs, .si-breadcrumbs .si-video-loader span, .si-video-dropdown, .si-video-dropdown .si-video-list .video-list-item, .si-main .si-col .si-itemswrapper, .si-main .si-col .si-itemswrapper .si-infographix-fields.check-btn, .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item, .si-main .si-col.viewer .si-graphic-control, .si-main .si-col.viewer .si-graphic-control .si-graphic-btn, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper, .si-main .si-col.viewer .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper, .si-infographic-selector, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item, .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-transition-controls .si-transition-wrap, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap, .si-page.login .si-login-section, .si-popup .si-popup-wrap .si-popup-close, .si-popup .si-popup-wrap .si-popup-content .si-popup-toggle .si-popup-toggle-control {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -3293,6 +3309,14 @@ body {
           user-select: none;
   pointer-events: none;
   opacity: 0.5; }
+
+.grab {
+  cursor: -webkit-grab;
+  cursor: grab; }
+
+.grabbing {
+  cursor: -webkit-grabbing;
+  cursor: grabbing; }
 
 .si-header {
   height: 38px;
@@ -4260,6 +4284,8 @@ body {
           background-image: url(../images/add-graphic-preview.svg); }
         .si-main .si-col.viewer .si-graphic-control .si-graphic-btn span.si-grid-btn {
           background-image: url(../images/grid-icon.svg); }
+        .si-main .si-col.viewer .si-graphic-control .si-graphic-btn span.si-singlecol-btn {
+          background-image: url(../images/single-column.svg); }
         .si-main .si-col.viewer .si-graphic-control .si-graphic-btn span + span {
           margin-left: 10px; }
     .si-main .si-col.viewer .si-graphic-control .si-grpahicnav-container {
@@ -4449,6 +4475,10 @@ body {
           z-index: 1; }
     .si-main .si-col.viewer .si-main-graphic .si-grpahic-container.static-graphic .si-main-image .si-image-wrapper img {
       min-height: 100%; }
+    .si-main .si-col.viewer .si-main-graphic .si-grpahic-container.static-graphic .graphic-overlay,
+    .si-main .si-col.viewer .si-main-graphic .si-grpahic-container.static-graphic .si-static-text-overlay,
+    .si-main .si-col.viewer .si-main-graphic .si-grpahic-container.static-graphic .si-branding {
+      pointer-events: none; }
     .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-split-image {
       position: absolute;
       width: 100%;
@@ -4634,6 +4664,8 @@ body {
         cursor: pointer; }
         .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.download-active, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.download-active {
           background-color: rgba(0, 0, 0, .2); }
+        .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn.active, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col.active {
+          border: 1px solid #fff; }
         .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn a, .si-main .si-col.viewer .si-graphic-actions .si-actions-wrapper .si-btn-col a {
           color: #fff;
           text-decoration: none;
@@ -4862,10 +4894,15 @@ body {
         height: 100%;
         top: 0;
         left: 0; }
-        .contentGridly .brick.small .brick-wrap .sub-wrap .sub-item {
-          -webkit-box-flex: 1;
-              -ms-flex: 1;
-                  flex: 1; }
+        .contentGridly .brick.small .brick-wrap .sub-wrap .sub-item.three-columns {
+          width: 33.33%;
+          max-width: 33.33%; }
+        .contentGridly .brick.small .brick-wrap .sub-wrap .sub-item.two-columns {
+          width: 50%;
+          max-width: 50%; }
+        .contentGridly .brick.small .brick-wrap .sub-wrap .sub-item.two-columns img, .contentGridly .brick.small .brick-wrap .sub-wrap .sub-item.three-columns img {
+          width: 150%;
+          min-height: 100%; }
 
 .si-static-text-overlay {
   position: absolute;
@@ -5996,93 +6033,96 @@ body {
             opacity: 0.5;
             pointer-events: none;
             cursor: default; }
+    .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-tempalte-thumb-wrap {
+      position: relative; }
+    .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-transition-controls {
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 31px;
+      background-color: rgba(0, 0, 0, .2); }
+      .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-transition-controls .si-transition-wrap {
+        padding: 5px;
+        height: 100%; }
+        .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-transition-controls .si-transition-wrap .si-play-btn {
+          display: inline-block;
+          padding-right: 12px;
+          border-right: 2px solid rgba(255, 255, 255, .2); }
+          .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-transition-controls .si-transition-wrap .si-play-btn .btn {
+            display: inline-block;
+            position: relative;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            cursor: pointer; }
+            .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-transition-controls .si-transition-wrap .si-play-btn .btn:after {
+              content: "";
+              display: inline-block;
+              position: absolute;
+              left: 0px;
+              right: 0px;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              border: 2px solid #fff;
+              -webkit-box-sizing: border-box;
+                      box-sizing: border-box; }
+            .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-transition-controls .si-transition-wrap .si-play-btn .btn:before {
+              text-align: center;
+              display: inline-block;
+              color: #fff;
+              font-size: 8px;
+              line-height: 20px;
+              text-indent: 1px; }
+            .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-transition-controls .si-transition-wrap .si-play-btn .btn.play:before {
+              content: "\f04b"; }
+            .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-transition-controls .si-transition-wrap .si-play-btn .btn.pause:before {
+              content: "\f04c";
+              text-indent: 0; }
+        .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-transition-controls .si-transition-wrap .si-play-label {
+          display: inline-block;
+          width: calc(100% - 39px); }
+          .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-transition-controls .si-transition-wrap .si-play-label span {
+            display: block;
+            width: 100%;
+            line-height: 20px;
+            padding: 0 10px;
+            color: #fff;
+            font-weight: 200; }
+    .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-transition-effect {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 0px;
+      padding-bottom: 56.25%; }
+      .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-transition-effect:before {
+        opacity: 0.2;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-position: center 15px; }
+      .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-transition-effect video {
+        opacity: 0;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0; }
+    .si-infographic-templates .si-infographic-templates-wrap .si-template-area .si-template-item.playing .si-tempalte-thumb-wrap .si-transition-effect video {
+      opacity: 1; }
     .si-infographic-templates .si-infographic-templates-wrap .si-template-area.templates .si-tempalte-thumb-wrap {
       background-image: url(../images/transparent.png);
       background-repeat: no-repeat;
       background-position: center center; }
     .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap {
-      position: relative;
       background-color: rgba(0, 0, 0, .1); }
-      .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-effect {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        height: 0px;
-        padding-bottom: 56.25%; }
-        .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-effect:before {
-          opacity: 0.2;
-          position: absolute;
-          content: "";
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;
-          background-repeat: no-repeat;
-          background-position: center 15px; }
-        .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-effect video {
-          opacity: 0;
-          display: block;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0; }
-      .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls {
-        position: absolute;
-        left: 0px;
-        bottom: 0px;
-        width: 100%;
-        height: 31px;
-        background-color: rgba(0, 0, 0, .2); }
-        .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap {
-          padding: 5px;
-          height: 100%; }
-          .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap .si-play-btn {
-            display: inline-block;
-            padding-right: 12px;
-            border-right: 2px solid rgba(255, 255, 255, .2); }
-            .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap .si-play-btn .btn {
-              display: inline-block;
-              position: relative;
-              width: 20px;
-              height: 20px;
-              text-align: center;
-              cursor: pointer; }
-              .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap .si-play-btn .btn:after {
-                content: "";
-                display: inline-block;
-                position: absolute;
-                left: 0px;
-                right: 0px;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                border: 2px solid #fff;
-                -webkit-box-sizing: border-box;
-                        box-sizing: border-box; }
-              .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap .si-play-btn .btn:before {
-                text-align: center;
-                display: inline-block;
-                color: #fff;
-                font-size: 8px;
-                line-height: 20px;
-                text-indent: 1px; }
-              .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap .si-play-btn .btn.play:before {
-                content: "\f04b"; }
-              .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap .si-play-btn .btn.pause:before {
-                content: "\f04c";
-                text-indent: 0; }
-          .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap .si-play-label {
-            display: inline-block;
-            width: calc(100% - 39px); }
-            .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-templates-container .si-tempalte-thumb-wrap .si-transition-controls .si-transition-wrap .si-play-label span {
-              display: block;
-              width: 100%;
-              line-height: 20px;
-              padding: 0 10px;
-              color: #fff;
-              font-weight: 200; }
     .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-template-item.bottom-fade-out .si-transition-effect:before, .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-template-item.top-fade-in .si-transition-effect:before {
       background-position: center 12px; }
     .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-template-item.slideright .si-transition-effect:before {
@@ -6106,8 +6146,6 @@ body {
       border-radius: 50%;
       background-color: rgba(0, 0, 0, .4);
       opacity: 0; }
-    .si-infographic-templates .si-infographic-templates-wrap .si-template-area.transitions .si-template-item.playing:not(#a) .si-tempalte-thumb-wrap .si-transition-effect video {
-      opacity: 1; }
     .si-infographic-templates .si-infographic-templates-wrap .si-template-area.audio .si-itemplates-wrapper .si-template-item .si-tempalte-thumb-wrap {
       height: 52px;
       padding-bottom: 0px;
@@ -6168,7 +6206,8 @@ body {
         -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
         -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .3);
-                box-shadow: 0 0 4px rgba(0, 0, 0, .3); }
+                box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+        z-index: 1; }
       .si-infographic-templates .si-infographic-templates-wrap .si-templates-container .si-itemplates-wrapper .si-template-item.selected:after {
         position: absolute;
         content: "\f00c";
@@ -6849,15 +6888,18 @@ body {
         grid-template-columns: repeat(2, 1fr); } }
     .contentGridly {
       width: 100%;
-      height: 100%; }
+      height: 0px;
+      padding-bottom: 56.25%; }
+      .contentGridly .example {
+        height: 100%; }
       .contentGridly .brick.small {
         width: 16%;
-        height: 100%; }
+        height: auto; }
           .contentGridly .brick.small .brick-wrap .delete {
-            width: 15px;
-            height: 15px;
+            width: 14px;
+            height: 14px;
             font-size: 10px;
-            line-height: 15px; }
+            line-height: 14px; }
     .si-static-text-overlay {
       zoom: 0.5; }
     .si-infographic-selector {

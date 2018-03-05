@@ -113,6 +113,7 @@
         }
 
         &.color-picker {
+
           position: relative;
 
           .selected-color {
@@ -475,7 +476,6 @@
             }
           }
         }
-
       }
     } // itemswrapper
   }
@@ -698,6 +698,7 @@
     // for add text
 
     .si-inputdiv {
+
       position: relative;
       @extend .si-mageupload-area;
       width:504px;
@@ -985,7 +986,6 @@
           flex:1 1 auto;
         }
       }
-
     }
     .si-submit-btn {
       text-align: center;
@@ -1060,6 +1060,9 @@
           }
           &.si-grid-btn {
             background-image:url(../images/grid-icon.svg);
+          }
+          &.si-singlecol-btn {
+            background-image:url(../images/single-column.svg);
           }
           + span {
             margin-left: 10px;
@@ -1323,6 +1326,11 @@
             }
           }
         }
+        .graphic-overlay,
+        .si-static-text-overlay,
+        .si-branding  {
+          pointer-events: none;
+        }
       }
       .si-split-image {
         position: absolute;
@@ -1558,6 +1566,9 @@
           cursor: pointer;
           &.download-active {
             background-color: rgba(0,0,0,.20);
+          }
+          &.active {
+            border:1px solid #fff;
           }
 
           a {
@@ -1939,7 +1950,8 @@
 
   @media (max-width: 768px) {
     width:100%;
-    height:100%;
+    height:0px;
+    padding-bottom: 56.25%;
   }
 
   .example {
@@ -1950,6 +1962,9 @@
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+    @media (max-width: 768px) {
+      height:100%;
+    }
 
   }
 
@@ -1962,7 +1977,7 @@
 
     @media (max-width: 768px) {
       width:calc(80% / 5);
-      height:100%;
+      height:auto;
     }
 
     .brick-wrap {
@@ -1991,10 +2006,10 @@
         background: rgba(0,0,0,0.8);
         color:#fff;
         @media (max-width: 768px) {
-          width:15px;
-          height:15px;
+          width:14px;
+          height:14px;
           font-size: 10px;
-          line-height: 15px;
+          line-height: 14px;
         }
       }
       .sub-wrap {
@@ -2004,8 +2019,19 @@
         top:0;
         left:0;
         @extend %d-flex;
-        .sub-item {
-          flex:1;
+        .sub-item.three-columns {
+          width:33.33%;
+          max-width: 33.33%;
+        }
+        .sub-item.two-columns {
+          width:50%;
+          max-width: 50%;
+        }
+        .sub-item.two-columns , .sub-item.three-columns {
+          img {
+            width:150%;
+            min-height: 100%;
+          }
         }
       }
     }

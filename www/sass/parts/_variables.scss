@@ -1,7 +1,13 @@
-$primary-color:#71797e; 
+$primary-color:#71797e;
 $secondary-color: #90c441;
 $font-color:#fff;
 $border-color:#66704c;
+
+
+$mobile:768px;
+$ipad:1034px;
+$desktop:1366px;
+$large-desktop:1920px;
 
 :root {
 
@@ -11,10 +17,10 @@ $border-color:#66704c;
   --font-color:$font-color;
 
   // break points
-  --mobile:768px;
-  --ipad:1034px;
-  --desktop:1366px;
-  --large-desktop:1920px;
+  --mobile:$mobile;
+  --ipad:$ipad;
+  --desktop:$desktop;
+  --large-desktop:$large-desktop;
 
 
 }
