@@ -1,4 +1,5 @@
 @import "parts/variables";
+@import "parts/mixins";
 @import "common-module/animation";
 @import "parts/reset";
 @import "parts/font-awesome.scss";
@@ -7,12 +8,17 @@
 @import "parts/common.scss";
 @import "common-module/header.scss";
 @import "common-module/footer.scss";
+@import "common-module/side-menu";
 @import "pages/index.scss";
+@import "common-module/main-graphic-viewer";
 @import "pages/static-templates";
 @import "pages/infographic-selector";
-@import "pages/template-selector";
+// @import "pages/template-selector";
 @import "pages/login";
+@import "pages/new-templates-section";
+@import "pages/ratio-selection";
 @import "common-module/popup";
+
 
 
 

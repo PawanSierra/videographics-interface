@@ -23,9 +23,10 @@
   } // media
   .si-brand-wrapper h1 a {
     display: block;
-    width:69px;
-    height:25px;
-    background-image: url(../images/si-logo.png);
+    // width:69px;
+    // height:25px;
+    // background-image: url(../images/si-logo.png);
+    @include branding-top($client);
     background-repeat: no-repeat;
     text-indent: -1000%;
     white-space: nowrap;

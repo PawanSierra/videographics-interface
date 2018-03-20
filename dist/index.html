@@ -103,6 +103,10 @@
                             <li class="si-sidemenu-item add-text"><a href="add-text.html">Add text</a></li>
                             <li class="si-sidemenu-item image-gallery"><a href="image-gallery.html">Image Gallery</a></li>
                             <li class="si-sidemenu-item infographix"><a href="infographix.html">Infographix</a></li>
+                            <li class="si-sidemenu-item ratio"><a href="infographix.html">Ratio</a></li>
+                            <li class="si-sidemenu-item templates"><a href="infographix.html">Video Templates</a></li>
+                            <li class="si-sidemenu-item audio"><a href="infographix.html">Audio</a></li>
+                            <li class="si-sidemenu-item transition"><a href="infographix.html">Transitions</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -140,8 +144,8 @@
                                         <div class="si-nav-item swiper-slide"><a href="#">11<span class="si-close-btn">x</span></a></div>
                                     </div>
                                 </div>
-                                <div class="swiper-btn swiper-button-prev"></div>
-                                <div class="swiper-btn swiper-button-next"></div>
+                                <!-- <div class="swiper-btn swiper-button-prev"></div>
+                  <div class="swiper-btn swiper-button-next"></div> -->
                             </div>
                         </div>
                         <div class="si-main-graphic">
@@ -151,37 +155,43 @@
                                         <img src="images/nba-img.png">
                                     </div>
                                 </div>
-                                <div class="si-split-image" style="display:none;">
-                                    <div class="si-image-col">
-                                        <span class="si-split-close">x</span>
-                                        <div class="si-image-wrap">
-                                            <img src="http://placehold.it/400x500" alt="">
-                                        </div>
-                                        <div class="si-split-drag">
-                                            <div class="si-resize-wrap"> </div>
-                                        </div>
-                                    </div>
-                                    <div class="si-image-col">
-                                        <span class="si-split-close">x</span>
-                                        <div class="si-image-wrap">
-                                            <img src="http://placehold.it/400x500" alt="">
-                                        </div>
-                                        <div class="si-split-drag">
-                                            <div class="si-resize-wrap"> </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <!-- <div class="si-split-image" style="display:none;">
+                  <div class="si-image-col">
+                    <span class="si-split-close">x</span>
+                    <div class="si-image-wrap">
+                      <img src="http://placehold.it/400x500" alt="">
+                    </div>
+                    <div class="si-split-drag"> <div class="si-resize-wrap"> <span class="si-resize-message"> Image Quality too low </span></div> </div>
+                  </div>
+                  <div class="si-image-col">
+                    <span class="si-split-close">x</span>
+                    <div class="si-image-wrap">
+                      <img src="http://placehold.it/400x500" alt="">
+                    </div>
+                    <div class="si-split-drag"> <div class="si-resize-wrap"> <span class="si-resize-message"> Image Quality too low </span></div> </div>
+                  </div>
+                </div> -->
                                 <div class="graphic-overlay">
                                     <img src="images/radar-1.jpg" alt="">
                                     <!-- <span class="graphic-line"> </span> -->
-                                    <div class="si-text-overlay drag-area" style="display:none;">
-                                        <div class="si-text-wrap">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, mollitia?</p>
+                                    <div class="si-text-overlay drag-area">
+                                        <div class="si-text-wrap" style="left:100px; top:100px;">
+                                            <div class="si-text-edit-options">
+                                                <dl>
+                                                    <dt><span class="text-btn text-edit" title="Edit Text"></span></dt>
+                                                </dl>
+                                            </div>
+                                            <p contenteditable>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, mollitia?</p>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- <div class="si-resize-overlay" >
+                  <div class="si-resize-wrap">
+                    <span class="si-resize-message"> Image Quality too low </span>
+                  </div>
+                </div> -->
                                 <div class="si-branding left"></div>
-                                <div class="si-static-text-overlay radar-infographic-1">
+                                <div class="si-static-text-overlay radar-infographic-1" style="display:none;">
                                     <!--radar-infographic-1 recent-kicks-->
                                     <div class="si-static-text-wrap">
 
@@ -666,10 +676,23 @@
                                 </div>
                                 </span>
                                 </span>
+                                <span class="si-btn-col zoom-in-out">
+                  <span class="si-btn-area">
+                    <span class="si-btn-label"> Zoom </span>
+                                <div class="si-btns-wrap">
+                                    <span class="si-btn zoom-out"></span>
+                                    <span class="si-btn zoom-in"></span>
+                                </div>
+                                </span>
+                                </span>
                                 <span class="si-btn-col">
                   <span class="si-btn-area">
-                    <span class="si-btn zoom-out"> Zoom In </span>
-                                <span class="si-btn zoom-in"> Zoom Out </span>
+                    <span class="si-btn grid-view">  Grid View</span>
+                                </span>
+                                </span>
+                                <span class="si-btn-col">
+                  <span class="si-btn-area">
+                    <span class="si-btn image-swap">  Image Swap </span>
                                 </span>
                                 </span>
                                 <span class="si-btn-col split-screen">
@@ -683,7 +706,7 @@
                                 </span>
                                 <span class="si-btn-col">
                   <span class="si-btn-area">
-                    <span class="si-btn download"> <a href="#" download> Download Videos </a> </span>
+                    <span class="si-btn download"> <a href="#" download> Download  </a> </span>
                                 </span>
                                 </span>
                             </div>

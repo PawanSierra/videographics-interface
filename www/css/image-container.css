@@ -220,6 +220,11 @@ body ,html {
   left:0;
   z-index:1;
 }
+.si-main-graphic {
+
+  background: rgba(0, 0, 0, .1);
+
+}
  .si-main-graphic .si-grpahic-container {
 	position: relative;
 	width: 100%;
@@ -229,6 +234,15 @@ body ,html {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover; }
+
+	.si-main-graphic .si-grpahic-container.one-one {
+    width: 56.3%;
+    height: 100%;
+    margin: 0 auto; }
+  .si-main-graphic .si-grpahic-container.four-three {
+    width:75%;
+    height:100%;
+    margin: 0 auto; }
  .si-main-graphic .si-grpahic-container .graphic-overlay {
 		position: absolute;
 		width: 100%;
@@ -426,6 +440,9 @@ body ,html {
 						-webkit-transform: translateY(-50%);
 								-ms-transform: translateY(-50%);
 										transform: translateY(-50%); }
+.si-grpahic-container.one-one .si-static-text-overlay.flag {
+		width:40%;
+}
 .si-grpahic-container .si-static-text-overlay.flag .si-static-text-wrap {
 							font-size: 70px;
 							font-family: 'gotham_ultra-italic',sans-serif; }
@@ -439,82 +456,112 @@ body ,html {
 						-webkit-transform: translateY(0);
 								-ms-transform: translateY(0);
 										transform: translateY(0); }
+.si-grpahic-container.one-one  .si-static-text-overlay.flag-1 {
+						width:50%;
+}
+.si-grpahic-container.four-three .si-static-text-overlay.flag-1 {
+						 width:40%;
+}
 .si-grpahic-container .si-static-text-overlay.flag-1 .si-static-text-wrap .si-static-player-name {
-							text-align: right;
-							font-size: 50px;
-							color: #fff;
-							font-family: 'gotham_black',sans-serif; }
+
+						  text-align: right;
+						  font-size: 50px;
+						  color: #fff;
+						  font-family: 'gotham_black',sans-serif;
+}
 .si-grpahic-container .si-static-text-overlay.flag-1 .si-static-text-wrap .si-static-score {
+
 							margin-top: 5px;
 							display: block;
 							text-align: right;
 							font-family: 'gotham_black',sans-serif;
 							font-size: 80px;
-							letter-spacing: 0.7px; }
+							letter-spacing: 0.7px;
+}
 .si-grpahic-container .si-static-text-overlay.flag-1 .si-static-text-wrap .si-static-score .si-static-score-item {
-								font-family: 'gotham_book',sans-serif;
-								font-size: 50px; }
+
+						font-family: 'gotham_book',sans-serif;
+						font-size: 50px;
+}
 .si-grpahic-container .si-static-text-overlay.flag-2 {
+
 						width: 30%;
 						top: 0;
 						bottom: auto;
-						 }
+}
+.si-grpahic-container.one-one .si-static-text-overlay.flag-2 {
+						 width: 60%;
+}
+.si-grpahic-container.four-three .si-static-text-overlay.flag-2 {
+						 width: 45%;
+}
 .si-grpahic-container .si-static-text-overlay.flag-2 .si-static-text-wrap {
 
 							padding: 40px 0;
-						}
+}
 .si-grpahic-container .si-static-text-overlay.flag-2 .si-static-title {
+
 							position: relative;
 							font-size: 50px;
 							font-family: 'gotham_bold',sans-serif;
 							padding-bottom: 30px;
 							margin-bottom: 30px;
 							word-wrap: break-word;
-						}
+
+}
 .si-grpahic-container .si-static-text-overlay.flag-2 .si-static-title:before {
-								position: absolute;
-								content: "";
-								bottom: 0;
-								left: 0;
-								right: -20px;
-								width: calc(100% + 20px);
-								height: 1px;
-								background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.8)), to(transparent));
-								background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.8) 0%, transparent 100%);
-								background: -o-linear-gradient(right, rgba(255, 255, 255, 0.8) 0%, transparent 100%);
-								background: linear-gradient(to left, rgba(255, 255, 255, 0.8) 0%, transparent 100%); }
+
+							position:absolute;
+							content: "";
+							bottom: 0;
+							left: 0;
+							right: -20px;
+							width: calc(100% + 20px);
+							height: 1px;
+							background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.8)), to(transparent));
+							background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.8) 0%, transparent 100%);
+							background: -o-linear-gradient(right, rgba(255, 255, 255, 0.8) 0%, transparent 100%);
+							background: linear-gradient(to left, rgba(255, 255, 255, 0.8) 0%, transparent 100%);
+
+}
 .si-grpahic-container .si-static-text-overlay.flag-2 .si-static-score {
+
 							font-family: 'gotham_black',sans-serif;
-							font-size: 150px; }
+							font-size: 150px;
+}
 .si-grpahic-container .si-static-text-overlay.flag-2 .si-static-description {
+
 							font-family: 'gotham_medium',sans-serif;
 							font-size: 40px;
 							margin-top: 20px;
 							line-height: 1;
 							word-wrap: break-word;
-						 }
+}
 .si-grpahic-container .si-static-text-overlay.bottom-text {
 
-						width: 90%;
-						bottom: 20px;
-						left: 50%;
-						top: auto;
-						text-align: left;
-						-webkit-transform: translateX(-50%);
-								-ms-transform: translateX(-50%);
-										transform: translateX(-50%); }
+							width: 90%;
+							bottom: 20px;
+							left: 50%;
+							top: auto;
+							text-align: left;
+							-webkit-transform: translateX(-50%);
+									-ms-transform: translateX(-50%);
+											transform: translateX(-50%); }
 
 .si-grpahic-container .si-static-text-overlay.bottom-text .si-static-text-wrap .si-static-player-name {
+
 							font-size: 75px;
 							font-family: 'gotham_ultra-italic',sans-serif;
-							 }
+}
 .si-grpahic-container .si-static-text-overlay.bottom-text .si-static-text-wrap .si-static-tagline {
-							display: inline-block;
-							margin-top: 5px;
-							font-family: 'gotham-book-italic',sans-serif;
-							font-size: 30px;
-						 }
+
+						display: inline-block;
+						margin-top: 5px;
+						font-family: 'gotham-book-italic',sans-serif;
+						font-size: 30px;
+}
 .si-grpahic-container .si-static-text-overlay.bottom-gradient {
+
 						width: 100%;
 						height: 60%;
 						bottom: 0;
@@ -525,8 +572,10 @@ body ,html {
 						/* background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.8)));
 						background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
 						background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
-					background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);*/ }
+						background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);*/ }
+
 .si-grpahic-container .si-static-text-overlay.bottom-gradient .si-static-text-wrap {
+
 							position: absolute;
 							width: 90%;
 							margin: 0 auto;
@@ -534,13 +583,18 @@ body ,html {
 							left: 50%;
 							-webkit-transform: translateX(-50%);
 									-ms-transform: translateX(-50%);
-											transform: translateX(-50%); }
+											transform: translateX(-50%);
+
+										 }
 .si-grpahic-container .si-static-text-overlay.bottom-gradient .si-static-text-wrap p {
-								font-family: 'gotham_book',sans-serif;
-								font-weight: normal;
-								font-size: 40px;
-								line-height: 1.3; }
+
+						font-family: 'gotham_book',sans-serif;
+						font-weight: normal;
+						font-size: 40px;
+						line-height: 1.3;
+					}
 .si-grpahic-container .si-static-text-overlay.left-gradient {
+
 						width: 30%;
 						left: 0;
 						top: 0;
@@ -552,6 +606,10 @@ body ,html {
 						background: -o-linear-gradient(right, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
 						background: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.5) 100%); */
 						padding: 40px 0 20px 40px; }
+.si-grpahic-container.one-one .si-static-text-overlay.left-gradient {
+
+						width:50%;
+}
 .si-grpahic-container .si-static-text-overlay.left-gradient .si-static-title {
 							position: relative;
 							font-size: 50px;
@@ -791,15 +849,17 @@ body ,html {
 			 				position: absolute;
 			 				width: 100%;
 			 				height: 100%;
-			 				display: -webkit-inline-box;
-			 				display: -ms-inline-flexbox;
-			 				display: inline-flex;
+							display:-webkit-box;
+					    display:-ms-flexbox;
+							display:-webkit-flex;
+					    display:flex;
 			 				-webkit-box-pack: center;
 			 						-ms-flex-pack: center;
 			 				        justify-content: center;
-			 				-webkit-box-align: center;
-			 						-ms-flex-align: center;
-			 				        align-items: center;
+											-webkit-box-align:center;
+				    -webkit-align-items:center;
+				        -ms-flex-align:center;
+				            align-items:center;
 			 				z-index: 2; }
 .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.left .si-static-score-borad-side-wrap .si-static-team-points, .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.right .si-static-score-borad-side-wrap .si-static-team-points {
 			 					font-size: 50px;
@@ -807,6 +867,7 @@ body ,html {
 			 					font-family: 'gotham-ultra';
 			 					margin: 0;
 								min-width: 100px;
+								text-align: center;
 							 }
 .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.left .si-static-score-borad-side-wrap .si-static-team-branding, .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.right .si-static-score-borad-side-wrap .si-static-team-branding {
 			 					display: inline-block;

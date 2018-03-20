@@ -1,7 +1,25 @@
-$primary-color:#71797e;
+
+
+
+
+//sportz
+$client:'sportz';
+$primary-color:#000;
 $secondary-color: #90c441;
 $font-color:#fff;
 $border-color:#66704c;
+
+// sportz-radar
+// $client:'sports-radar';
+// $primary-color:#333333;
+// $secondary-color:#c1022c;
+// $font-color:#fff;
+// $border-color:desaturate(#c1022c,10);
+
+// exp: $client: 'client name', 'primary-color' , 'secondary-color','font-color' , 'border-color';
+
+$si:'sportz' ,'#000', '#90c441' , '#fff', '#66704c';
+$sports-radar:'sports-radar','#333333','#c1022c','#fff',desaturate(#c1022c,10);
 
 
 $mobile:768px;
@@ -9,18 +27,19 @@ $ipad:1034px;
 $desktop:1366px;
 $large-desktop:1920px;
 
+
 :root {
 
   // theme variables
   --primary-color:$primary-color;
   --secondary-color:$secondary-color;
   --font-color:$font-color;
+  --border-color:$border-color;
 
   // break points
   --mobile:$mobile;
   --ipad:$ipad;
   --desktop:$desktop;
   --large-desktop:$large-desktop;
-
 
 }

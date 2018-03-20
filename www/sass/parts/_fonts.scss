@@ -563,3 +563,16 @@ $font:'Roboto',sans-serif;
 //     font-weight: normal;
 //     font-style: normal;
 // }
+
+@font-face {
+
+  font-family: 'vg-fonts';
+  src:  url('../fonts/vg-custom-fonts/vg-fonts.eot?hbuaz9');
+  src:  url('../fonts/vg-custom-fonts/vg-fonts.eot?hbuaz9#iefix') format('embedded-opentype'),
+    url('../fonts/vg-custom-fonts/vg-fonts.ttf?hbuaz9') format('truetype'),
+    url('../fonts/vg-custom-fonts/vg-fonts.woff?hbuaz9') format('woff'),
+    url('../fonts/vg-custom-fonts/vg-fonts.svg?hbuaz9#vg-fonts') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}

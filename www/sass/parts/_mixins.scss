@@ -1,0 +1,63 @@
+@mixin branding-top($client) {
+
+  @if $client == 'sportz' {
+    width:69px;
+    height:25px;
+    background-image: url(../images/si-logo.png);
+  }
+  @else if $client == 'sports-radar' {
+    width:150px;
+    height:19px;
+    background-image: url(../images/sports-radar.png);
+    background-size: cover;
+  }
+
+}
+@mixin branding-bottom($client) {
+
+  @if $client == 'sportz' {
+
+    background-image: url(../images/si-branding-footer.png);
+  }
+  @else if $client == 'sports-radar' {
+
+    background-image: url(../images/sports-radar-footer.png);
+    background-size: cover;
+  }
+
+}
+@mixin branding-login($client) {
+
+  @if($client == "") {
+    @error "$client variable not defined!";
+  }
+  @else {
+
+    @if $client == 'sportz' {
+
+      background-image:url(../images/si-brand-big.png);
+      background-size: cover;
+
+    }
+    @else if $client == 'sports-radar' {
+
+      background-image:url(../images/sports-radar-logo.png);
+      background-size: contain;
+
+    }
+  }
+}
+
+@mixin background($client) {
+
+  @if $client == 'sportz' {
+
+    background-image: url(../images/bg-new.png);
+  }
+  @else if $client == 'sports-radar' {
+
+    background-image: url(../images/full_bg.jpg);
+
+  }
+
+}
