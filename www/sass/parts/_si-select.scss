@@ -261,7 +261,7 @@
     border-radius: 0;
 }
 .SI-select>.optWrapper>.options li.opt:hover {
-    background-color:$secondary-color;
+    background-color:var(--secondary-color);
     label {
       color:#fff;
     }

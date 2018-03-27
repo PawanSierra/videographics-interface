@@ -30,20 +30,21 @@
 
           display: block;
           text-align: center;
-          color:$font-color;
+          color:var(--font-color);
           text-decoration: none;
           font-size: 14px;
         }
         &.active {
           a {
-            color:$secondary-color;
+            color:var(--secondary-color);
           }
-          border-bottom: 3px solid $secondary-color;
+          border-bottom: 3px solid var(--secondary-color);
         }
       }
     }
     .si-template-area {
       margin-bottom:5px;
+
       @media (min-width: 768px) and (max-width: 1366px){
         margin-bottom:0px;
       }
@@ -65,9 +66,9 @@
 
           width:134px;
           padding:8px 14px;
-          background-color:$secondary-color;
+          background-color:var(--secondary-color);
           display: inline-block;
-          color:$font-color;
+          color:var(--font-color);
           box-shadow: 0 2px 4px 0px rgba(0,0,0,.20);
           font-weight:400;
 
@@ -156,7 +157,7 @@
                 text-align: center;
                 @extend .fontAwesome;
                 display: inline-block;
-                color:$font-color;
+                color:var(--font-color);
                 font-size: 8px;
                 line-height: 20px;
                 text-indent: 1px;
@@ -179,7 +180,7 @@
               width:100%;
               line-height: 20px;
               padding:0 10px;
-              color:$font-color;
+              color:var(--font-color);
               // overflow: hidden;
               // white-space: nowrap;
               // text-overflow: ellipsis;
@@ -305,7 +306,7 @@
             .label {
               float:left;
               width:calc(100% - 22px);
-              color:$font-color;
+              color:var(--font-color);
               font-weight: 200;
               font-size: 16px;
               padding:0 5px;
@@ -439,7 +440,7 @@
         text-transform: uppercase;
         line-height: 30px;
         padding:0 10px;
-        border-bottom:1px solid $secondary-color;
+        border-bottom:1px solid var(--secondary-color);
       }
       &:nth-child(n + 5) {
         margin-top:10px;

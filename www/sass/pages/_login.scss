@@ -25,7 +25,7 @@
         flex-direction: column;
         height:auto;
         align-items: center;
-        background: linear-gradient(to bottom,$secondary-color 0,lighten($secondary-color,5%) 79%,rgba(255,255,255,.01) 99%,rgba(255,255,255,0) 100%);
+        background: linear-gradient(to bottom,var(--secondary-color) 0,lighten($secondary-color,5%) 79%,rgba(255,255,255,.01) 99%,rgba(255,255,255,0) 100%);
       }
 
     & > div[class*='si'] {
@@ -46,7 +46,7 @@
 
       border-radius: 5px;
       height:100%;
-      background-color:$secondary-color;
+      background-color:var(--secondary-color);
 
       @media (max-width: 768px) {
         order:1;
@@ -62,6 +62,7 @@
           margin-top: 40px;
         }
         &:after {
+
           position: absolute;
           display: inline-block;
           content:"";
@@ -71,8 +72,10 @@
           transform: translateX(-50%);
           height:2px;
           background: radial-gradient(ellipse at center, rgba(255,255,255,.50) 0%,rgba(255,255,255,0) 100%);
+
         }
         a {
+
           display: block;
           text-indent: -1000%;
           white-space: nowrap;
@@ -87,7 +90,6 @@
             width:200px;
             height:69px;
           }
-
         }
       } // si-logo-brand
       .si-product-branding {
@@ -139,11 +141,12 @@
 
       h3 {
         font-size: 22px;
-        color:#fff;
+        color:var(--font-color);
         margin-bottom: 20px;
       }
 
       .si-input-area:not(.submit) {
+        display: block;
         position: relative;
         height:34px;
         & + .si-input-area:not(:last-child) {
@@ -162,6 +165,7 @@
             content:"";
             font-size: 20px;
             transform: translateY(-50%);
+            cursor: pointer;
           }
 
         }
@@ -186,7 +190,7 @@
           border:none;
           padding:10px 5px;
           float:right;
-          color:$font-color;
+          color:var(--font-color);
           font-size: 16px;
 
           &:focus {
@@ -197,7 +201,7 @@
             }
           }
           &::placeholder {
-            color:$font-color;
+            color:var(--font-color);
             font-size: 18px;
           }
         }
@@ -212,8 +216,8 @@
         input[type="submit"] {
           display: inline-block;
           background-color:rgba(0,0,0,.10);
-          border:1px solid $font-color;
-          color:$font-color;
+          border:1px solid var(--font-color);
+          color:var(--font-color);
           padding:0 10px;
           line-height: 36px;
           height:36px;
@@ -230,7 +234,7 @@
           margin-left: 10px;
         }
         a {
-          color:#fff;
+          color:var(--font-color);
           font-size: 14px;
           text-decoration: none;
           &:hover {

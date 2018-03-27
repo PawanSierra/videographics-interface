@@ -29,7 +29,7 @@
 @mixin branding-login($client) {
 
   @if($client == "") {
-    @error "$client variable not defined!";
+    background-image:url(../images/misc-logo.png);
   }
   @else {
 
@@ -47,7 +47,6 @@
     }
   }
 }
-
 @mixin background($client) {
 
   @if $client == 'sportz' {

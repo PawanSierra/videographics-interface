@@ -17,12 +17,12 @@ let fs = require("fs"),
     ssync = require("gulp-scp"),
     htmlbeautify = require("gulp-html-beautify"),
     customselector = require('postcss-custom-selectors');
-    //clip_path = require("postcss-clip-path-polyfill");
+    // clip_path = require("postcss-clip-path-polyfill");
 
 
 let prefixer = autoprefixer({browsers: "last 5 versions" , grid:true }); //clip_path()
 
-let plugins = [cssnext({ features:{ customProperties:{ preserve:true }, grid:true  } }),customselector(),orderValues(),mqpacker(),merge()]; //,merge_long() autoprefixer({browsers: "last 6 versions", grid:true})
+let plugins = [cssnext({ features:{ customProperties:{ preserve:true }, grid:true   } }),customselector(),orderValues(),mqpacker(),merge()]; //,merge_long() autoprefixer({browsers: "last 6 versions", grid:true})
 
 
 
@@ -48,7 +48,7 @@ gulp.task('connect',function() {
 });
 gulp.task('sass',function() {
 
-  return gulp.src("www/sass/*.scss")
+  return gulp.src("www/sass/**/*.scss")
                .pipe(sourcemap.init())
                .pipe(sass({}).on('error',sass.logError)) //sourceMaps: true
                .pipe(postcss(plugins,{}))

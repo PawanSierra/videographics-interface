@@ -25,11 +25,11 @@
     .si-selector-title {
 
       display: inline-block;
-      color:$font-color;
+      color:var(--font-color);
       font-size: 22px;
       padding:0 25px 10px 25px;
       text-align: center;
-      border-bottom: 2px solid $secondary-color;
+      border-bottom: 2px solid var(--secondary-color);
 
     }
     .si-infographic-sports {
@@ -92,7 +92,7 @@
           }
         }
         display: block;
-        color:$font-color;
+        color:var(--font-color);
         text-decoration: none;
         text-transform: uppercase;
         font-size: 16px;
@@ -138,7 +138,7 @@
         content:"";
         width:60%;
         height:1px;
-        background-color:$secondary-color;
+        background-color:var(--secondary-color);
         bottom: 0px;
         left:50%;
         transform: translateX(-50%);
@@ -216,7 +216,7 @@
           }
         }
         display: block;
-        color:$font-color;
+        color:var(--font-color);
         text-transform: uppercase;
         font-size:16px;
         text-decoration: none;
@@ -242,7 +242,7 @@
           appearance:none;
           background-color:rgba(0,0,0,.10);
           border:none;
-          color:$font-color;
+          color:var(--font-color);
           font-size: 16px;
           cursor: pointer;
           border-radius:5px;

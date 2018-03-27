@@ -1,5 +1,5 @@
 .si-side-menu {
-  border-right:1px solid $border-color;
+  border-right:1px solid var(--border-color);
 
   .si-sidemenu-list {
 
@@ -18,7 +18,7 @@
           content:"";
           width:3px;
           height:100%;
-          background-color: $secondary-color;
+          background-color: var(--secondary-color);
           transition: all 300ms ease-in;
         }
         &:before {
@@ -30,98 +30,95 @@
           height:0px;
           border-top:4px solid transparent;
           border-bottom: 4px solid transparent;
-          border-right:4px solid $secondary-color;
+          border-right:4px solid var(--secondary-color);
           border-left:4px solid transparent;
           transform: translateY(-50%);
         }
       }
-    }
-    .si-sidemenu-item  {
-
       a {
 
-        display: block;
-        text-align: center;
-        padding:10px 0;
-        border-bottom:1px solid lighten($secondary-color,50);
-        transition: all 300ms ease-out;
-        &:before {
-
-          @extend %vg-fonts;
           display: block;
-          content:"";
-          background-size:contain;
-          background-repeat: no-repeat;
-          background-position: center center;
-          width:100%;
-          height:36px;
-          font-size: 36px;
-          margin:0 auto;
-          margin-bottom:15px;
-          @media (max-height: 768px) {
-            height:25px;
-            font-size: 25px;
-            margin-bottom: 8px;
+          text-align: center;
+          padding:10px 0;
+          border-bottom:1px solid lighten($secondary-color,50);
+          transition: all 300ms ease-out;
+
+          &:before {
+
+            @extend %vg-fonts;
+            display: block;
+            content:"";
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width:100%;
+            height:36px;
+            font-size: 36px;
+            margin:0 auto;
+            margin-bottom:15px;
+            @media (max-height: 768px) {
+              height:25px;
+              font-size: 25px;
+              margin-bottom: 8px;
+            }
+          }
+          font-size: 12px;
+          color:var(--font-color);
+          text-decoration: none;
+          font-weight: 400;
+
+        } // a
+        &:hover , &.active {
+          a:before , a {
+            color:var(--secondary-color);
           }
         }
-        font-size: 12px;
-        color:$font-color;
-        text-decoration: none;
-        font-weight: 400;
+        &.add-photo {
+          a:before {
+            content:"\e900";
+          }
+        }
+        &.add-text {
+          a:before {
 
-      }
-      &:hover , &.active {
-        a:before , a {
-          color:$secondary-color;
+            content:"\e919";
+          }
         }
-      }
-      &.add-photo {
-        a:before {
-          // background-image: url(../images/add_photo.svg);
-          content:"\e900";
+        &.image-gallery {
+          a:before {
+            background-image: url(../images/compny_logo.png);
+          }
         }
-      }
-      &.add-text {
-        a:before {
-          // background-image: url(../images/text.svg);
-          content:"\e919";
+        &.infographix {
+          a:before {
+
+            content:"\e916";
+          }
         }
-      }
-      &.image-gallery {
-        a:before {
-          background-image: url(../images/compny_logo.png);
+        &.ratio {
+          a:before {
+
+            content:"\e923";
+          }
         }
-      }
-      &.infographix {
-        a:before {
-          // background-image: url(../images/stats.svg);
-          content:"\e916";
+        &.templates {
+          a:before {
+
+            content:"\e925";
+          }
         }
-      }
-      &.ratio {
-        a:before {
-          // background-image: url(../images/stats.svg);
-          content:"\e923";
+        &.transition {
+          a:before {
+
+            content:"\e926";
+          }
         }
-      }
-      &.templates {
-        a:before {
-          // background-image: url(../images/stats.svg);
-          content:"\e925";
+        &.audio {
+          a:before {
+
+            content:"\e924";
+          }
         }
-      }
-      &.transition {
-        a:before {
-          // background-image: url(../images/stats.svg);
-          content:"\e926";
-        }
-      }
-      &.audio {
-        a:before {
-          // background-image: url(../images/stats.svg);
-          content:"\e924";
-        }
-      }
-    }
-  }
-}
+    } // .si-sidemenu-item
+  } // .si-sidemenu-list
+} // .si-side-menu

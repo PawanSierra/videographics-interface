@@ -22,7 +22,7 @@
       // justify-content: center;
       @extend %justify-center;
       // border-radius: 50%;
-      background-color: $font-color;
+      background-color: var(--font-color);
       // box-shadow: 0 0 3px rgba(0,0,0,0.20);
       cursor: pointer;
       &:before {
@@ -40,7 +40,7 @@
       @media (max-width: 768px) {
         width:80%;
       }
-      background-color: $primary-color;
+      background-color: var(--primary-color);
       top:50%;
       left:50%;
       transform: translate(-50%,-50%);
@@ -59,9 +59,9 @@
           display: inline-block;
           width:125px;
           height:34px;
-          color:$font-color;
+          color:var(--font-color);
           background-color: rgba(0,0,0,.10);
-          border:1px solid $font-color;
+          border:1px solid var(--font-color);
           outline: 0px;
           cursor: pointer;
           border-radius: 3px;
@@ -131,14 +131,14 @@
           left:-100%;
         }
         label.n {
-          color:$font-color;
+          color:var(--font-color);
           right:-150%;
         }
         input[type="checkbox"]:checked ~ label.n {
           color:#a6d067;
         }
         input[type="checkbox"]:checked ~ label.m {
-          color:$font-color;
+          color:var(--font-color);
         }
       }
       .si-popup-dropdown {
@@ -148,9 +148,9 @@
           border-bottom: 1px solid #fff;
         }
         .select-out {
-          color:$font-color;
+          color:var(--font-color);
           &:after {
-            color:$font-color;
+            color:var(--font-color);
           }
         }
         .si-dropdown-item {

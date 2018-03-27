@@ -4,8 +4,6 @@
   // display: flex;
   @extend %d-flex;
   // overflow:hidden;
-
-
   @media (max-width: 768px) {
 
     height: calc(100% - 67px);
@@ -23,7 +21,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(1,2,1,0) 1%,$secondary-color 100%);
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(1,2,1,0) 1%,var(--secondary-color) 100%);
       .si-action-wrap {
         display: inline-flex;
         align-items: center;
@@ -51,8 +49,8 @@
       .si-actn-btn {
         display: inline-block;
         padding:5px 10px;
-        color:$font-color;
-        background-color:$secondary-color;
+        color:var(--font-color);
+        background-color:var(--secondary-color);
         border-radius: 3px;
         font-size: 16px;
       }
@@ -212,14 +210,14 @@
               .color-palette-label {
 
                 display: inline-block;
-                color:$font-color;
+                color:var(--font-color);
                 font-size: 14px;
                 text-transform: uppercase;
                 cursor: pointer;
                 background: transparent !important;
                 border:none !important;
                 outline:none !important;
-                color:#fff !important;
+                color:var(--font-color) !important;
                 padding:0;
 
               }
@@ -242,7 +240,7 @@
           display: inline-block;
           text-transform: uppercase;
           font-size: 14px;
-          color:#fff;
+          color:var(--font-color);
           opacity: 0.5;
           padding-bottom: 4px;
           &.selected {
@@ -258,7 +256,7 @@
               content:"";
               width:105%;
               height:2px;
-              background-color: $secondary-color;
+              background-color: var(--secondary-color);
               transform: translateX(-50%);
               animation-name:scaleX;
               animation-duration: 500ms;
@@ -275,7 +273,7 @@
           width:80px;
           height:30px;
           border-radius:15px;
-          border:1px solid $secondary-color;
+          border:1px solid var(--secondary-color);
           // box-shadow: inset 0 0 20px 0 rgba(0,0,0,0.5);
           padding:2px;
 
@@ -297,7 +295,7 @@
             width:36px;
             height:26px;
             border-radius:20px;
-            background-color:$secondary-color;
+            background-color:var(--secondary-color);
             top:1px;
             left:2px;
             transition: left 300ms linear;
@@ -419,7 +417,7 @@
             border:none;
             background-color: rgba(0,0,0,.10);
             font-size: 14px;
-            color:#fff;
+            color:var(--font-color);
             resize: none;
             overflow: hidden;
             border: 1px dashed #8d8f81;
@@ -428,7 +426,7 @@
             &::placeholder {
 
               content:"Enter Text";
-              color:#fff;
+              color:var(--font-color);
               opacity: 0.7;
               font-size: 12px;
               font-family:'Roboto',sans-serif;
@@ -447,10 +445,10 @@
             background-color: transparent;
             border:none;
             border-bottom:1px solid #fff;
-            color:#fff;
+            color:var(--font-color);
 
             &::placeholder {
-              color:#fff;
+              color:var(--font-color);
               opacity: 0.5;
             }
           }
@@ -582,7 +580,7 @@
             text-transform: capitalize;
           }
           .si-selectoption .select-out {
-            color:#fff;
+            color:var(--font-color);
           }
         }
       } // .select-controls
@@ -647,7 +645,7 @@
       @extend .si-mageupload-area;
       width:504px;
       height:286px;
-      color:#fff;
+      color:var(--font-color);
       font-size: 14px;
       // overflow: hidden;
       @media (max-width: 768px) {
@@ -671,7 +669,7 @@
         padding:0 20px;
         right:0;
         height:30px;
-        color:#fff;
+        color:var(--font-color);
         line-height: 30px;
         color:rgba(255,255,255,0.5);
         background-color: rgba(0,0,0,.05);
@@ -689,7 +687,7 @@
         padding:20px;
         background: transparent;
         border:none;
-        color:#fff;
+        color:var(--font-color);
         resize: none;
         &:focus {
           outline:0;
@@ -723,7 +721,7 @@
         @extend .fontAwesome;
         content:"\f021";
         font-size: 18px;
-        color:$font-color;
+        color:var(--font-color);
       }
       @media (max-width: 768px) {
         display: none;
@@ -807,7 +805,7 @@
           // height:20px;
           // background:transparent;
           // border:2px solid #4a4a4a;
-          // border-top:2px solid $secondary-color;
+          // border-top:2px solid var(--secondary-color);
           // border-radius: 50%;
           // transform: translate(-50%,-50%);
 
@@ -900,7 +898,7 @@
     .si-selectoption {
       border-bottom: 1px solid rgba(255, 255, 255,1);
       span {
-        color:$font-color;
+        color:var(--font-color);
       }
       &:after {
         border-top: 6px solid rgba(255, 255, 255, 1);
@@ -947,7 +945,7 @@
         background-color:rgba(0,0,0,.20);
         border:1px solid #fff;
         border-radius:5px;
-        color:#fff;
+        color:var(--font-color);
         cursor: pointer;
         font-size: 16px;
         font-weight: 200;
@@ -968,7 +966,7 @@
           @extend .fontAwesome;
           content:"\f014";
           font-size: 18px;
-          color:#fff;
+          color:var(--font-color);
           // line-height: 38px;
           cursor: pointer;
         }
@@ -1114,7 +1112,7 @@
     //           right:-6px;
     //           width:12px;
     //           height:12px;
-    //           background-color:$font-color;
+    //           background-color:var(--font-color);
     //           color:#000;
     //           line-height: 11px;
     //           font-size: 8px;
@@ -1128,8 +1126,8 @@
     //           display: block;
     //         }
     //         a {
-    //           background-color:$secondary-color;
-    //           color:$font-color;
+    //           background-color:var(--secondary-color);
+    //           color:var(--font-color);
     //           border-right:none;
     //         }
     //         & a:before {
@@ -1158,7 +1156,7 @@
     //             content:"";
     //             @extend .fontAwesome;
     //             font-size: 22px;
-    //             color:$font-color;
+    //             color:var(--font-color);
     //             text-align: center;
     //           }
     //           &.button-prev:before {
@@ -1574,7 +1572,7 @@
     //       // justify-content: center;
     //       @extend %justify-center;
     //       align-items: stretch;
-    //       color:$font-color;
+    //       color:var(--font-color);
     //       font-size: 12px;
     //       font-weight: 200;
     //       height:100%;
@@ -1583,7 +1581,7 @@
     //         background-color: rgba(0,0,0,.20);
     //       }
     //       a {
-    //         color:$font-color;
+    //         color:var(--font-color);
     //         text-decoration: none;
     //         display: block;
     //       }
@@ -1726,7 +1724,7 @@
     //     }
     //     &.split-screen {
     //       .si-btn.active:after {
-    //         color:lighten($secondary-color,10);
+    //         color:lighten(var(--secondary-color),10);
     //       }
     //     }
     //     &.active .si-btn-action-tip:not(#a) {
@@ -2057,7 +2055,7 @@
         font-size: 14px;
         line-height:20px;
         background: rgba(0,0,0,0.8);
-        color:#fff;
+        color:var(--font-color);
         @media (max-width: 768px) {
           width:14px;
           height:14px;

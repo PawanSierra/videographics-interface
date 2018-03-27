@@ -101,13 +101,14 @@
         @extend %justify-center;
 
         a {
+
           position: relative;
           display: block;
           width:25px;
           height:25px;
           line-height: 25px;
           font-size: 14px;
-          color:#fff;
+          color:var(--font-color);
           text-decoration: none;
 
         }
@@ -130,7 +131,7 @@
           right:-6px;
           width:12px;
           height:12px;
-          background-color:$font-color;
+          background-color:var(--font-color);
           color:#000;
           line-height: 11px;
           font-size: 8px;
@@ -144,8 +145,8 @@
           display: block;
         }
         a {
-          background-color:$secondary-color;
-          color:$font-color;
+          background-color:var(--secondary-color);
+          color:var(--font-color);
           border-right:none;
         }
         & a:before {
@@ -174,7 +175,7 @@
             content:"";
             @extend .fontAwesome;
             font-size: 22px;
-            color:$font-color;
+            color:var(--font-color);
             text-align: center;
           }
           &.button-prev:before {
@@ -273,11 +274,14 @@
           }
           dt {
 
+            position: relative;
+            display: inline-block;
             text-align: center;
-            width:15px;
+            width:auto;
             height:15px;
             background-color:#fff;
             border-radius: 2px 2px 0 0;
+            padding:0 4px;
 
             .text-btn {
 
@@ -291,12 +295,18 @@
               &.text-edit:before {
                   content:"\f044";
               }
+              &.font-family:before {
+                content:"Font Family";
+              }
+              &.font-size:before {
+                content:"\f031";
+              }
             } // .text-btn
           }
         }
         &:hover {
           border:1px dashed rgba(255,255,255,0.5);
-          padding:3px;
+          padding:4px;
         }
 
       }
@@ -339,6 +349,26 @@
         position: absolute;
         width:100%;
         z-index: 1;
+      }
+    }
+  }
+  &.one-one {
+    .si-main-image {
+      .si-image-wrapper {
+        img {
+          width:150%;
+          height:auto;
+        }
+      }
+    }
+  }
+  &.four-three {
+    .si-main-image {
+      .si-image-wrapper {
+        img {
+          width:130%;
+          height:auto;
+        }
       }
     }
   }
@@ -601,7 +631,7 @@
       // justify-content: center;
       @extend %justify-center;
       align-items: stretch;
-      color:$font-color;
+      color:var(--font-color);
       font-size: 12px;
       font-weight: 200;
       height:100%;
@@ -610,7 +640,7 @@
         background-color: rgba(0,0,0,.20);
       }
       a {
-        color:$font-color;
+        color:var(--font-color);
         text-decoration: none;
         display: block;
       }

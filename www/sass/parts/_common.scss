@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-
 }
 html {
   width:100%;
@@ -13,7 +12,7 @@ body {
   width:100%;
   height:100%;
   font-family:$font;
-  color:$font-color;
+  color:var(--font-color);
   overflow-x: hidden;
 
 }
@@ -41,6 +40,7 @@ body {
 
   font-family:"vg-fonts";
   -webkit-font-smoothing:antialiased;
+
 }
 %ellipsis {
   overflow: hidden;
