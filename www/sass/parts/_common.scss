@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 html {
+  
   width:100%;
   height:100%;
   line-height: 1;
@@ -27,48 +28,6 @@ body {
   background-size:cover;
 
 }
-.clearfix {
-  display: block;
-  content:"";
-  clear:both;
-}
-.fontAwesome {
-  font-family: "FontAwesome";
-  content:"";
-}
-%vg-fonts {
-
-  font-family:"vg-fonts";
-  -webkit-font-smoothing:antialiased;
-
-}
-%ellipsis {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-%d-flex {
-  display: flex;
-}
-%align-center {
-  align-items: center;
-}
-%justify-center {
-  justify-content: center;
-}
-%justify-between {
-
-  justify-content: space-between;
-}
-%justify-around {
-
-  justify-content: space-around;
-
-}
-%align-start {
-  align-items: flex-start;
-}
-
 .si-selectoption {
   position: relative;
   height:20px;
@@ -82,7 +41,7 @@ body {
     color:#4a4a4a;
     text-transform: uppercase;
     z-index: 2;
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       opacity:1;
       display: block;
       background: transparent;
@@ -92,7 +51,7 @@ body {
     }
 
   }
-  @media (max-width:  768px) {
+  @media (max-width:  $mobile) {
     .CaptionCont {
       display: none;
     }

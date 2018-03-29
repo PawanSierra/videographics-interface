@@ -44,7 +44,7 @@
       &:after {
 
         position: absolute;
-        @extend .fontAwesome;
+        @extend %fontAwesome;
         content:"\f00c";
         font-size: 38px;
         top:50%;
@@ -53,6 +53,15 @@
         color:#fff;
         text-shadow: 0 0 4px rgba(0,0,0,.30);
 
+      }
+      @media (max-width: $mobile) {
+        &:before {
+          width:24px;
+          height:24px;
+        }
+        &:after {
+          font-size: 18px;
+        }
       }
     }
     .si-template-item-wrap {
@@ -123,7 +132,7 @@
               &:before {
 
                 text-align: center;
-                @extend .fontAwesome;
+                @extend %fontAwesome;
                 display: inline-block;
                 color:var(--font-color);
                 font-size: 8px;
@@ -248,7 +257,7 @@
         background-size: 34px 69px;
       }
     }
-    
+
     .si-template-item.zoom-in {
       .si-template-item-wrap {
         background-image: url(../images/transitions/zoom-in.png);
@@ -284,7 +293,6 @@
     .si-upload-label {
       font-size: 16px;
       color:#fff;
-
     }
     .si-custom-templates-upload {
 
@@ -323,7 +331,7 @@
     display: grid;
     grid-gap:40px;
     grid-template-columns: repeat(2,1fr);
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       grid-template-columns: repeat(1,1fr);
       padding:20px 0;
     }

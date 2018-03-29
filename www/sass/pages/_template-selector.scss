@@ -1,23 +1,23 @@
 .si-infographic-templates {
   width:100%;
   padding-top:30px;
-  @media (max-width: 768px) {
+  @media (max-width: $mobile) {
     padding-top:5px;
     height:100%;
   }
   .si-infographic-templates-wrap {
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       height:100%;
     }
     .si-mobile-tab {
       display: none;
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         display: block;
       }
       border-bottom: 1px solid rgba(255,255,255,.20);
       margin-bottom: 10px;
       &:after {
-        @extend .clearfix;
+        @extend %clearfix;
       }
       .si-tab-col {
 
@@ -45,10 +45,10 @@
     .si-template-area {
       margin-bottom:5px;
 
-      @media (min-width: 768px) and (max-width: 1366px){
+      @media (min-width: $mobile) and (max-width: 1366px){
         margin-bottom:0px;
       }
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
 
         height: calc(100% - 65px);
         overflow-y: auto;
@@ -58,7 +58,7 @@
         // }
       }
       .si-template-top {
-        @media(max-width: 768px) {
+        @media(max-width: $mobile) {
           display: none;
         }
         margin-bottom: 12px;
@@ -155,7 +155,7 @@
               &:before {
 
                 text-align: center;
-                @extend .fontAwesome;
+                @extend %fontAwesome;
                 display: inline-block;
                 color:var(--font-color);
                 font-size: 8px;
@@ -322,7 +322,7 @@
               }
               .btn:before {
                 content:"\f04b";
-                @extend .fontAwesome;
+                @extend %fontAwesome;
                 color:rgba(255,255,255,.50);
                 font-size: 22px;
               }
@@ -350,7 +350,7 @@
         padding-bottom: 20px;
 
         &:after {
-          @extend .clearfix;
+          @extend %clearfix;
         }
         .si-template-item {
           position: relative;
@@ -358,7 +358,7 @@
           float:left;
           padding:0 7.5px 0 7.5px;
           cursor: pointer;
-          @media (max-width: 768px) {
+          @media (max-width: $mobile) {
             width:100%;
             & + .si-template-item {
               margin-top:10px;
@@ -397,7 +397,7 @@
             &:after {
 
               position: absolute;
-              @extend .fontAwesome;
+              @extend %fontAwesome;
               content:"\f00c";
               font-size: 38px;
               top:50%;
@@ -417,7 +417,7 @@
 
   height:100%;
   padding-top:20px;
-  @media (max-width: 768px) {
+  @media (max-width: $mobile) {
     padding-top: 5px;
   }
   .si-infographic-templates-wrap {
@@ -445,7 +445,7 @@
       &:nth-child(n + 5) {
         margin-top:10px;
       }
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         width:100%;
         float:none;
       }

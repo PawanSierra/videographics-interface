@@ -2,11 +2,7 @@
   --primary-color: #000;
   --secondary-color: #90c441;
   --font-color: #fff;
-  --border-color: #66704c;
-  --mobile: 768px;
-  --ipad: 1034px;
-  --desktop: 1366px;
-  --large-desktop: 1920px; }
+  --border-color: #66704c; }
 
 @-webkit-keyframes scaleX {
   0% {
@@ -3229,53 +3225,6 @@ body {
   background-position: center center;
   background-size: cover; }
 
-.clearfix, .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-options:after, .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-container:after, .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper:after, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-sports .si-infographic-sport-list:after, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-types-list:after, .si-page.login .si-login-section-wrap:after {
-  display: block;
-  content: "";
-  clear: both; }
-
-.fontAwesome, .si-header .si-logged-wrapper .si-home-btn a:before, .si-breadcrumbs .si-breadcrumbs-list-item + .si-breadcrumbs-list-item a:before, .si-video-dropdown .si-video-list .si-btn:before, .fixed-btn-bottom a:after, .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-refresh:before, .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-container .si-gallery-thumb.selected:before, .si-main .si-col.editor .si-input-fields .si-submit-btn .si-clear-graphic:before, .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item.btn span:before, .si-grpahic-container .graphic-overlay .si-text-overlay .si-text-wrap:hover .si-text-edit-options dt .text-btn, .si-grpahic-container .si-set-btn:before, .si-grpahic-container .si-set-close-btn:before, .si-grpahic-container .si-zoomin-btn:before, .si-grpahic-container .si-zoomout-btn:before, .si-grpahic-container .si-zoom-controls .si-set-zoom-btn:before, .si-grpahic-container .si-zoom-controls .si-set-zoom-close-btn:before, .si-templates-section .si-template-item.selected:after, .si-templates-section .si-template-item .si-template-item-wrap .si-template-item-media-contorls .si-controls-wrap .si-play-btn .btn:before, .si-popup .si-popup-wrap .si-popup-close:before {
-  font-family: "FontAwesome";
-  content: ""; }
-
-.si-side-menu .si-sidemenu-list .si-sidemenu-item a:before, .si-main .si-col.editor .si-uploadui span:before, .si-graphic-control .si-graphic-btn span:before, .si-graphic-actions .si-actions-wrapper .si-btn:after, .si-graphic-actions .si-actions-wrapper .si-btn a:after, .si-graphic-actions .si-actions-wrapper .si-btn-col:after, .si-graphic-actions .si-actions-wrapper .si-btn-col a:after, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-sports .si-infographic-sport-item a:before, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item a:before, .si-page.login .si-login-form .si-input-container .si-input-area:not(.submit):not(:last-child):before {
-  font-family: "vg-fonts";
-  -webkit-font-smoothing: antialiased; }
-
-.SI-select > .CaptionCont > span, .si-selectoption .select-out, .si-header .si-logged-wrapper .logged-menu .si-drop-menu .si-logged-username, .si-header .si-logged-wrapper .logged-menu .si-drop-menu .si-drop-down a, .si-video-dropdown .si-video-list .video-list-item > span, .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item.two-col .si-static-input-field-item-col label, .si-main .si-col.editor .si-input-fields .si-infographic-field-column .si-input-option label, .si-templates-section .si-template-item .si-template-item-wrap .si-template-item-media-contorls .si-controls-wrap .si-play-label span, .si-templates-section .si-templates-upload .si-custom-templates-upload .si-seleted-file {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis; }
-
-.si-header, .si-breadcrumbs, .si-breadcrumbs .si-video-loader span, .si-video-dropdown, .si-video-dropdown .si-video-list .video-list-item, .si-main, .si-main .si-col .si-itemswrapper, .si-main .si-col .si-itemswrapper .si-infographix-fields.color-picker .color-palette .color-palette-list, .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item, .si-main .si-col.editor .si-input-fields .si-infographic-field-column, .si-main .si-col.editor .si-input-fields .si-infographic-field-column .si-input-option, .contentGridly .brick.small .brick-wrap .sub-wrap, .si-graphic-control, .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper, .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item, .si-grpahic-container .si-split-image, .si-graphic-actions, .si-graphic-actions .si-actions-wrapper .si-btn.split-screen .si-btn-area, .si-graphic-actions .si-actions-wrapper .si-btn.zoom-in-out .si-btn-area, .si-graphic-actions .si-actions-wrapper .si-btn-col.split-screen .si-btn-area, .si-graphic-actions .si-actions-wrapper .si-btn-col.zoom-in-out .si-btn-area, .si-graphic-actions .si-actions-wrapper .si-btn.active .si-btn-action-tip:not(#a), .si-graphic-actions .si-actions-wrapper .si-btn-col.active .si-btn-action-tip:not(#a), .si-static-text-overlay.bottom-graphic .si-static-text-wrap, .si-infographic-selector, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item, .si-page.login .si-login-section, .si-templates-section, .si-templates-section .si-template-item .si-template-item-wrap .si-template-item-media-contorls .si-controls-wrap, .si-templates-section .si-templates-upload, .si-ratio-section, .si-ratio-section .si-ratio-item .si-ratio-item-wrap .si-ratio-count {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.si-header, .si-header .si-logged-wrapper, .si-breadcrumbs .si-right-section, .si-breadcrumbs, .si-breadcrumbs .si-video-loader span, .si-video-dropdown, .si-video-dropdown .si-video-list .video-list-item, .si-main .si-col .si-itemswrapper, .si-main .si-col .si-itemswrapper .si-infographix-fields.check-btn, .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item, .si-graphic-control, .si-graphic-control .si-graphic-btn, .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper, .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item, .si-graphic-actions .si-actions-wrapper, .si-infographic-selector, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item, .si-page.login .si-login-section, .si-templates-section .si-template-item .si-template-item-wrap .si-template-item-media-contorls .si-controls-wrap, .si-templates-section .si-templates-upload, .si-ratio-section, .si-ratio-section .si-ratio-item .si-ratio-item-wrap .si-ratio-count, .si-popup .si-popup-wrap .si-popup-close, .si-popup .si-popup-wrap .si-popup-content .si-popup-toggle .si-popup-toggle-control {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.si-main .si-col .si-itemswrapper, .si-main .si-col .si-itemswrapper .si-infographix-fields.check-btn, .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item, .si-graphic-actions .si-actions-wrapper .si-btn, .si-graphic-actions .si-actions-wrapper .si-btn-col, .si-infographic-selector, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item, .si-page.login .si-login-section, .si-templates-section .si-templates-upload, .si-ratio-section .si-ratio-item .si-ratio-item-wrap .si-ratio-count, .si-popup .si-popup-wrap .si-popup-close {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.si-header, .si-breadcrumbs, .si-main .si-col .si-itemswrapper .si-infographix-fields.color-picker .color-palette .color-palette-list, .si-main .si-col .si-itemswrapper .si-infographix-fields.three-col:not(#a), .si-static-text-overlay.bottom-graphic .si-static-text-wrap, .si-templates-section {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.si-ratio-section {
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-
-.si-templates-section {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
-
 .si-selectoption {
   position: relative;
   height: 20px;
@@ -3340,6 +3289,53 @@ body {
 .grabbing {
   cursor: -webkit-grabbing;
   cursor: grabbing; }
+
+.si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-options:after, .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-container:after, .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper:after, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-sports .si-infographic-sport-list:after, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-types-list:after, .si-page.login .si-login-section-wrap:after {
+  display: block;
+  content: "";
+  clear: both; }
+
+.si-header .si-logged-wrapper .si-home-btn a:before, .si-breadcrumbs .si-breadcrumbs-list-item + .si-breadcrumbs-list-item a:before, .si-video-dropdown .si-video-list .si-btn:before, .fixed-btn-bottom a:after, .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-refresh:before, .si-main .si-col.editor .si-imagegallery-wrapper .si-imagegallery-container .si-gallery-thumb.selected:before, .si-main .si-col.editor .si-input-fields .si-submit-btn .si-clear-graphic:before, .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item.btn span:before, .si-grpahic-container .graphic-overlay .si-text-overlay .si-text-wrap:hover .si-text-edit-options dt .text-btn, .si-grpahic-container .si-set-btn:before, .si-grpahic-container .si-set-close-btn:before, .si-grpahic-container .si-zoomin-btn:before, .si-grpahic-container .si-zoomout-btn:before, .si-grpahic-container .si-zoom-controls .si-set-zoom-btn:before, .si-grpahic-container .si-zoom-controls .si-set-zoom-close-btn:before, .si-templates-section .si-template-item.selected:after, .si-templates-section .si-template-item .si-template-item-wrap .si-template-item-media-contorls .si-controls-wrap .si-play-btn .btn:before, .si-popup .si-popup-wrap .si-popup-close:before {
+  font-family: "FontAwesome";
+  -webkit-font-smoothing: antialiased; }
+
+.si-side-menu .si-sidemenu-list .si-sidemenu-item a:before, .si-main .si-col.editor .si-uploadui span:before, .si-graphic-control .si-graphic-btn span:before, .si-graphic-actions .si-actions-wrapper .si-btn:after, .si-graphic-actions .si-actions-wrapper .si-btn a:after, .si-graphic-actions .si-actions-wrapper .si-btn-col:after, .si-graphic-actions .si-actions-wrapper .si-btn-col a:after, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-sports .si-infographic-sport-item a:before, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item a:before, .si-page.login .si-login-form .si-input-container .si-input-area:not(.submit):not(:last-child):before {
+  font-family: "vg-fonts";
+  -webkit-font-smoothing: antialiased; }
+
+.SI-select > .CaptionCont > span, .si-selectoption .select-out, .si-header .si-logged-wrapper .logged-menu .si-drop-menu .si-logged-username, .si-header .si-logged-wrapper .logged-menu .si-drop-menu .si-drop-down a, .si-video-dropdown .si-video-list .video-list-item > span, .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item.two-col .si-static-input-field-item-col label, .si-main .si-col.editor .si-input-fields .si-infographic-field-column .si-input-option label, .si-templates-section .si-template-item .si-template-item-wrap .si-template-item-media-contorls .si-controls-wrap .si-play-label span, .si-templates-section .si-templates-upload .si-custom-templates-upload .si-seleted-file {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.si-header, .si-breadcrumbs, .si-breadcrumbs .si-video-loader span, .si-video-dropdown, .si-video-dropdown .si-video-list .video-list-item, .si-main, .si-main .si-col .si-itemswrapper, .si-main .si-col .si-itemswrapper .si-infographix-fields.color-picker .color-palette .color-palette-list, .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item, .si-main .si-col.editor .si-input-fields .si-infographic-field-column, .si-main .si-col.editor .si-input-fields .si-infographic-field-column .si-input-option, .contentGridly .brick.small .brick-wrap .sub-wrap, .si-graphic-control, .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper, .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item, .si-grpahic-container .si-split-image, .si-graphic-actions, .si-graphic-actions .si-actions-wrapper .si-btn.split-screen .si-btn-area, .si-graphic-actions .si-actions-wrapper .si-btn.zoom-in-out .si-btn-area, .si-graphic-actions .si-actions-wrapper .si-btn-col.split-screen .si-btn-area, .si-graphic-actions .si-actions-wrapper .si-btn-col.zoom-in-out .si-btn-area, .si-graphic-actions .si-actions-wrapper .si-btn.active .si-btn-action-tip:not(#a), .si-graphic-actions .si-actions-wrapper .si-btn-col.active .si-btn-action-tip:not(#a), .si-static-text-overlay.bottom-graphic .si-static-text-wrap, .si-infographic-selector, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item, .si-page.login .si-login-section, .si-templates-section, .si-templates-section .si-template-item .si-template-item-wrap .si-template-item-media-contorls .si-controls-wrap, .si-templates-section .si-templates-upload, .si-ratio-section, .si-ratio-section .si-ratio-item .si-ratio-item-wrap .si-ratio-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.si-header, .si-header .si-logged-wrapper, .si-breadcrumbs .si-right-section, .si-breadcrumbs, .si-breadcrumbs .si-video-loader span, .si-video-dropdown, .si-video-dropdown .si-video-list .video-list-item, .si-main .si-col .si-itemswrapper, .si-main .si-col .si-itemswrapper .si-infographix-fields.check-btn, .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item, .si-graphic-control, .si-graphic-control .si-graphic-btn, .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper, .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item, .si-graphic-actions .si-actions-wrapper, .si-infographic-selector, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item, .si-page.login .si-login-section, .si-templates-section .si-template-item .si-template-item-wrap .si-template-item-media-contorls .si-controls-wrap, .si-templates-section .si-templates-upload, .si-ratio-section, .si-ratio-section .si-ratio-item .si-ratio-item-wrap .si-ratio-count, .si-popup .si-popup-wrap .si-popup-close, .si-popup .si-popup-wrap .si-popup-content .si-popup-toggle .si-popup-toggle-control {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.si-templates-section {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.si-main .si-col .si-itemswrapper, .si-main .si-col .si-itemswrapper .si-infographix-fields.check-btn, .si-graphic-control .si-graphic-nav .si-graphicnav-wrapper .si-nav-item, .si-graphic-actions .si-actions-wrapper .si-btn, .si-graphic-actions .si-actions-wrapper .si-btn-col, .si-infographic-selector, .si-infographic-selector .si-infographic-selector-wrapper .si-infographic-type .si-infographic-type-item, .si-page.login .si-login-section, .si-templates-section .si-templates-upload, .si-ratio-section .si-ratio-item .si-ratio-item-wrap .si-ratio-count, .si-popup .si-popup-wrap .si-popup-close {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.si-header, .si-breadcrumbs, .si-main .si-col .si-itemswrapper .si-infographix-fields.color-picker .color-palette .color-palette-list, .si-main .si-col .si-itemswrapper .si-infographix-fields.three-col:not(#a), .si-static-text-overlay.bottom-graphic .si-static-text-wrap, .si-templates-section {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.si-ratio-section {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .si-header {
   height: 38px;
@@ -3976,7 +3972,7 @@ body {
             color: var(--font-color);
             opacity: 0.7;
             font-size: 12px;
-            font-family: 'Roboto',sans-serif;
+            font-family: "Roboto", sans-serif;
             font-weight: 200;
             letter-spacing: 0.5px; }
           .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-text:-ms-input-placeholder,.si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-text::-ms-input-placeholder {
@@ -3985,7 +3981,7 @@ body {
             color: var(--font-color);
             opacity: 0.7;
             font-size: 12px;
-            font-family: 'Roboto',sans-serif;
+            font-family: "Roboto", sans-serif;
             font-weight: 200;
             letter-spacing: 0.5px; }
           .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-text::placeholder {
@@ -3994,7 +3990,7 @@ body {
             color: var(--font-color);
             opacity: 0.7;
             font-size: 12px;
-            font-family: 'Roboto',sans-serif;
+            font-family: "Roboto", sans-serif;
             font-weight: 200;
             letter-spacing: 0.5px; }
         .si-main .si-col .si-itemswrapper .si-static-input-field-wrap .si-static-input-field-item .si-static-input {
@@ -4500,13 +4496,6 @@ body {
         font-size: 25px; }
       .si-graphic-control .si-graphic-btn span.si-add-btn:before {
         content: "\e901"; }
-      .si-graphic-control .si-graphic-btn span.si-grid-btn {
-        background-image: url(../images/grid-icon.svg);
-        background-size: 22px 22px; }
-      .si-graphic-control .si-graphic-btn span.si-singlecol-btn {
-        background-image: url(../images/single-column.svg); }
-      .si-graphic-control .si-graphic-btn span.si-swap-btn {
-        background-image: url(../images/swap-btn.svg); }
       .si-graphic-control .si-graphic-btn span + span {
         margin-left: 10px; }
   .si-graphic-control .si-grpahicnav-container {
@@ -4743,8 +4732,14 @@ body {
   .si-grpahic-container.one-one .si-main-image .si-image-wrapper img {
     width: 150%;
     height: auto; }
+  .si-grpahic-container.one-one.low-one-one .si-main-image .si-image-wrapper img {
+    width: 200%;
+    height: auto; }
   .si-grpahic-container.four-three .si-main-image .si-image-wrapper img {
     width: 130%;
+    height: auto; }
+  .si-grpahic-container.four-three.low-four-three .si-main-image .si-image-wrapper img {
+    width: 150%;
     height: auto; }
   .si-grpahic-container.static-graphic .si-main-image .si-image-wrapper img {
     min-height: 100%; }
@@ -6601,7 +6596,7 @@ body {
   right: 0px;
   bottom: 0px;
   background-color: rgba(0, 0, 0, .85);
-  z-index: 9999999999999999; }
+  z-index: 99999; }
   .si-popup .si-popup-wrap {
     position: relative;
     width: 100%;
@@ -7250,7 +7245,12 @@ body {
     .si-page.login .si-login-form .si-input-container .si-input-area.submit:not(a) {
       margin-top: 50px;
       text-align: center; }
-    @supports (display: grid) {
+        .si-templates-section .si-template-item.selected:before {
+          width: 24px;
+          height: 24px; }
+        .si-templates-section .si-template-item.selected:after {
+          font-size: 18px; }
+        @supports (display: grid) {
         .si-templates-section {
           grid-template-columns: repeat(1, 1fr);
           padding: 20px 0; } }

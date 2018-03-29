@@ -1,201 +1,13 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font:inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-body ,html {
-	width:auto;
-}
+// @import "parts/variables";
+@import "parts/reset";
+@import "parts/fonts";
+@import "parts/utilities";
 
-@font-face {
-  font-family: 'gotham_ultra-italic';
-  src: url("../fonts/gotham_ultra_italic-webfont.eot"); }
-
-@font-face {
-  font-family: 'gotham_ultra-italic';
-  src: url("../fonts/gotham_ultra_italic-webfont.woff") format("woff"), url("../fonts/gotham_ultra_italic-webfont.ttf") format("truetype"), url("../fonts/gotham_ultra_italic-webfont.svg#gotham_ultraitalic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'gotham_book';
-  src: url("../fonts/Gotham-Book.eot"); }
-
-@font-face {
-  font-family: 'gotham_book';
-  src: url("../fonts/Gotham-Book.woff") format("woff"), url("../fonts/Gotham-Book.ttf") format("truetype"), url("../fonts/Gotham-Book.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'gotham_black';
-  src: url("../fonts/Gotham-Black.eot") format("embedded-opentype"); }
-
-@font-face {
-  font-family: 'gotham_black';
-  src: url("../fonts/Gotham-Black.woff") format("woff"), url("../fonts/Gotham-Black.ttf") format("truetype"), url("../fonts/Gotham-Black.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'gotham_medium';
-  src: url("../fonts/Gotham-Medium.woff") format("woff"), url("../fonts/Gotham-Medium.eot") format("embedded-opentype"), url("../fonts/Gotham-Medium.ttf") format("truetype"), url("../fonts/Gotham-Medium.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'gotham_light';
-  src: url("../fonts/Gotham-Light.woff") format("woff"), url("../fonts/Gotham-Light.eot") format("embedded-opentype"), url("../fonts/Gotham-Light.ttf") format("truetype"), url("../fonts/Gotham-Light.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-	 font-family:'gotham-book-italic';
-	 src: url('../fonts/Gotham-BookItalic.woff') format('woff') , url('../fonts/Gotham-BookItalic.eot') format('embedded-opentype'), url('../fonts/Gotham-BookItalic.ttf') format('truetype'), url('../fonts/Gotham-BookItalic.otf') format('opentype'), url('../fonts/Gotham-BookItalic.svg') format('svg');
-	 font-style: normal;
-	 font-weight: normal;
-
-	}
-
-@font-face {
-	  font-family: 'gotham_bold';
-	  src: url("../fonts/Gotham-Bold.eot");
-	  src: url("../fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Bold.woff2") format("woff2"), url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype"), url("../fonts/Gotham-Bold.otf") format("opentype"), url("../fonts/Gotham-Bold.svg#Gotham Bold") format("svg");
-	  font-weight: 700;
-	  font-style: normal;
-	  font-stretch: normal;
-	  unicode-range: U+0020-00FE; }
-
-	@font-face {
-		    font-family:'gotham-narrow-black';
-		    src: url('../fonts/GothamNarrow-Black.eot');
-			  src: url('../fonts/GothamNarrow-Black.eot?#iefix') format('embedded-opentype'),
-				url('../fonts/GothamNarrow-Black.woff') format('woff'),
-				url('../fonts/GothamNarrow-Black.ttf') format('truetype'),
-				url('../fonts/GothamNarrow-Black.otf') format('opentype'),
-				url('../fonts/GothamNarrow-Black.svg#GothamNarrow-Black') format('svg');
-		    font-weight: 450;
-		    font-style: normal;
-		    font-stretch: condensed;
-		    unicode-range: U+0020-00FE;
-		}
-
-		@font-face {
-		    font-family:'roboto-bold';
-		    src: url('../fonts/Roboto-Bold.eot');
-		  	src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-		  		url('../fonts/Roboto-Bold.woff') format('woff'),
-		  		url('../fonts/Roboto-Bold.ttf') format('truetype'),
-		  		url('../fonts/Roboto-Bold.otf') format('opentype'),
-		  		url('../fonts/Roboto-Bold.svg#Roboto Medium') format('svg');
-		      font-style: normal;
-		      font-stretch: normal;
-		      unicode-range: U+0020-2044;
-		}
-
-		@font-face {
-		    font-family:'gotham-ultra';
-		    src: url('../fonts/Gotham-Ultra.eot');
-			src: url('../fonts/Gotham-Ultra.eot?#iefix') format('embedded-opentype'),
-				url('../fonts/Gotham-Ultra.woff') format('woff'),
-				url('../fonts/Gotham-Ultra.ttf') format('truetype'),
-				url('../fonts/Gotham-Ultra.otf') format('opentype'),
-				url('../fonts/Gotham-Ultra.svg#Gotham-Ultra') format('svg');
-		    font-weight: 450;
-		    font-style: normal;
-		    font-stretch: normal;
-		    unicode-range: U+0020-00FE;
-		}
-		@font-face {
-		    font-family:'helvetica-neue';
-		    src: url('../fonts/Helvetica-Neue-Condensed Bold.eot');
-			src: url('../fonts/Helvetica-Neue-Condensed Bold.eot?#iefix') format('embedded-opentype'),
-				url('../fonts/Helvetica-Neue-Condensed Bold.woff') format('woff'),
-				url('../fonts/Helvetica-Neue-Condensed Bold.ttf') format('truetype'),
-				url('../fonts/Helvetica-Neue-Condensed Bold.otf') format('opentype'),
-				url('../fonts/Helvetica-Neue-Condensed Bold.svg#Helvetica Neue Condensed Bold') format('svg');
-		    font-weight: 700;
-		    font-style: normal;
-		    font-stretch: condensed;
-		    unicode-range: U+0-10FFFF;
-		}
-		@font-face {
-
-		    font-family: 'Helvetica Neue Bold Condensed';
-		    src: url('../fonts/helveticaneue-boldcond-webfont.ttf') format('truetype');
-		    font-weight: normal;
-		    font-style: normal;
-		}
-		@font-face {
-
-		    font-family: 'Helvetica Neue Bold';
-		    src: url('../fonts/helveticaneue-bold-webfont.ttf') format('truetype');
-		    font-weight: normal;
-		    font-style: normal;
-		}
-		@font-face {
-		    font-family: 'Helvetica Neue Light';
-		    src: url('../fonts/Helvetica-Neue-Light.ttf') format('truetype');
-		    font-weight: normal;
-		    font-style: normal;
-		}
-		@font-face {
-		    font-family: 'Digital';
-		    src: url('../fonts/digitalfont-webfont.ttf') format('truetype');
-		    font-weight: normal;
-		    font-style: normal;
-		}
 
 .container {
+
 	width:100%;
 	height:100%;
-  /* display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align:center;
-        -ms-flex-align:center;
-            align-items:center;
-    -webkit-box-pack:center;
-        -ms-flex-pack:center;
-            justify-content:center; */
 
 }
 .image-wrapper  {
@@ -206,289 +18,73 @@ body ,html {
 
 }
 .main-image {
+
   position: relative;
   width:100%;
   height:100%;
   overflow: hidden;
 
 }
-.main-image .si-image-wrapper img {
-  position: absolute;
-  width:100%;
-  height:auto;
-  top:0;
-  left:0;
-  z-index:1;
-}
-.si-main-graphic {
-  background: rgba(0, 0, 0, .1);
-}
- .si-main-graphic .si-grpahic-container {
-	position: relative;
-	width: 100%;
-	height: 0px;
-	padding-bottom: 56.25%;
-	background-image: url(../images/transparent-big.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	overflow: hidden;
-}
-
-	.si-main-graphic .si-grpahic-container.one-one {
-    width:720px;
-    height: 100%;
-    margin: 0 auto; }
-  .si-main-graphic .si-grpahic-container.four-three {
-    width:75%;
-    height:100%;
-    margin: 0 auto; }
- .si-main-graphic .si-grpahic-container .graphic-overlay {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		bottom: 0;
-		left: 0;
-		z-index: 2; }
-	 .si-main-graphic .si-grpahic-container .graphic-overlay img {
-			display: block;
-			width: 100%;
-			height: 100%; }
-	 .si-main-graphic .si-grpahic-container .graphic-overlay .si-text-overlay {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			z-index: 5;
-		 }
-		 .si-grpahic-container .si-branding {
-       position: absolute;
-       width: 163px;
-       height: 26px;
-       top: 10px;
-       background-repeat: no-repeat;
-       background-size: contain;
-       background-position: center center;
-       z-index: 4; }
-    .si-grpahic-container .si-branding.left {
-         left: 20px; }
-    .si-grpahic-container .si-branding.right {
-         right: 20px; }
-    .si-grpahic-container .si-branding.yahoo {
-         background-image: url(../images/client-logos/yahoo.png); }
-
-		 .si-main-graphic .si-grpahic-container .graphic-overlay .si-text-overlay .si-text-wrap {
-				position: absolute;
-				width: 80%;
-				top: 80%;
-				left: 50%;
-				-webkit-transform: translateX(-50%);
-						-ms-transform: translateX(-50%);
-								transform: translateX(-50%);
-							}
-		 .si-main-graphic .si-grpahic-container .graphic-overlay .si-text-overlay p {
-				text-align: left;
-				font: initial;
-				word-wrap: break-word; }
- .si-main-graphic .si-grpahic-container .si-main-image {
-
-		width: 100%;
-		height: 100%;
-		overflow: hidden; }
-	 .si-main-graphic .si-grpahic-container .si-main-image .si-image-wrapper {
-			width: 100%;
-			height: 100%; }
-	.si-main-graphic .si-grpahic-container .si-main-image .si-image-wrapper img {
-				position: absolute;
-				width: 100%;
-				min-height:100%;
-				z-index: 1; }
-	.si-main-graphic .si-grpahic-container.one-one .si-main-image .si-image-wrapper img {
-			    width: 150%;
-			    height: auto; }
-	.si-main-graphic .si-grpahic-container.one-one.low-one-one .si-main-image .si-image-wrapper img {
-					width: 200%;
-	 }
-	.si-main-graphic .si-grpahic-container.four-three .si-main-image .si-image-wrapper img {
-			    width: 130%;
-			    height: auto; }
-	.si-main-graphic .si-grpahic-container.four-three.low-four-three .si-main-image .si-image-wrapper img {
-				width: 150%;
-	}
- .si-main-graphic .si-grpahic-container .si-resize-overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.4);
-		padding: 10px;
-		z-index: 3;
-		cursor: move; }
-	.si-main-graphic .si-grpahic-container .si-resize-overlay .si-resize-wrap {
-			width: 100%;
-			height: 100%;
-			border: 1px dashed rgba(255, 255, 255, 0.5); }
- .si-main-graphic .si-grpahic-container .si-resize-options {
-		position: absolute;
-		top: 0;
-		right: -35px;
-		text-align: center; }
-	 .si-main-graphic .si-grpahic-container .si-resize-options span {
-			opacity: 0.20;
-			cursor: pointer; }
- .si-main-graphic .si-grpahic-container .si-drag-btn, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-set-btn {
-		display: block;
-		width: 25px;
-		height: 25px;
-		background-repeat: no-repeat;
-		background-image: url(../images/image_adjust.svg);
-		cursor: pointer; }
- .si-main-graphic .si-grpahic-container .si-set-btn, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-set-close-btn {
-		background-image: none;
-		text-align: center; }
-	 .si-main-graphic .si-grpahic-container .si-set-btn:before, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-set-close-btn:before {
-			display: inline-block;
-			font-size: 26px;
-			content: "\f00c";
-			color: #fff;
-			line-height: 25px; }
- .si-main-graphic .si-grpahic-container .si-set-close-btn:before {
-		content: "\f00d "; }
- .si-main-graphic .si-grpahic-container span + span {
-		display: inline-block;
-		margin-top: 10px; }
- .si-main-graphic .si-grpahic-container span.active {
-		opacity: 1; }
-
-.si-grpahic-container .si-split-image {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			overflow: hidden; }
-.si-grpahic-container .si-split-image .si-image-col {
-				position: relative;
-				height: 100%;
-				-webkit-box-flex: 1;
-						-ms-flex: 1;
-								flex: 1;
-				overflow: hidden; }
-.si-grpahic-container .si-split-image .si-image-col .si-split-close {
-					display: inline-block;
-					position: absolute;
-					top: 0;
-					right: 0;
-					width: 16px;
-					height: 16px;
-					line-height: 14px;
-					font-size: 12px;
-					color: #4a4a4a;
-					font-weight: 600;
-					background-color: #f6f6f6;
-					z-index: 3;
-					text-align: center;
-					cursor: pointer; }
-.si-grpahic-container .si-split-image .si-image-col:hover:not(:last-child):before {
-					display: inline-block;
-					position: absolute;
-					top: 0;
-					right: 0;
-					content: "";
-					width: 1px;
-					height: 100%;
-					background-color: rgba(255, 255, 255, 0.4);
-					z-index: 3; }
-.si-grpahic-container .si-split-image .si-image-col .si-image-wrap {
-					width: 100%;
-					height: 100%; }
-.si-grpahic-container .si-split-image .si-image-col .si-image-wrap img {
-						position: absolute;
-						display: block;
-						min-width: 150%;
-						min-height: 100%;
-						z-index: 1; }
-.si-grpahic-container .si-resize-overlay, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-split-image .si-split-drag {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, 0.4);
-			padding: 10px;
-			z-index: 3;
-			cursor: move; }
-
-.si-grpahic-container .si-resize-overlay .si-resize-wrap, .si-main .si-col.viewer .si-main-graphic .si-grpahic-container .si-split-image .si-split-drag .si-resize-wrap {
-				width: 100%;
-				height: 100%;
-				border: 1px dashed rgba(255, 255, 255, 0.5); }
-
 .si-grpahic-container .si-static-text-overlay {
-					position: absolute;
-					text-align: right;
-					top: 0;
-					right: 24px;
-					z-index: 3;
-					-webkit-box-sizing:border-box;
-				            box-sizing:border-box; }
+		position: absolute;
+		text-align: right;
+		top: 0;
+		right: 24px;
+		z-index: 3;
+		-webkit-box-sizing:border-box;
+		box-sizing:border-box; }
 .si-grpahic-container .si-static-text-overlay.flipped {
-					right: auto;
-					left: 24px;
-					text-align: left;
-				}
+		right: auto;
+		left: 24px;
+		text-align: left;
+	}
 .si-grpahic-container .si-static-text-overlay .si-static-text-wrap  * {
 
-					word-wrap: break-word;
+		word-wrap: break-word;
 }
 .si-grpahic-container .si-static-text-overlay.flag {
-						width: 30%;
-						top: 50%;
-						-webkit-transform: translateY(-50%);
-								-ms-transform: translateY(-50%);
-										transform: translateY(-50%); }
+		width: 30%;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+						transform: translateY(-50%); }
 .si-grpahic-container.one-one .si-static-text-overlay.flag {
 		width:40%;
 }
 .si-grpahic-container .si-static-text-overlay.flag .si-static-text-wrap {
-							font-size: 70px;
-							font-family: 'gotham_ultra-italic',sans-serif; }
+		font-size: 70px;
+		font-family: 'gotham_ultra-italic',sans-serif; }
 .si-grpahic-container .si-static-text-overlay.flag .si-static-text-wrap p {
-							text-shadow: 4px 0 0 rgba(0, 71, 178, 0.6);
-							color:#fff; }
+		text-shadow: 4px 0 0 rgba(0, 71, 178, 0.6);
+		color:#fff; }
 .si-grpahic-container .si-static-text-overlay.flag-1 {
-						width: 25%;
-						top: auto;
-						bottom: 100px;
-						-webkit-transform: translateY(0);
-								-ms-transform: translateY(0);
-										transform: translateY(0); }
+		width: 25%;
+		top: auto;
+		bottom: 100px;
+		-webkit-transform: translateY(0);
+				-ms-transform: translateY(0);
+						transform: translateY(0); }
 .si-grpahic-container.one-one  .si-static-text-overlay.flag-1 {
-						width:50%;
+		width:50%;
 }
 .si-grpahic-container.four-three .si-static-text-overlay.flag-1 {
-						 width:40%;
+		width:40%;
 }
 .si-grpahic-container .si-static-text-overlay.flag-1 .si-static-text-wrap .si-static-player-name {
 
-						  text-align: right;
-						  font-size: 50px;
-						  color: #fff;
-						  font-family: 'gotham_black',sans-serif;
+		text-align: right;
+		font-size: 50px;
+		color: #fff;
+		font-family: 'gotham_black',sans-serif;
 }
 .si-grpahic-container .si-static-text-overlay.flag-1 .si-static-text-wrap .si-static-score {
 
-							margin-top: 5px;
-							display: block;
-							text-align: right;
-							font-family: 'gotham_black',sans-serif;
-							font-size: 80px;
-							letter-spacing: 0.7px;
+		margin-top: 5px;
+		display: block;
+		text-align: right;
+		font-family: 'gotham_black',sans-serif;
+		font-size: 80px;
+		letter-spacing: 0.7px;
 }
 .si-grpahic-container .si-static-text-overlay.flag-1 .si-static-text-wrap .si-static-score .si-static-score-item {
 

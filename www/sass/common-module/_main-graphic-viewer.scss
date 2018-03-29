@@ -31,16 +31,16 @@
         // background-image:url(../images/add-graphic-preview.svg);
         content:"\e901";
       }
-      &.si-grid-btn {
-        background-image:url(../images/grid-icon.svg);
-        background-size: 22px 22px;
-      }
-      &.si-singlecol-btn {
-        background-image:url(../images/single-column.svg);
-      }
-      &.si-swap-btn {
-        background-image:url(../images/swap-btn.svg);
-      }
+      // &.si-grid-btn {
+      //   background-image:url(../images/grid-icon.svg);
+      //   background-size: 22px 22px;
+      // }
+      // &.si-singlecol-btn {
+      //   background-image:url(../images/single-column.svg);
+      // }
+      // &.si-swap-btn {
+      //   background-image:url(../images/swap-btn.svg);
+      // }
       + span {
         margin-left: 10px;
       }
@@ -83,7 +83,7 @@
       // justify-content: center;
       // padding:0 20px;
       &:after {
-        @extend .clearfix;
+        @extend %clearfix;
       }
       .si-nav-item {
 
@@ -173,7 +173,7 @@
           &:before {
             display: inline-block;
             content:"";
-            @extend .fontAwesome;
+            @extend %fontAwesome;
             font-size: 22px;
             color:var(--font-color);
             text-align: center;
@@ -286,7 +286,7 @@
             .text-btn {
 
               display: inline-block;
-              @extend .fontAwesome;
+              @extend %fontAwesome;
               font-size: 12px;
               color:#fff;
               line-height: 15px;
@@ -362,11 +362,31 @@
       }
     }
   }
+  &.one-one.low-one-one {
+    .si-main-image {
+      .si-image-wrapper {
+        img {
+          width:200%;
+          height:auto;
+        }
+      }
+    }
+  }
   &.four-three {
     .si-main-image {
       .si-image-wrapper {
         img {
           width:130%;
+          height:auto;
+        }
+      }
+    }
+  }
+  &.four-three.low-four-three {
+    .si-main-image {
+      .si-image-wrapper {
+        img {
+          width:150%;
           height:auto;
         }
       }
@@ -553,7 +573,7 @@
     &:before {
       display: inline-block;
       font-size: 26px;
-      @extend .fontAwesome;
+      @extend %fontAwesome;
       content:"\f00c";
       color:#fff;
       line-height: 25px;

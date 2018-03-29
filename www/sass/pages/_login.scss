@@ -13,14 +13,14 @@
     @extend %justify-center;
 
     margin:0 auto;
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       width:100%;
       display: block;
     }
   }
   .si-login-section-wrap {
       height:458px;
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         display: flex;
         flex-direction: column;
         height:auto;
@@ -31,7 +31,7 @@
     & > div[class*='si'] {
       float:left;
     }
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       & > div[class*='si'] {
         float:none;
         &:not(.si-login-form) {
@@ -40,7 +40,7 @@
       }
     }
     &:after {
-      @extend .clearfix;
+      @extend %clearfix;
     }
     .si-login-branding {
 
@@ -48,7 +48,7 @@
       height:100%;
       background-color:var(--secondary-color);
 
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         order:1;
         padding:20px 0;
         background-color: transparent;
@@ -58,7 +58,7 @@
         position: relative;
         margin-top:94px;
         padding-bottom: 30px;
-        @media (max-width: 768px) {
+        @media (max-width: $mobile) {
           margin-top: 40px;
         }
         &:after {
@@ -86,7 +86,7 @@
           @include branding-login($client);
           background-repeat: no-repeat;
           background-position: center center;
-          @media (max-width: 768px) {
+          @media (max-width: $mobile) {
             width:200px;
             height:69px;
           }
@@ -94,7 +94,7 @@
       } // si-logo-brand
       .si-product-branding {
         margin-top: 30px;
-        @media (max-width: 768px) {
+        @media (max-width: $mobile) {
           display: none;
         }
         h4,h5 {
@@ -109,7 +109,7 @@
   .si-login-section-wrap .si-login-form {
     width:478px;
     margin-right: 65px;
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       width:90%;
       order:2;
       text-align: center;
@@ -124,7 +124,7 @@
       font-size: 36px;
       font-weight:200;
       margin-bottom: 15px;
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         font-size: 30px;
       }
     }
@@ -132,7 +132,7 @@
       font-size: 28px;
       font-weight: 600;
       margin-bottom: 68px;
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         margin-bottom: 40px;
         font-size: 25px;
       }
@@ -209,7 +209,7 @@
       .si-input-area.submit:not(a) {
         margin-top:90px;
         text-align: right;
-        @media (max-width: 768px) {
+        @media (max-width: $mobile) {
           margin-top: 50px;
           text-align: center;
         }

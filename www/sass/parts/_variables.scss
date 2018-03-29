@@ -2,18 +2,18 @@
 
 
 //sportz
-$client:'sportz';
-$primary-color:#000;
-$secondary-color: #90c441;
-$font-color:#fff;
-$border-color:#66704c;
+$client:'sportz' !default;
+$primary-color:#000 !default;
+$secondary-color: #90c441 !default;
+$font-color:#fff !default;
+$border-color:#66704c !default;
 
 //sportz-radar
-// $client:'sports-radar';
-// $primary-color:#333333;
-// $secondary-color:#c1022c;
-// $font-color:#fff;
-// $border-color:desaturate(#c1022c,10);
+// $client:'sports-radar' !default;
+// $primary-color:#333333 !default;
+// $secondary-color:#c1022c !default;
+// $font-color:#fff !default;
+// $border-color:desaturate(#c1022c,10) !default;
 
 // exp: $client-theme: 'client name', 'primary-color' , 'secondary-color','font-color' , 'border-color';
 
@@ -36,9 +36,9 @@ $large-desktop:1920px;
   --border-color:$border-color;
 
   // break points
-  --mobile:$mobile;
-  --ipad:$ipad;
-  --desktop:$desktop;
-  --large-desktop:$large-desktop;
+  // --mobile:$mobile;
+  // --ipad:$ipad;
+  // --desktop:$desktop;
+  // --large-desktop:$large-desktop;
 
 }

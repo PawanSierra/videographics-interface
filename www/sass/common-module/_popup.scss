@@ -5,7 +5,8 @@
   right:0px;
   bottom:0px;
   background-color: rgba(0,0,0,.85);
-  z-index:9999999999999999;
+  // z-index:9999999999999999;
+  z-index: 99999;
   .si-popup-wrap {
     position: relative;
     width:100%;
@@ -27,7 +28,7 @@
       cursor: pointer;
       &:before {
         display: inline-block;
-        @extend .fontAwesome;
+        @extend %fontAwesome;
         content:"\f00d";
         font-size: 12px;
         line-height: 20px;
@@ -37,7 +38,7 @@
     .si-popup-content {
       position: absolute;
       width:45%;
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         width:80%;
       }
       background-color: var(--primary-color);
@@ -174,7 +175,7 @@
             &::placeholder {
               color:#fff;
               text-transform: uppercase;
-              font-family: "Roboto", sans-serif;
+              font-family:$font;
               font-size:14px;
             }
           }

@@ -9,7 +9,7 @@
   // justify-content: space-between;
   @extend %justify-between;
   box-shadow: 0px 11px 17px 0px rgba(0, 0, 0, 0.4);
-  @media (max-width: 768px) {
+  @media (max-width: $mobile) {
     height:40px;
     justify-content: flex-start;
     padding:0 10px;
@@ -39,7 +39,7 @@
     .si-home-btn {
 
       display: inline-block;
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         display: none;
       }
 
@@ -49,7 +49,7 @@
         cursor: pointer;
         &:before {
           content:"\f015";
-          @extend .fontAwesome;
+          @extend %fontAwesome;
           display: inline-block;
           font-size: 20px;
           color:#fff;
@@ -57,7 +57,7 @@
         }
       }
     }
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       width:25px;
       height:25px;
       &:before {
@@ -71,7 +71,7 @@
     .logged-menu {
       display: inline-block;
       margin-left:20px;
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         position: absolute;
         top:0;
         right:0;
@@ -88,7 +88,7 @@
           padding-right:10px;
           width:100%;
           @extend %ellipsis;
-          @media (max-width: 768px) {
+          @media (max-width: $mobile) {
             display: none;
           }
         }
@@ -103,7 +103,7 @@
           padding:10px;
           z-index:9999;
           border-radius:2px;
-          @media (max-width: 768px) {
+          @media (max-width: $mobile) {
             right:auto;
             left:0;
             top:25px;
@@ -151,7 +151,7 @@
           transform: rotate(-46deg);
           z-index: 1;
         }
-        @media (max-width: 768px) {
+        @media (max-width: $mobile) {
           width:24px;
           height:24px;
 
@@ -173,7 +173,7 @@
   }
 
 
-  @media (max-width: 768px) {
+  @media (max-width: $mobile) {
     height:0px;
     overflow: hidden;
     .si-breadcrumbs-list {
@@ -211,7 +211,7 @@
       padding-left:10px;
 
       & a:before {
-          @extend .fontAwesome;
+          @extend %fontAwesome;
           content:"\f105";
           font-size: 16px;
           margin-right:5px;
@@ -407,7 +407,7 @@
       }
 
       &:before {
-        @extend .fontAwesome;
+        @extend %fontAwesome;
         color:#999999;
         font-size: 25px;
       }
@@ -451,7 +451,7 @@
     border-radius: 2px;
     transition: all 200ms ease-out;
     &:after {
-      @extend .fontAwesome;
+      @extend %fontAwesome;
       display: inline-block;
       padding-left:5px;
     }
@@ -470,7 +470,7 @@
       content:"\f019";
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: $mobile) {
     position: fixed;
     width:100%;
     left:0;

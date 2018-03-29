@@ -4,7 +4,7 @@
   // display: flex;
   @extend %d-flex;
   // overflow:hidden;
-  @media (max-width: 768px) {
+  @media (max-width: $mobile) {
 
     height: calc(100% - 67px);
     flex-direction: column;
@@ -13,7 +13,7 @@
   }
   .si-mobile-action {
     display: none;
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       display: block;
       width:100%;
       height:50px;
@@ -71,7 +71,7 @@
       background-image:url(../images/shad.png);
       background-size: cover;
       background-repeat:no-repeat;
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         display: none;
       }
     }
@@ -94,7 +94,7 @@
         }
       }
 
-      @media (max-width: 768px){
+      @media (max-width: $mobile){
         flex-direction: column;
         // height:calc(100% - 50px);
         form {
@@ -179,7 +179,7 @@
                 cursor: pointer;
                 box-shadow: 0 0 2px rgba(0,0,0,0.3);
                 text-align: center;
-                @media (max-width: 768px) {
+                @media (max-width: $mobile) {
                   flex-basis: 18%;
                   height:30px;
                 }
@@ -193,7 +193,7 @@
                   line-height:15px;
                   color:#f6f6f6;
                   text-shadow: 0 0 2px rgba(0,0,0,0.8);
-                  @media (max-width: 768px) {
+                  @media (max-width: $mobile) {
                     line-height: 30px;
                     font-size: 14px;
                   }
@@ -204,7 +204,7 @@
 
               padding:5px 0;
               // text-align: center;
-              @media (max-width: 768px) {
+              @media (max-width: $mobile) {
                 text-align: center;
               }
               .color-palette-label {
@@ -325,7 +325,7 @@
           // justify-content: space-between;
           @extend %justify-between;
           margin-top: 20px;
-          @media (max-width: 768px) {
+          @media (max-width: $mobile) {
             width:80%;
             margin:20px auto  0 auto;
           }
@@ -338,7 +338,7 @@
             border-radius: 5px;
             background-color: rgba(0,0,0,.20);
             border:1px solid rgba(255,255,255,.10);
-            @media (max-width: 768px) {
+            @media (max-width: $mobile) {
               width:80px;
               max-width: 80px;
               flex-basis: 80px;
@@ -355,7 +355,7 @@
               background-position: center center;
               background-size: auto;
               margin:10px auto;
-              @media (max-width: 768px) {
+              @media (max-width: $mobile) {
                 width:30px;
                 height:30px;
                 background-size: contain;
@@ -370,7 +370,7 @@
               border-radius: 4px;
               text-transform: uppercase;
               background-color: rgba(0,0,0,.10);
-              @media (max-width: 768px) {
+              @media (max-width: $mobile) {
                 font-size: 8px;
               }
             }
@@ -429,7 +429,7 @@
               color:var(--font-color);
               opacity: 0.7;
               font-size: 12px;
-              font-family:'Roboto',sans-serif;
+              font-family:$font;
               font-weight: 200;
               letter-spacing: 0.5px;
 
@@ -501,7 +501,7 @@
   .si-col.editor {
     width:39.9%;
     flex-basis: 39.9%;
-    @media (min-width: 768px) and (max-width: 1280px) {
+    @media (min-width: $mobile) and (max-width: 1280px) {
       width:35.9%;
       flex-basis: 35.9%;
     }
@@ -509,12 +509,12 @@
   .si-col.viewer {
     width:53%;
     flex-basis: 53%;
-    @media (min-width: 768px) and (max-width: 1280px) {
+    @media (min-width: $mobile) and (max-width: 1280px) {
       width:57%;
       flex-basis: 57%;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: $mobile) {
     .si-col:not(#a) {
       width:100%;
       float:none;
@@ -538,24 +538,24 @@
         display: flex;
         margin:45px auto;
 
-        @media (max-width: 768px) {
+        @media (max-width: $mobile) {
           flex-direction: column;
           margin:20px 10px;
           width:90%;
         }
-        @media (min-height: 768px) {
+        @media (min-height: $mobile) {
           margin:100px auto;
         }
         .si-infographix-fields {
           flex:1;
           & + .si-infographix-fields {
             margin-left: 20px;
-            @media (max-width: 768px) {
+            @media (max-width: $mobile) {
               margin-left: 0px;
               margin-top: 15px;
             }
           }
-          @media (max-width: 768px) {
+          @media (max-width: $mobile) {
             margin:0;
           }
           display: flex;
@@ -594,7 +594,7 @@
         height:369px;
         border:1px dashed #8d8f81;
         background-color:rgba(0,0,0,0.03);
-        @media (max-width: 768px) {
+        @media (max-width: $mobile) {
           width:90%;
           height:250px;
         }
@@ -648,7 +648,7 @@
       color:var(--font-color);
       font-size: 14px;
       // overflow: hidden;
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         width:90%;
 
       }
@@ -704,7 +704,7 @@
   .si-imagegallery-wrapper {
     padding:20px;
     margin-top:10px;
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       margin-top:0;
     }
     .si-imagegallery-refresh {
@@ -718,26 +718,26 @@
       cursor: pointer;
       margin-top: 10px;
       &:before {
-        @extend .fontAwesome;
+        @extend %fontAwesome;
         content:"\f021";
         font-size: 18px;
         color:var(--font-color);
       }
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         display: none;
       }
     }
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       padding:0px;
       width:100%;
       height:100%;
     }
     .si-imagegallery-options , .si-imagegallery-container {
       &:after {
-        @extend .clearfix;
+        @extend %clearfix;
       }
     }
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       .si-imagegallery-options {
         display: none;
       }
@@ -764,7 +764,7 @@
           opacity: 0;
         }
       }
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         height:100%;
       }
       overflow-y: auto;
@@ -775,7 +775,7 @@
         background-color:rgba(0,0,0,.10);
         cursor: pointer;
         &.selected:before {
-          @extend .fontAwesome;
+          @extend %fontAwesome;
           position: absolute;
           content:"\f05d";
           top:50%;
@@ -863,7 +863,7 @@
       &:nth-child(3n+1) {
         padding-left: 0px;
       }
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         width:50%;
         & + .si-col-3 {
           padding-left: 0px;
@@ -886,12 +886,12 @@
     width:455px;
     margin:0 auto;
 
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       width:90%;
     }
     .si-infographix-fields + .si-infographix-fields {
       margin-top:35px;
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         margin-top:20px;
       }
     }
@@ -908,7 +908,7 @@
       @extend %d-flex;
       margin:35px 0;
       flex-wrap: wrap;
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         margin:20px 0;
       }
        & > * {
@@ -934,7 +934,7 @@
     .si-submit-btn {
       text-align: center;
       margin-top:40px;
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         margin-top:30px;
       }
       .si-btn {
@@ -963,7 +963,7 @@
         margin-right: 10px;
         cursor: pointer;
         &:before {
-          @extend .fontAwesome;
+          @extend %fontAwesome;
           content:"\f014";
           font-size: 18px;
           color:var(--font-color);
@@ -979,7 +979,7 @@
 
     .si-graphic-preview {
       width:640px;
-      @media (max-height: 768px) {
+      @media (max-height: $mobile) {
         width:640px;
       }
     }
@@ -1065,7 +1065,7 @@
     //       // justify-content: center;
     //       // padding:0 20px;
     //       &:after {
-    //         @extend .clearfix;
+    //         @extend %clearfix;
     //       }
     //       .si-nav-item {
     //
@@ -1154,7 +1154,7 @@
     //           &:before {
     //             display: inline-block;
     //             content:"";
-    //             @extend .fontAwesome;
+    //             @extend %fontAwesome;
     //             font-size: 22px;
     //             color:var(--font-color);
     //             text-align: center;
@@ -1252,7 +1252,7 @@
     //             .text-btn {
     //
     //               display: inline-block;
-    //               @extend .fontAwesome;
+    //               @extend %fontAwesome;
     //               font-size: 12px;
     //               color:#fff;
     //               line-height: 15px;
@@ -1494,7 +1494,7 @@
     //     &:before {
     //       display: inline-block;
     //       font-size: 26px;
-    //       @extend .fontAwesome;
+    //       @extend %fontAwesome;
     //       content:"\f00c";
     //       color:#fff;
     //       line-height: 25px;
@@ -1743,7 +1743,7 @@
   }
 }
 
-@media (max-width: 768px)   {
+@media (max-width: $mobile)   {
   .si-main.create-graphic {
     .si-mobile-action {
       display: none;
@@ -1891,7 +1891,7 @@
       width:230px;
       z-index:4;
       cursor: move;
-      @media (max-width: 768px) {
+      @media (max-width: $mobile) {
         width:40%;
       }
       &:hover {
@@ -1963,7 +1963,7 @@
     grid-template-rows: auto auto auto;
     grid-gap:15px;
     height: calc(100% - 20px);
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       grid-template-columns: repeat(2,1fr);
     }
     &:after {
@@ -1999,7 +1999,7 @@
   width: 640px;
   height: 360px;
 
-  @media (max-width: 768px) {
+  @media (max-width: $mobile) {
     width:100%;
     height:0px;
     padding-bottom: 56.25%;
@@ -2013,7 +2013,7 @@
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       height:100%;
     }
 
@@ -2026,7 +2026,7 @@
     cursor: pointer;
     overflow: hidden;
 
-    @media (max-width: 768px) {
+    @media (max-width: $mobile) {
       width:calc(80% / 5);
       height:auto;
     }
@@ -2056,7 +2056,7 @@
         line-height:20px;
         background: rgba(0,0,0,0.8);
         color:var(--font-color);
-        @media (max-width: 768px) {
+        @media (max-width: $mobile) {
           width:14px;
           height:14px;
           font-size: 10px;

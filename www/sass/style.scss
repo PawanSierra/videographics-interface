@@ -3,10 +3,11 @@
 @import "common-module/animation";
 @import "parts/reset";
 @import "parts/font-awesome";
-// @import "parts/font-awesome-5.scss";
+//@import "parts/font-awesome-5.scss";
 @import "parts/fonts";
 @import "parts/si-select";
 @import "parts/common";
+@import "parts/utilities";
 @import "common-module/header";
 @import "common-module/footer";
 @import "common-module/side-menu";
@@ -19,10 +20,6 @@
 @import "pages/new-templates-section";
 @import "pages/ratio-selection";
 @import "common-module/popup";
-
-
-
-
 
 // @import 'http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css';
 
