@@ -183,6 +183,31 @@ body ,html {
 		    font-weight: normal;
 		    font-style: normal;
 		}
+		@font-face {
+		  font-family: 'futura-bold';
+		  src: url("../fonts/futura-bold.eot");
+		  src: url("../fonts/futura-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/futura-bold.woff") format("woff"), url("../fonts/futura-bold.ttf") format("truetype"), url("../fonts/futura-bold.otf") format("opentype"), url("../fonts/futura-bold.svg#T BoldCondensed") format("svg");
+		  font-weight: 400;
+		  font-style: normal;
+		  unicode-range: U+0020-02DC; }
+
+		@font-face {
+		  font-family: 'futura-light';
+		  src: url("../fonts/futura-light.eot");
+		  src: url("../fonts/futura-light.eot?#iefix") format("embedded-opentype"), url("../fonts/futura-light.woff") format("woff"), url("../fonts/futura-light.ttf") format("truetype"), url("../fonts/futura-light.otf") format("opentype"), url("../fonts/futura-light.svg#T Light") format("svg");
+		  font-weight: 400;
+		  font-style: normal;
+		  font-stretch: normal;
+		  unicode-range: U+0020-02DC; }
+
+		@font-face {
+		  font-family: 'futura-medium';
+		  src: url("../fonts/futura-medium.eot");
+		  src: url("../fonts/futura-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/futura-medium.woff") format("woff"), url("../fonts/futura-medium.ttf") format("truetype"), url("../fonts/futura-medium.otf") format("opentype"), url("../fonts/futura-medium.svg#T Medium") format("svg");
+		  font-weight: 400;
+		  font-style: normal;
+		  font-stretch: normal;
+		  unicode-range: U+0020-02DC; }
 
 .container {
 	width:100%;
@@ -200,8 +225,9 @@ body ,html {
 }
 .image-wrapper  {
 
-	width:1280px;
- 	height:720px;
+	/* width:1280px;
+ 	height:720px; */
+	max-width: 1280px;
 	margin:0 auto;
 
 }
@@ -220,9 +246,9 @@ body ,html {
   left:0;
   z-index:1;
 }
-.si-main-graphic {
+/* .si-main-graphic {
   background: rgba(0, 0, 0, .1);
-}
+} */
  .si-main-graphic .si-grpahic-container {
 	position: relative;
 	width: 100%;
@@ -237,12 +263,16 @@ body ,html {
 
 	.si-main-graphic .si-grpahic-container.one-one {
     width:720px;
-    height: 100%;
-    margin: 0 auto; }
+    height:720px;
+    margin: 0 auto;
+		padding-bottom: 0px;
+	 }
   .si-main-graphic .si-grpahic-container.four-three {
-    width:75%;
-    height:100%;
-    margin: 0 auto; }
+    width:960px;
+    height:720px;
+    margin: 0 auto;
+		padding-bottom: 0px;
+	 }
  .si-main-graphic .si-grpahic-container .graphic-overlay {
 		position: absolute;
 		width: 100%;
@@ -1576,6 +1606,127 @@ body ,html {
 																					fill: #008A98; }
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-game-points .si-static-rank-warp .si-static-rank-graphic svg .st6 {
 																					fill: #DADEE0; }
+
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 {
+					  width: 100%;
+					  height: 100%;
+					  left: 0;
+					  top: 0; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-text-wrap {
+			      width: 100%;
+			      height: 100%;
+			      display: -webkit-box;
+					  display: -ms-flexbox;
+					  display: -webkit-flex;
+					  display: flex;
+			      -webkit-box-orient: vertical;
+			      -webkit-box-direction: normal;
+						-ms-flex-direction: column;
+						-webkit-flex-direction: column;
+						flex-direction: column;
+			      -webkit-box-pack: justify;
+						-ms-flex-pack: justify;
+					   -webkit-justify-content: space-between;
+						justify-content: space-between;
+			      text-align: left; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-top-area {
+					  display: -webkit-box;
+					  display: -ms-flexbox;
+					  display: -webkit-flex;
+					  display: flex;
+					  -webkit-box-pack: justify;
+					  -ms-flex-pack: justify;
+					  -webkit-justify-content: space-between;
+						justify-content: space-between;
+						padding: 10px 20px; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-top-area > span {
+						display: inline-block; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-top-area .si-static-branding {
+						width: 102px;
+						height: 92px; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-top-area .si-static-branding img {
+					  display: block;
+					  width: 100%;
+					  height: auto; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-top-area .si-static-hashtag {
+						font-size: 20px;
+						font-family: 'Trebuchet MS',sans-serif; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-bottom-area {
+						display: -webkit-box;
+						display: -ms-flexbox;
+						display: -webkit-flex;
+						display: flex;
+						-webkit-box-pack: justify;
+						-ms-flex-pack: justify;
+						-webkit-justify-content: space-between;
+						justify-content: space-between;
+						padding: 20px  20px 35px 20px; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-bottom-area span {
+						display: inline-block; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-bottom-area .si-static-bottom-left {
+						/* -webkit-box-flex: 1;
+						-webkit-flex: 1 1 auto;
+						-ms-flex: 1 1 auto;
+						flex: 1 1 auto; */
+						max-width: 50%;
+						margin-bottom: -10px; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-bottom-area .si-static-bottom-left-name {
+						font-size: 26px;
+						text-transform: uppercase;
+						font-family: 'futura-medium',sans-serif; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-bottom-area .si-static-bottom-left-over {
+						font-family: 'futura-bold',sans-serif;
+						font-size: 28px; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-bottom-area .si-static-bottom-left-wickets-over {
+							font-size: 40px;
+							font-family: 'futura-bold',sans-serif; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-bottom-area .si-static-bottom-left-score {
+						font-size: 120px;
+						font-family: 'futura-bold',sans-serif;
+						line-height: 120px;
+						height: 120px; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-bottom-area .si-static-score-item-label {
+						font-family: 'futura-medium',sans-serif;
+						font-size: 16px;
+						text-transform: uppercase; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-bottom-area .si-static-score-item-count {
+						font-family: 'futura-bold',sans-serif;
+						font-size: 24px; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-bottom-area .si-static-bottom-right {
+				    position: relative;
+				    -webkit-box-flex: 1;
+						-ms-flex: 1 1 auto;
+						-webkit-flex: 1 1 auto;
+            flex: 1 1 auto;
+				    display: -webkit-box;
+				    display: -ms-flexbox;
+				    display: -webkit-flex;
+				    display: flex;
+				    -ms-flex-pack: distribute;
+						-webkit-justify-content: space-around;
+						justify-content: space-around;
+				    -webkit-box-align: end;
+						-ms-flex-align: end;
+						-webkit-align-items: flex-end;
+						align-items: flex-end; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-bottom-area .si-static-bottom-right .si-static-score-item {
+							display: inline-block; }
+.si-grpahic-container .si-static-text-overlay.ipl-template-1 .si-static-bottom-area .si-static-bottom-right .si-static-bottom-hashtag {
+						  position: absolute;
+						  right: 0;
+						  bottom: -16px;
+						  font-size: 16px;
+						  -webkit-transform: translateY(100%);
+										  transform: translateY(100%);
+						  font-family: 'Trebuchet MS',sans-serif; }
+.si-static-text-overlay.ipl-template-1.blue-red .si-static-bottom-left-name, .si-static-text-overlay.ipl-template-1.blue-red .si-static-score-item-label ,.si-static-text-overlay.ipl-template-1.blue-red .si-static-bottom-hashtag {
+							color:#00408c; }
+.si-static-text-overlay.ipl-template-1.blue-red .si-static-bottom-left-score, .si-static-text-overlay.ipl-template-1.blue-red  .si-static-bottom-left-wickets-over , .si-static-text-overlay.ipl-template-1.blue-red .si-static-score-item-count, .si-static-text-overlay.ipl-template-1.blue-red .si-static-bottom-left-over {
+							color:#fd2415; }
+.si-static-text-overlay.ipl-template-1.white-yellow .si-static-bottom-left-name, .si-static-text-overlay.ipl-template-1.white-yellow .si-static-bottom-hashtag , .si-static-text-overlay.ipl-template-1.white-yellow .si-static-score-item-label, .si-static-text-overlay.ipl-template-1.white-yellow .si-static-hashtag {
+							color:#fff; }
+.si-static-text-overlay.ipl-template-1.white-yellow .si-static-bottom-left-score, .si-static-text-overlay.ipl-template-1.white-yellow .si-static-bottom-left-wickets-over , .si-static-text-overlay.ipl-template-1.white-yellow .si-static-score-item-count , .si-static-text-overlay.ipl-template-1.white-yellow .si-static-bottom-left-over {
+						color:#ffdd00; }
 
 .si-spider-graphic {
 	position: absolute;

@@ -15,10 +15,12 @@
     "gulp-sass": "^3.1.0",
     "gulp-scp": "0.0.3",
     "gulp-sourcemaps": "^2.6.4",
+    "npm": "^5.8.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-custom-properties": "^7.0.0",
     "postcss-custom-selectors": "^4.0.1",
-    "postcss-ordered-values": "^2.2.3"
+    "postcss-ordered-values": "^2.2.3",
+    "postcss-placehold": "^1.2.0"
   },
   "devDependencies": {
     "css-mqpacker": "^6.0.2",

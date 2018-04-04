@@ -514,9 +514,7 @@
         text-indent: -1000%;
         white-space: nowrap;
       }
-
     }
-
   } // radar-infographic-1
 
   &.radar-infographic-1.luckey-wins {
@@ -571,7 +569,6 @@
               transform: translate(-50%,-50%);
               box-shadow: inset 0 0 50px rgba(0,0,0,0.8);
             }
-
           }
         }
         .si-static-col.scoring {
@@ -703,7 +700,7 @@
         }
       }
     }
-  }
+  } // .radar-infographic-1.luckey-wins
 
   &.radar-infographic-1.recent-kicks {
     .si-static-main {
@@ -899,7 +896,7 @@
         }
       }
     }
-  }
+  }  // radar-infographic-1.recent-kicks
 
   &.basketball-1 {
 
@@ -1010,7 +1007,6 @@
         }
       }
     }
-
   } // basketball-1
 
   &.basketball-2 {
@@ -1030,6 +1026,7 @@
       height: 40px;
       margin:0 auto;
       .si-static-score-board-wrap {
+
         display: flex;
         justify-content: space-between;
         height:100%;
@@ -1122,13 +1119,134 @@
           font-size: 15px;
           color:#000;
           font-family: 'gotham_bold';
-
         }
       }
     }
-  }
+  } // basketball-2
+
+  &.ipl-template-1 {
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    .si-static-text-wrap {
+      width:100%;
+      height:100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: left;
+    }
+    .si-static-top-area {
+      display: flex;
+      justify-content: space-between;
+      padding:5px 10px;
+      & > span {
+        display: inline-block;
+      }
+      .si-static-branding {
+        width:52px;
+        height: 42px;
+        img {
+          display: block;
+          width:100%;
+          height:auto;
+        }
+      }
+      .si-static-hashtag {
+        font-size: 10px;
+        font-family: 'Trebuchet MS',sans-serif;
+      }
+    }
+    .si-static-bottom-area {
+      display: flex;
+      justify-content: space-between;
+      padding:10px  10px 17.5px 10px;
+      span {
+        display: inline-block;
+      }
+        .si-static-bottom-left {
+          // flex:1 1 auto;
+          max-width: 50%;
+          margin-bottom: -5px;
+        }
+        .si-static-bottom-left-name {
+          font-size: 13px;
+          text-transform: uppercase;
+          font-family: 'futura-medium',sans-serif;
+
+        }
+        .si-static-bottom-left-over {
+          font-family: 'futura-bold',sans-serif;
+          font-size: 14px;
+        }
+        .si-static-bottom-left-wickets-over {
+          font-size: 20px;
+          font-family: 'futura-bold',sans-serif;
+        }
+        .si-static-bottom-left-score {
+
+          font-size: 60px;
+          font-family: 'futura-bold',sans-serif;
+          line-height: 60px;
+          height:60px;
+        }
+        .si-static-score-item-label {
+          font-family: 'futura-medium',sans-serif;
+          font-size: 10px;
+          text-transform: uppercase;
+        }
+        .si-static-score-item-count {
+          font-family: 'futura-bold',sans-serif;
+          font-size: 12px;
+        }
+        .si-static-bottom-right {
+          position: relative;
+          flex:1 1 auto;
+          display: flex;
+          justify-content: space-around;
+          align-items: flex-end;
+
+          .si-static-score-item {
+            display: inline-block;
+          }
+          .si-static-bottom-hashtag {
+            position: absolute;
+            right:0;
+            bottom:-4px;
+            font-size: 10px;
+            transform: translateY(100%);
+            font-family: 'Trebuchet MS',sans-serif;
+          }
+        }
+    }
+  } // ipl-template-1
+
+  &.ipl-template-1.blue-red {
+
+    .si-static-bottom-left-name , .si-static-score-item-label  , .si-static-bottom-hashtag {
+      color:#00408c;
+    }
+    .si-static-bottom-left-score, .si-static-score-item-count  , .si-static-bottom-left-over , .si-static-bottom-left-wickets-over {
+      color:#fd2415;
+    }
+
+  } // ipl-template-1.blue-red
+
+  &.ipl-template-1.white-yellow {
+
+    .si-static-bottom-left-name , .si-static-score-item-label , .si-static-hashtag ,.si-static-bottom-hashtag  {
+      color:#fff;
+    }
+    .si-static-bottom-left-score , .si-static-score-item-count , .si-static-bottom-left-over , .si-static-bottom-left-wickets-over  {
+      color:#ffdd00;
+    }
+
+  } // ipl-template-1.white-yellow
+
   //end
-}
+
+} // si-static-text-overlay
 
 .si-grpahic-container.one-one {
 

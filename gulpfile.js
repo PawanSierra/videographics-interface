@@ -22,7 +22,7 @@ let fs = require("fs"),
 
 let prefixer = autoprefixer({browsers: "last 5 versions" , grid:true }); //clip_path()
 
-let plugins = [cssnext({ features:{ customProperties:{ preserve:true }, grid:true   } }),customselector(),orderValues(),mqpacker(),merge()]; //,merge_long() autoprefixer({browsers: "last 6 versions", grid:true})
+let plugins = [cssnext({ features:{ customProperties:{ preserve:true }, grid:true   } , browsers: ['last 1 version']  }),customselector(),orderValues(),mqpacker(),merge()]; //,merge_long() autoprefixer({browsers: "last 6 versions", grid:true})
 
 
 

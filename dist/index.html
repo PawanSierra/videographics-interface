@@ -8,8 +8,8 @@
     <title>SI Video Graphics</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script> -->
 </head>
 
 <body>
@@ -112,7 +112,14 @@
                 </div>
             </aside>
             <section class="si-col editor">
-                <div class="si-itemswrapper">
+                <div class="si-itemswrapper add-photo">
+                    <div class="si-media-upload">
+                        <label for="si-upload-label">Upload Branding Logo:</label>
+                        <div class="si-custom-templates-upload">
+                            <input type="file" mutiple id="custom-template">
+                            <div class="si-seleted-file">Browse</div>
+                        </div>
+                    </div>
                     <div class="si-mageupload-area">
                         <input type="file" class="si-fileupload">
                         <div class="si-uploadui">
@@ -149,10 +156,10 @@
                             </div>
                         </div>
                         <div class="si-main-graphic">
-                            <div class="si-grpahic-container">
+                            <div class="si-grpahic-container one-one">
                                 <div class="si-main-image">
                                     <div class="si-image-wrapper">
-                                        <img src="images/nba-img.png">
+                                        <img src="images/ipl.png">
                                     </div>
                                 </div>
                                 <!-- <div class="si-split-image" style="display:none;">
@@ -174,18 +181,18 @@
                                 <div class="graphic-overlay">
                                     <img src="images/radar-1.jpg" alt="">
                                     <!-- <span class="graphic-line"> </span> -->
-                                    <div class="si-text-overlay drag-area">
-                                        <div class="si-text-wrap" style="left:50px; top:100px;">
-                                            <div class="si-text-edit-options">
-                                                <dl>
-                                                    <dt><span class="text-btn text-edit" title="Edit Text"></span></dt>
-                                                    <dt><span class="text-btn font-family" title="Font Family"></span></dt>
-                                                    <dt><span class="text-btn font-size" title="Font Size"></span></dt>
-                                                </dl>
-                                            </div>
-                                            <p contenteditable>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, mollitia?</p>
-                                        </div>
-                                    </div>
+                                    <!-- <div class="si-text-overlay drag-area">
+                    <div class="si-text-wrap" style="left:50px; top:100px;">
+                       <div class="si-text-edit-options">
+                        <dl>
+                          <dt><span class="text-btn text-edit" title="Edit Text"></span></dt>
+                          <dt><span class="text-btn font-family" title="Font Family"></span></dt>
+                          <dt><span class="text-btn font-size" title="Font Size"></span></dt>
+                        </dl>
+                      </div>
+                       <p contenteditable>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, mollitia?</p>
+                    </div>
+                  </div> -->
                                 </div>
                                 <!-- <div class="si-resize-overlay" >
                   <div class="si-resize-wrap">
@@ -193,7 +200,7 @@
                   </div>
                 </div> -->
                                 <div class="si-branding left"></div>
-                                <div class="si-static-text-overlay left-gradient">
+                                <div class="si-static-text-overlay ipl-template-1">
                                     <!--radar-infographic-1 recent-kicks-->
                                     <div class="si-static-text-wrap">
 
@@ -219,22 +226,22 @@
 
 
                                         <!-- left-gradient -->
-                                        <h1 class="si-static-title">INDIA IN LAST 5 SERIES AT HOME</h1>
-                                        <div class="si-static-score-item">
-                                            <span class="si-static-score-item-details"> 5-0 vs SL </span>
-                                        </div>
-                                        <div class="si-static-score-item">
-                                            <span class="si-static-score-item-details"> 5-0 vs SL </span>
-                                        </div>
-                                        <div class="si-static-score-item">
-                                            <span class="si-static-score-item-details"> 5-0 vs SL </span>
-                                        </div>
-                                        <div class="si-static-score-item">
-                                            <span class="si-static-score-item-details"> 5-0 vs SL </span>
-                                        </div>
-                                        <div class="si-static-score-item">
-                                            <span class="si-static-score-item-details"> 5-0 vs SL </span>
-                                        </div>
+                                        <!-- <h1 class="si-static-title">INDIA IN LAST 5 SERIES AT HOME</h1>
+                    <div class="si-static-score-item">
+                      <span class="si-static-score-item-details"> 5-0 vs SL </span>
+                    </div>
+                    <div class="si-static-score-item">
+                      <span class="si-static-score-item-details"> 5-0 vs SL </span>
+                    </div>
+                    <div class="si-static-score-item">
+                      <span class="si-static-score-item-details"> 5-0 vs SL </span>
+                    </div>
+                    <div class="si-static-score-item">
+                      <span class="si-static-score-item-details"> 5-0 vs SL </span>
+                    </div>
+                    <div class="si-static-score-item">
+                      <span class="si-static-score-item-details"> 5-0 vs SL </span>
+                    </div> -->
 
 
                                         <!-- bottom-graphic -->
@@ -578,6 +585,43 @@
                       </div>
                     </div> -->
 
+                                        <div class="si-static-top-area">
+                                            <span class="si-static-branding"> <img src="images/client-logos/mi-dd.png"></span>
+                                            <span class="si-static-hashtag">#DilDilli </span>
+                                        </div>
+
+                                        <div class="si-static-bottom-area">
+
+                                            <div class="si-static-bottom-left">
+                                                <div class="si-static-bottom-left-name"> Gautam gambhir </div>
+                                                <div class="si-static-bottom-left-details">
+                                                    <span class="si-static-bottom-left-score">87 </span>
+                                                    <!--<span class="si-static-bottom-left-over">(52)</span>-->
+                                                    <span class="si-static-bottom-left-wickets-over">/83</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="si-static-bottom-right">
+
+                                                <div class="si-static-score-item">
+                                                    <span class="si-static-score-item-label">Fours </span>
+                                                    <span class="si-static-score-item-count">12</span>
+                                                </div>
+                                                <div class="si-static-score-item">
+                                                    <span class="si-static-score-item-label">Sixes </span>
+                                                    <span class="si-static-score-item-count">6</span>
+                                                </div>
+                                                <div class="si-static-score-item">
+                                                    <span class="si-static-score-item-label">SR </span>
+                                                    <span class="si-static-score-item-count">143.33</span>
+                                                </div>
+
+                                                <span class="si-static-bottom-hashtag">#DDvKXIP</span>
+
+                                            </div>
+
+                                        </div>
+
 
                                         <!-- end -->
                                     </div>
@@ -838,9 +882,8 @@
             </div>
         </div>
     </div>
-    <script src="js/swiper-min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/color-function.js"></script>
+    <!-- <script src="js/swiper-min.js"></script>
+  <script src="js/script.js"></script> -->
 </body>
 
 </html>

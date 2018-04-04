@@ -421,6 +421,32 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'futura-bold';
+  src: url("../fonts/futura-bold.eot");
+  src: url("../fonts/futura-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/futura-bold.woff") format("woff"), url("../fonts/futura-bold.ttf") format("truetype"), url("../fonts/futura-bold.otf") format("opentype"), url("../fonts/futura-bold.svg#T BoldCondensed") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+0020-02DC; }
+
+@font-face {
+  font-family: 'futura-light';
+  src: url("../fonts/futura-light.eot");
+  src: url("../fonts/futura-light.eot?#iefix") format("embedded-opentype"), url("../fonts/futura-light.woff") format("woff"), url("../fonts/futura-light.ttf") format("truetype"), url("../fonts/futura-light.otf") format("opentype"), url("../fonts/futura-light.svg#T Light") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-02DC; }
+
+@font-face {
+  font-family: 'futura-medium';
+  src: url("../fonts/futura-medium.eot");
+  src: url("../fonts/futura-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/futura-medium.woff") format("woff"), url("../fonts/futura-medium.ttf") format("truetype"), url("../fonts/futura-medium.otf") format("opentype"), url("../fonts/futura-medium.svg#T Medium") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-02DC; }
+
 .container {
   width: 100%;
   height: 100%; }
@@ -442,7 +468,6 @@ table {
   top: 0;
   right: 24px;
   z-index: 3;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .si-grpahic-container .si-static-text-overlay.flipped {
@@ -531,7 +556,6 @@ table {
   right: -20px;
   width: calc(100% + 20px);
   height: 1px;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, .8)), to(transparent));
   background: linear-gradient(to left, rgba(255, 255, 255, .8) 0%, transparent 100%); }
 
 .si-grpahic-container .si-static-text-overlay.flag-2 .si-static-score {
@@ -622,7 +646,6 @@ table {
   bottom: 0;
   height: 1px;
   width: calc(100% + 40px);
-  background: -webkit-gradient(linear, left top, right top, from(white), to(transparent));
   background: linear-gradient(to right, white 0%, transparent 100%); }
 
 .si-grpahic-container .si-static-text-overlay.left-gradient .si-static-score-item {
@@ -638,7 +661,6 @@ table {
   bottom: 0;
   height: 1px;
   width: calc(100% + 40px);
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, .2)), to(transparent));
   background: linear-gradient(to right, rgba(255, 255, 255, .2) 0%, transparent 100%); }
 
 .si-grpahic-container .si-static-text-overlay.bottom-graphic {
@@ -649,11 +671,7 @@ table {
   top: auto; }
 
 .si-grpahic-container .si-static-text-overlay.bottom-graphic .si-static-text-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 40px; }
 
@@ -700,11 +718,7 @@ table {
 .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-details {
   position: relative;
   padding-bottom: 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center; }
 
 .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-details .si-player-jersey-no, .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-details .si-player-data {
@@ -736,26 +750,17 @@ table {
   content: "";
   bottom: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(0, 0, 0, .01)));
   background: linear-gradient(to right, white 0%, rgba(0, 0, 0, .01) 100%); }
 
 .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-points {
   margin-top: 30px;
   height: 80px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex; }
 
 .si-grpahic-container .si-static-text-overlay.basketball-1 .si-player-points .si-player-point-item {
   position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
   align-items: flex-end;
   width: 142px;
   height: 80px;
@@ -814,11 +819,7 @@ table {
   margin: 0 auto; }
 
 .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-board-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   height: 100%; }
 
@@ -827,14 +828,11 @@ table {
   height: 100%; }
 
 .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.left, .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.right {
-  -ms-flex-preferred-size: 234px;
   flex-basis: 234px;
   width: 234px;
   max-width: 234px;
   min-width: 234px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ededed), color-stop(50%, #fdfdfd), to(#ededed));
   background: linear-gradient(to bottom, #ededed 0%, #fdfdfd 50%, #ededed 100%);
-  -webkit-box-shadow: 0 -4px 4px rgba(0, 0, 0, .2);
   box-shadow: 0 -4px 4px rgba(0, 0, 0, .2); }
 
 .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.left:before, .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.right:before {
@@ -843,7 +841,6 @@ table {
   width: 80px;
   height: 100%;
   top: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ededed), color-stop(50%, #fdfdfd), to(#ededed));
   background: linear-gradient(to bottom, #ededed 0%, #fdfdfd 50%, #ededed 100%);
   z-index: 1; }
 
@@ -851,14 +848,8 @@ table {
   position: absolute;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   z-index: 2; }
 
@@ -872,7 +863,6 @@ table {
 
 .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.left .si-static-score-borad-side-wrap .si-static-team-branding, .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.right .si-static-score-borad-side-wrap .si-static-team-branding {
   display: inline-block;
-  -ms-flex-preferred-size: 76px;
   flex-basis: 76px;
   width: 76px;
   max-width: 76px;
@@ -890,7 +880,6 @@ table {
   right: 0;
   -webkit-transform: translateX(50%) skewX(40deg);
   transform: translateX(50%) skewX(40deg);
-  -webkit-box-shadow: 10px 0 0 0 rgba(0, 0, 0, .1);
   box-shadow: 10px 0 0 0 rgba(0, 0, 0, .1); }
 
 .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.left .si-static-team-branding {
@@ -904,30 +893,22 @@ table {
   left: 0;
   -webkit-transform: translateX(-50%) skewX(-40deg);
   transform: translateX(-50%) skewX(-40deg);
-  -webkit-box-shadow: -10px 0 0 0 rgba(0, 0, 0, .1);
   box-shadow: -10px 0 0 0 rgba(0, 0, 0, .1); }
 
 .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.right .si-static-team-branding {
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
   order: 1;
   margin: 0 30px; }
 
 .si-grpahic-container .si-static-text-overlay.basketball-2 .si-static-score-board .si-static-score-borad-side.middle {
   position: absolute;
-  -ms-flex-item-align: end;
-  -webkit-align-self: flex-end;
   align-self: flex-end;
   height: calc(100% - 10px);
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   bottom: 0;
   width: 15%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#0463a2), color-stop(50%, cyan), to(#034974));
   background: linear-gradient(to bottom, #0463a2 0%, cyan 50%, #034974 100%);
   text-align: center;
   line-height: 70px; }
@@ -957,11 +938,7 @@ table {
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-header {
   height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 0 48px; }
 
@@ -990,7 +967,6 @@ table {
   background-repeat: no-repeat;
   background-position: -70px center;
   background-size: 200px 200px;
-  -webkit-box-shadow: inset 0 0 100px 0 rgba(0, 0, 0, .8);
   box-shadow: inset 0 0 100px 0 rgba(0, 0, 0, .8);
   z-index: 1; }
 
@@ -1002,7 +978,6 @@ table {
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  -webkit-box-shadow: inset 0 0 200px 0 rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 200px 0 rgba(0, 0, 0, .5);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
@@ -1070,14 +1045,8 @@ table {
   z-index: 1; }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-main .si-static-main-player .si-static-similar-players .si-static-similar-players-list .si-static-similar-player-item .si-static-similar-player-rank {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   width: 60px;
   height: 60px;
@@ -1145,7 +1114,6 @@ table {
   border-radius: 50%;
   border: 6px solid #fff;
   overflow: hidden;
-  -webkit-box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, .5);
   background: url(http://placehold.it/500x500), red;
   background-repeat: no-repeat;
@@ -1160,7 +1128,6 @@ table {
   border-radius: 50%;
   width: calc(100% - 10px);
   height: calc(100% - 10px);
-  -webkit-box-shadow: inset 0 0 100px 0 rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 100px 0 rgba(0, 0, 0, .5);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
@@ -1183,14 +1150,8 @@ table {
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1 .si-static-footer {
   height: 64px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 0 44px;
   background: #000; }
@@ -1222,8 +1183,6 @@ table {
   margin: 30px auto 0 auto; }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100%;
   width: 100%;
@@ -1231,7 +1190,6 @@ table {
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.branding {
   position: relative;
-  -ms-flex-preferred-size: 220px;
   flex-basis: 220px;
   width: 220px;
   max-width: 220px;
@@ -1251,14 +1209,12 @@ table {
   transform: translate(-50%, -50%);
   background: #fff;
   padding: 10px;
-  -webkit-box-shadow: inset 0 0 40px rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 40px rgba(0, 0, 0, .5);
   background-image: url(http://placehold.it/500x500);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-clip: content-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.branding .si-static-team-brand:before {
@@ -1271,15 +1227,10 @@ table {
   border-radius: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .8);
   box-shadow: inset 0 0 100px rgba(0, 0, 0, .8); }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 0px;
   flex: 1 1 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative; }
 
@@ -1305,8 +1256,6 @@ table {
   background-color: #fff; }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team .si-static-team-wrap .si-static-col.scoring .si-static-score-item {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 0px;
   flex: 1 1 0;
   text-align: center;
   position: relative;
@@ -1376,8 +1325,6 @@ table {
   right: 0; }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team.label .si-static-team-wrap .si-staic-label-col {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 0px;
   flex: 1 1 0; }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team.label .si-static-team-wrap .si-staic-label-col span {
@@ -1386,20 +1333,16 @@ table {
   font-family: 'helvetica-neue'; }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.luckey-wins .si-static-team.label .si-static-team-wrap .si-staic-label-col:first-child {
-  -ms-flex-preferred-size: 220px;
   flex-basis: 220px;
   width: 220px;
   max-width: 220px;
   min-width: 220px; }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col {
   position: relative;
-  -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
   width: 50%;
   height: 100%;
@@ -1459,32 +1402,20 @@ table {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  -webkit-box-shadow: inset 0 0 150px rgba(0, 0, 0, .8);
   box-shadow: inset 0 0 150px rgba(0, 0, 0, .8); }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-kick-wrap {
   height: 100%;
   padding: 50px 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: distribute;
   justify-content: space-around; }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-kick-wrap .si-static-kick-item {
   min-height: 120px;
   background: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center; }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-kick-wrap .si-static-kick-item .si-static-icon-left {
@@ -1503,9 +1434,7 @@ table {
   padding: 15px 10px 15px 0;
   font-size: 24px;
   font-family: 'Helvetica Neue Light';
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-      flex: 1 1 auto; }
+  flex: 1 1 auto; }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-game-points {
   position: absolute;
@@ -1548,11 +1477,7 @@ table {
   margin-bottom: 10px; }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-game-points .si-static-game-points-wrap .si-static-game-point-item .si-static-game-point-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center; }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-game-points .si-static-game-points-wrap .si-static-game-point-item .si-static-game-point-bar .si-static-game-point-bar-count {
@@ -1571,20 +1496,14 @@ table {
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-game-points .si-static-rank-warp {
   height: 140px;
   background: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
   font-size: 20px;
   font-family: 'Helvetica Neue Bold Condensed';
   text-transform: uppercase; }
 
 .si-grpahic-container .si-static-text-overlay.radar-infographic-1.recent-kicks .si-static-main .si-static-main-col .si-static-game-points .si-static-rank-warp .si-static-rank-graphic {
-  -ms-flex-preferred-size: 136px;
   flex-basis: 136px;
   width: 136px;
   max-width: 136px;

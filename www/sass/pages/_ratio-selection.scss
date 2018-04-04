@@ -34,16 +34,13 @@
         left:50%;
         transform: translate(-50%,-50%);
         span {
-
           display: block;
           color:var(--font-color);
-
         }
         span:first-child {
 
           font-size: 38px;
           font-weight: 600;
-
         }
         span:last-child {
 
@@ -67,7 +64,6 @@
         height:calc(100% - 30px);
       }
     }
-
     &.four-three {
       .si-ratio-count{
         width:70%;
