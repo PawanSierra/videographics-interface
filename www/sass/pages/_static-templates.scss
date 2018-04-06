@@ -112,7 +112,6 @@
       .si-static-player-name {
         font-size: 35px;
         font-family:'gotham_ultra-italic',sans-serif;
-
       }
       .si-static-tagline {
         display: inline-block;
@@ -195,6 +194,7 @@
   } // left-gradient
 
   &.bottom-graphic {
+
     width:100%;
     bottom:10px;
     left:0;
@@ -1161,46 +1161,55 @@
     .si-static-bottom-area {
       display: flex;
       justify-content: space-between;
-      padding:10px  10px 17.5px 10px;
+      flex-direction: column;
+      padding:10px  5px 17.5px 5px;
+      .si-static-bottom-details {
+        display: flex;
+      }
       span {
         display: inline-block;
       }
         .si-static-bottom-left {
           // flex:1 1 auto;
           max-width: 50%;
-          margin-bottom: -5px;
+          margin-bottom: -3px;
         }
         .si-static-bottom-left-name {
           font-size: 13px;
-          text-transform: uppercase;
+          // text-transform: uppercase;
           font-family: 'futura-medium',sans-serif;
 
         }
         .si-static-bottom-left-over {
+
           font-family: 'futura-bold',sans-serif;
           font-size: 14px;
         }
         .si-static-bottom-left-wickets-over {
+
           font-size: 20px;
           font-family: 'futura-bold',sans-serif;
         }
         .si-static-bottom-left-score {
 
-          font-size: 60px;
+          font-size: 58px;
           font-family: 'futura-bold',sans-serif;
-          line-height: 60px;
-          height:60px;
+          line-height: 58px;
+          height:58px;
         }
         .si-static-score-item-label {
+
           font-family: 'futura-medium',sans-serif;
           font-size: 10px;
           text-transform: uppercase;
         }
         .si-static-score-item-count {
+
           font-family: 'futura-bold',sans-serif;
           font-size: 12px;
         }
         .si-static-bottom-right {
+
           position: relative;
           flex:1 1 auto;
           display: flex;
@@ -1211,6 +1220,7 @@
             display: inline-block;
           }
           .si-static-bottom-hashtag {
+
             position: absolute;
             right:0;
             bottom:-4px;

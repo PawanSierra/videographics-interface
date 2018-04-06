@@ -4,7 +4,7 @@ let fs = require("fs"),
     gulp = require("gulp"),
     sass = require("gulp-sass"),
     postcss = require("gulp-postcss"),
-    autoprefixer = require("autoprefixer"),
+    // autoprefixer = require("autoprefixer"),
     orderValues = require("postcss-ordered-values"),
     connect = require("gulp-connect"),
     sourcemap = require("gulp-sourcemaps"),
@@ -16,17 +16,18 @@ let fs = require("fs"),
     cssnext = require("postcss-cssnext"),
     ssync = require("gulp-scp"),
     htmlbeautify = require("gulp-html-beautify"),
-    customselector = require('postcss-custom-selectors');
+    customselector = require('postcss-custom-selectors'),
+    placehold = require("postcss-placehold");
     // clip_path = require("postcss-clip-path-polyfill");
 
 
-let prefixer = autoprefixer({browsers: "last 5 versions" , grid:true }); //clip_path()
+//let prefixer = autoprefixer({browsers: "last 5 versions" , grid:true }); //clip_path()
 
-let plugins = [cssnext({ features:{ customProperties:{ preserve:true }, grid:true   } , browsers: ['last 1 version']  }),customselector(),orderValues(),mqpacker(),merge()]; //,merge_long() autoprefixer({browsers: "last 6 versions", grid:true})
+let plugins = [cssnext({ features:{ customProperties:{ preserve:true }, grid:true   } , browsers: ['last 3 version']  }),customselector(),placehold(),orderValues(),mqpacker(),merge()]; //,merge_long()
 
 
 
-gulp.task('connect',function() {
+gulp.task('connect',() => {
 
   connect.server({
 
@@ -46,7 +47,8 @@ gulp.task('connect',function() {
   });
 
 });
-gulp.task('sass',function() {
+
+gulp.task('sass',() => {
 
   return gulp.src("www/sass/**/*.scss")
                .pipe(sourcemap.init())
@@ -56,14 +58,14 @@ gulp.task('sass',function() {
                .pipe(gulp.dest("www/css/"));
 });
 
-gulp.task('reload',function(){
+gulp.task('reload',() => {
 
   return gulp.src("*")
               .pipe(connect.reload());
 });
 
 
-gulp.task('production',function() {
+gulp.task('production',() => {
 
 
   let imagesminify =  gulp.src("www/images/*")
@@ -72,7 +74,7 @@ gulp.task('production',function() {
 
   let files_sync   =  gulp.src("")
                           .pipe(sync('www/','dist/',{ printSummary:true , ignore:"sass"}))
-                          .on('error',function(){
+                          .on('error',() => {
                                 console.log("Something went wrong with files sync!");
                           });
 
@@ -87,7 +89,6 @@ gulp.task('production',function() {
 
 
 
-
   return [files_sync,imagesminify,cssminify,htmlbeauty];
 
 
@@ -95,7 +96,7 @@ gulp.task('production',function() {
 
 
 
-gulp.task('watch',function(){
+gulp.task('watch',() => {
 
     console.log("waiting for changes");
     gulp.watch('www/sass/**/*.scss',['sass']);
