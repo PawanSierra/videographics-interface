@@ -75,12 +75,12 @@
             color:var(--secondary-color);
           }
         }
-        &.add-photo {
+        &.add-photo  {
           a:before {
             content:"\e900";
           }
         }
-        &.add-text {
+        &.add-text  {
           a:before {
             content:"\e919";
           }
@@ -92,31 +92,26 @@
         }
         &.infographix {
           a:before {
-
             content:"\e916";
           }
         }
         &.ratio {
           a:before {
-
             content:"\e923";
           }
         }
         &.templates {
           a:before {
-
             content:"\e925";
           }
         }
         &.transition {
           a:before {
-
             content:"\e926";
           }
         }
         &.audio {
           a:before {
-
             content:"\e924";
           }
         }

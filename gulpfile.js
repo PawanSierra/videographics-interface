@@ -16,16 +16,16 @@ let fs = require("fs"),
     cssnext = require("postcss-cssnext"),
     ssync = require("gulp-scp"),
     htmlbeautify = require("gulp-html-beautify"),
-    customselector = require('postcss-custom-selectors'),
+    //customselector = require('postcss-custom-selectors'),
     placehold = require("postcss-placehold");
     // clip_path = require("postcss-clip-path-polyfill");
 
 
 //let prefixer = autoprefixer({browsers: "last 5 versions" , grid:true }); //clip_path()
 
-let plugins = [cssnext({ features:{ customProperties:{ preserve:true }, grid:true   } , browsers: ['last 3 version']  }),customselector(),placehold(),orderValues(),mqpacker(),merge()]; //,merge_long()
+let plugins = [cssnext({ features:{ customProperties:{ preserve:true }, grid:true   } , browsers: ['last 2 version']  }),orderValues(),mqpacker(),merge()];
 
-
+              //,merge_long() , customselector(), placehold()
 
 gulp.task('connect',() => {
 

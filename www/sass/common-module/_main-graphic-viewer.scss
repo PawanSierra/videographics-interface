@@ -13,6 +13,7 @@
     // height:32px;
     display: inline-flex;
     @extend %align-center;
+
     span {
       display: inline-block;
       &:before {
@@ -49,6 +50,7 @@
     height:100%;
   }
   .si-graphic-nav {
+
     position: relative;
     width: calc(100% - 45px);
     margin:0 auto;
@@ -137,7 +139,7 @@
           font-size: 8px;
           border-radius: 50%;
           text-align: center;
-          
+
         }
 
       &.active  {
@@ -208,6 +210,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  user-select: none;
   &.one-one {
     width: 360px;
     height:360px;

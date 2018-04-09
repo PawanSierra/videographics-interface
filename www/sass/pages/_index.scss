@@ -777,6 +777,7 @@
         width:100%;
         height:115px;
         background-color:rgba(0,0,0,.10);
+        vertical-align: middle;
         cursor: pointer;
         &.selected:before {
           @extend %fontAwesome;
@@ -792,6 +793,21 @@
 
         }
         &.loading:after {
+
+
+          // display: inline-block;
+          // position: absolute;
+          // content:"";
+          // width:30px;
+          // height:30px;
+          // top:50%;
+          // left:50%;
+          // border-radius: 50%;
+          // border:4px solid rgba(255,255,255,.8);
+          // border-top-color: var(--secondary-color);
+          // transform: translate(-50%,-50%);
+          // animation: spin 800ms linear infinite;
+
           content:"";
           position: absolute;
           top:0;
@@ -801,17 +817,7 @@
           background-image:url(../images/loading.svg);
           background-repeat: no-repeat;
           background-position: center center;
-          background-size: 80px 80px;
-
-          // left:50%;
-          // top:50%;
-          // width:20px;
-          // height:20px;
-          // background:transparent;
-          // border:2px solid #4a4a4a;
-          // border-top:2px solid var(--secondary-color);
-          // border-radius: 50%;
-          // transform: translate(-50%,-50%);
+          background-size:60px 60px;
 
 
         }
@@ -845,7 +851,8 @@
           line-height: 20px;
           font-size: 12px;
         }
-      }
+
+      } //si-gallery-thumb
 
       img {
 

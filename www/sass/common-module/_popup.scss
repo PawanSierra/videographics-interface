@@ -219,15 +219,31 @@
     .si-popup-wrap {
       position: relative;
       .si-loader-gif {
-        position: absolute;
-        display: inline-block;
-        width:100px;
-        height:100px;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-        background: url(../images/loading.svg) no-repeat center;
-        background-size: cover;
+        // position: absolute;
+        // display: inline-block;
+        // width:100px;
+        // height:100px;
+        // top:50%;
+        // left:50%;
+        // transform: translate(-50%,-50%);
+        // background: url(../images/loading.svg) no-repeat center;
+        // background-size: cover;
+
+        &:before {
+          display: inline-block;
+          position: absolute;
+          content:"";
+          width:65px;
+          height:65px;
+          top:50%;
+          left:50%;
+          border-radius: 50%;
+          border:6px solid rgba(255,255,255,.8);
+          border-top-color: var(--secondary-color);
+          animation: spin 800ms linear infinite;
+          transform: translate(-50%,-50%);
+
+        }
       }
     }
   }
